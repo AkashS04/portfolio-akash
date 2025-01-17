@@ -95,9 +95,9 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                       xs: "0.5rem",
                     },
                     margin: {
-                      lg: "1rem",
+                      lg: "0.5rem 1rem",
                       md: "0.5rem 1rem",
-                      sm: "0.2rem 1rem",
+                      sm: "0.2rem 0.8rem",
                       xs: "0rem 2rem",
                     },
                     padding: {
