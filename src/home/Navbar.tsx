@@ -52,6 +52,7 @@ function Navbar({
           top: "10px",
           right: "10px",
           color: "#e3e3e3",
+          zIndex:'999'
         }}
       >
         <CloseIcon />
