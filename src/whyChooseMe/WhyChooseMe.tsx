@@ -52,9 +52,9 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               mt: "1rem",
               fontSize: {
                 lg: "3rem",
-                md: "2.5rem",
-                sm: "2rem",
-                xs: "1.5rem",
+                md: "2.6rem",
+                sm: "2.5rem",
+                xs: "2.25rem",
               },
             }}
             gutterBottom
@@ -72,7 +72,7 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             >
               {Skillset.map((skills: any) => (
                 <Box
-                key={skills.uId}
+                  key={skills.uId}
                   sx={{
                     width: {
                       lg: "40%",
@@ -81,10 +81,10 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                       xs: "80%",
                     },
                     height: {
-                      lg: "104px",
-                      md: "80px",
-                      sm: "40px",
-                      xs: "40px",
+                      lg: "140px",
+                      md: "140px",
+                      sm: "140px",
+                      xs: "140px",
                     },
                     display: "flex",
                     alignItems: "center",
@@ -118,10 +118,10 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                       filter:
                         "invert(85%) sepia(7%) saturate(26%) hue-rotate(319deg) brightness(101%) contrast(104%)",
                       height: {
-                        lg: "60px",
-                        md: "50px",
-                        sm: "40px",
-                        xs: "35px",
+                        lg: "75px",
+                        md: "65px",
+                        sm: "45px",
+                        xs: "40px",
                       },
                       width: "auto",
                     }}
@@ -134,10 +134,10 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                         fontFamily: "Kanit-Regular",
                         color: "#e3e3e3",
                         fontSize: {
-                          lg: "1.5rem",
-                          md: "1rem",
-                          sm: "0.9rem",
-                          xs: "0.7rem",
+                          lg: "2.25rem",
+                          md: "1.125rem",
+                          sm: "1.125rem",
+                          xs: "1.125rem",
                         },
                       }}
                     >
@@ -150,10 +150,10 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                         fontFamily: "kanit-Light",
                         color: "#e3e3e3",
                         fontSize: {
-                          lg: "1rem",
-                          md: "1rem",
-                          sm: "0.6rem",
-                          xs: "0.6rem",
+                          lg: "1.125rem",
+                          md: "1.125rem",
+                          sm: "1rem",
+                          xs: "1rem",
                         },
                       }}
                     >

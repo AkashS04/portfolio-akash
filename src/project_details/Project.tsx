@@ -51,9 +51,9 @@ const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: a
             mt: "1rem",
             fontSize: {
               lg: "3rem",
-              md: "2.5rem",
-              sm: "2rem",
-              xs: "1.5rem",
+              md: "2.6rem",
+              sm: "2.5rem",
+              xs: "2.25rem"
             },
           }}
           gutterBottom
@@ -122,8 +122,8 @@ const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: a
                   fontSize: {
                     lg: "1.5rem",
                     md: "1.5rem",
-                    sm: "1.3rem",
-                    xs: "1rem",
+                    sm: "1.5rem",
+                    xs: "1.5rem",
                   },
                 }}
                 gutterBottom
@@ -136,10 +136,10 @@ const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: a
                   fontFamily: "Kanit-Light",
                   color: "#e3e3e3",
                   fontSize: {
-                    lg: "1rem",
-                    md: "1rem",
+                    lg: "1.125rem",
+                    md: "1.125rem",
                     sm: "1rem",
-                    xs: "0.8rem",
+                    xs: "1rem",
                   },
                 }}
                 gutterBottom

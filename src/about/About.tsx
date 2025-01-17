@@ -11,9 +11,9 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_, ref:an
           variant="h3"
           sx={{ color: "#d52e2e", fontFamily: "Oswald-Bold", mt: "1rem", fontSize:{
             lg: "3rem",
-            md: "2.5rem",
-            sm: "2rem",
-            xs: "1.5rem"
+            md: "2.6rem",
+            sm: "2.5rem",
+            xs: "2.25rem"
           }, }}
           gutterBottom
         >
@@ -27,7 +27,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_, ref:an
               lg: "2.5rem",
               md: "2rem",
               sm: "1.5rem",
-              xs: "1rem"
+              xs: "1.5rem"
             }, }}
             gutterBottom
           >
@@ -36,11 +36,11 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_, ref:an
           <Typography
             variant="h5"
             align="left"
-            sx={{ fontFamily: "kanit-Light", color: "#e3e3e3",fontSize:{
+            sx={{ fontFamily: "kanit-Regular", color: "#e3e3e3",fontSize:{
               lg: "1.5rem",
-              md: "1rem",
-              sm: "0.8rem",
-              xs: "0.5rem"
+              md: "1.125rem",
+              sm: "1rem",
+              xs: "1rem"
             },  }}
             gutterBottom
           >

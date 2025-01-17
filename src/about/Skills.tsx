@@ -79,9 +79,9 @@ const Skills = () => {
                     fontFamily: "Oswald-Regular",
                     fontSize: {
                       lg: "1.5rem",
-                      md: "1rem",
-                      sm: "0.8rem",
-                      xs: "0.8rem",
+                      md: "1.125rem",
+                      sm: "1rem",
+                      xs: "1rem",
                     },
                   }}
                   align="left"

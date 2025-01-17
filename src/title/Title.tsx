@@ -41,7 +41,7 @@ function Title() {
               lg: "6rem",
               md: "4rem",
               sm: "3rem",
-              xs: "2rem",
+              xs: "2.225rem",
             },
             fontFamily:'PlaywriteIN-Light',
             textShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
@@ -55,8 +55,8 @@ function Title() {
             fontSize: {
               lg: "4rem",
               md: "3rem",
-              sm: "2rem",
-              xs: "1rem",
+              sm: "2.25rem",
+              xs: "2.25rem",
             },
             fontFamily:'Oswald-Regular',
             textShadow:' rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'
