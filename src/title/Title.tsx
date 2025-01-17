@@ -43,11 +43,12 @@ function Title() {
               sm: "3rem",
               xs: "2rem",
             },
-            fontFamily:'Raleway-Regular'
+            fontFamily:'PlaywriteIN-Light',
+            textShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
           }}
           gutterBottom
         >
-          Hi there, This is Akash
+          Hi,This is Akash
         </Typography>
         <Typography variant="h2" sx={{
             color: "#e3e3e3",
@@ -57,9 +58,10 @@ function Title() {
               sm: "2rem",
               xs: "1rem",
             },
-            fontFamily:'Raleway-Extralight'
+            fontFamily:'Oswald-Regular',
+            textShadow:' rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'
           }} gutterBottom>
-          Front-end React Developer
+        React Developer
         </Typography>
       </Box>
     </div>

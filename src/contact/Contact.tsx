@@ -50,9 +50,9 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_,ref:a
       >
         <Box>
           <Typography
-            variant="h5"
+            variant="h4"
             align="left"
-            sx={{ color: "#d52e2e", fontFamily: "Poppins-Bold", mt: "1rem" }}
+            sx={{ color: "#d52e2e", fontFamily: "Oswald-Bold", mt: "1rem" }}
             gutterBottom
           >
             CONTACT

@@ -2,16 +2,16 @@ import { Box, Typography } from "@mui/material";
 import LinearProgress from "@mui/material/LinearProgress";
 const Skills = () => {
   const coreSkills = [
-    { title: "HTML", value: "80", percentage: "80%" },
-    { title: "CSS", value: "75", percentage: "75%" },
-    { title: "JavaScript", value: "70", percentage: "70%" },
-    { title: "TypeScript", value: "70", percentage: "70%" },
-    { title: "React", value: "75", percentage: "75%" },
-    { title: "Material-UI", value: "70", percentage: "70%" },
-    { title: "Bootstrap", value: "80", percentage: "80%" },
-    { title: "REST API", value: "70", percentage: "70%" },
-    { title: "GitHub", value: "70", percentage: "70%" },
-    { title: "JIRA", value: "70", percentage: "70%" },
+    { uID: 121, title: "HTML", value: 80, percentage: "80%" },
+    { uID: 122, title: "CSS", value: 75, percentage: "75%" },
+    { uID: 123, title: "JavaScript", value: 70, percentage: "70%" },
+    { uID: 124, title: "TypeScript", value: 70, percentage: "70%" },
+    { uID: 125, title: "React", value: 75, percentage: "75%" },
+    { uID: 126, title: "Material-UI", value: 70, percentage: "70%" },
+    { uID: 127, title: "Bootstrap", value: 80, percentage: "80%" },
+    { uID: 128, title: "REST API", value: 70, percentage: "70%" },
+    { uID: 129, title: "GitHub", value: 70, percentage: "70%" },
+    { uID: 130, title: "JIRA", value: 70, percentage: "70%" },
   ];
 
   return (
@@ -29,7 +29,7 @@ const Skills = () => {
         sx={{
           padding: "1rem 0rem",
           border: "1px solid #707070",
-          borderRadius: "1rem",
+          borderRadius: ".5rem",
         }}
       >
         <Typography
@@ -37,8 +37,8 @@ const Skills = () => {
           sx={{
             color: "#e3e3e3",
             paddingLeft: "2rem",
-            fontFamily: "Poppins-Medium",
-            fontSize: "1.1rem",
+            fontFamily: "Oswald-Medium",
+            fontSize: "1.5rem",
           }}
           align="left"
         >
@@ -50,6 +50,7 @@ const Skills = () => {
         >
           {coreSkills.map((skills: any) => (
             <Box
+            key={skills.uID}
               sx={{
                 width: { lg: "40%", md: "40%", sm: "40%", xs: "80%" },
                 display: "flex",
@@ -75,7 +76,7 @@ const Skills = () => {
                   variant="h5"
                   sx={{
                     color: "#e3e3e3",
-                    fontFamily: "Raleway-Regular",
+                    fontFamily: "Oswald-Regular",
                     fontSize: {
                       lg: "1.5rem",
                       md: "1rem",

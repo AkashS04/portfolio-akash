@@ -9,26 +9,31 @@ import PortfolioImg from "../assets/MyProjects/PortfolioWebsite.jpg";
 const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: any) => {
   const projectData: any = [
     {
+      id: 11 ,
       img: EcommerceImg,
       title: "ECommerse Websites",
       content: "Robust ECommerce Websites for Clients",
     },
     {
+      id: 12  ,
       img: BussinessImg,
       title: "Bussiness Websites",
       content: "Robust Bussiness Websites for Clients",
     },
     {
+      id: 13 ,
       img: StartupImg,
       title: "StartUp Websites",
       content: "Robust StartUp Websites for Clients",
     },
     {
+      id:14  ,
       img: PersonalImg,
       title: "Personal Websites",
       content: "Robust Personal Websites for Clients",
     },
     {
+      id: 15 ,
       img: PortfolioImg,
       title: "Portfolio Websites",
       content: "Robust Portfolio Websites for Clients",
@@ -42,7 +47,7 @@ const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: a
           variant="h3"
           sx={{
             color: "#d52e2e",
-            fontFamily: "Poppins-Bold",
+            fontFamily: "Oswald-Bold",
             mt: "1rem",
             fontSize: {
               lg: "3rem",
@@ -69,6 +74,7 @@ const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: a
         >
           {projectData.map((data: any) => (
             <Box
+            key={data.id}
               sx={{
                 width: { lg: "300px", md: "300px", sm: "300px", xs: "300px" },
                 backgroundColor: "#181818",
@@ -111,7 +117,7 @@ const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: a
               <Typography
                 variant="h5"
                 sx={{
-                  fontFamily: "Raleway-Extralight",
+                  fontFamily: "Kanit-Regular",
                   color: "#e3e3e3",
                   fontSize: {
                     lg: "1.5rem",
@@ -127,7 +133,7 @@ const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: a
               <Typography
                 variant="body1"
                 sx={{
-                  fontFamily: "Raleway-Thin",
+                  fontFamily: "Kanit-Light",
                   color: "#e3e3e3",
                   fontSize: {
                     lg: "1rem",

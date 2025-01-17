@@ -9,7 +9,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_, ref:an
       <Box sx={{ width: "100%" }}>
         <Typography
           variant="h3"
-          sx={{ color: "#d52e2e", fontFamily: "Poppins-Bold", mt: "1rem", fontSize:{
+          sx={{ color: "#d52e2e", fontFamily: "Oswald-Bold", mt: "1rem", fontSize:{
             lg: "3rem",
             md: "2.5rem",
             sm: "2rem",
@@ -23,7 +23,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_, ref:an
           <Typography
             variant="h4"
             align="left"
-            sx={{ fontFamily: "Poppins-Regular", color: "#e3e3e3" ,fontSize:{
+            sx={{ fontFamily: "Kanit-Regular", color: "#e3e3e3" ,fontSize:{
               lg: "2.5rem",
               md: "2rem",
               sm: "1.5rem",
@@ -31,20 +31,21 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_, ref:an
             }, }}
             gutterBottom
           >
-            Hello, I'm Akash,Front-end Developer in India.
+          React Developer, India.
           </Typography>
           <Typography
             variant="h5"
             align="left"
-            sx={{ fontFamily: "Raleway-Extralight", color: "#e3e3e3",fontSize:{
-              lg: "2rem",
-              md: "1.5rem",
-              sm: "1rem",
-              xs: "0.9rem"
+            sx={{ fontFamily: "kanit-Light", color: "#e3e3e3",fontSize:{
+              lg: "1.5rem",
+              md: "1rem",
+              sm: "0.8rem",
+              xs: "0.5rem"
             },  }}
             gutterBottom
           >
-            Having better skills with modern web technologies
+           Skilled in Building Scalable and User-Centric Web Applications Crafting dynamic UIs with React.js, Javascript, Typescript, HTML, CSS.
+           <br></br>Managing state with Redux & Context API and Seamless API integration using REST APIs for optimal user experiences.
           </Typography>
         </Box>
         <Skills/>

@@ -1,39 +1,35 @@
 @font-face {
-  font-family: "Raleway-Thin";
-  src: url(./assets/fonts/Raleway-Thin.ttf);
-}
-@font-face {
-  font-family: "Raleway-Extralight";
-  src: url(./assets/fonts/Raleway-ExtraLight.ttf);
-}
-@font-face {
-  font-family: "Raleway-Regular";
-  src: url(./assets/fonts/Raleway-Regular.ttf);
-}
-@font-face {
-  font-family: "Raleway-Medium";
-  src: url(./assets/fonts/Raleway-Medium.ttf);
-}
-@font-face {
-  font-family: "Poppins-Regular";
-  src: url(./assets/fonts/Poppins-Regular.ttf);
-}
-@font-face {
-  font-family: "Poppins-Medium";
-  src: url(./assets/fonts/Poppins-Medium.ttf);
-}
-@font-face {
   font-family: "Poppins-Semibold";
   src: url(./assets/fonts/Poppins-SemiBold.ttf);
 }
+
 @font-face {
-  font-family: "Poppins-Bold";
-  src: url(./assets/fonts/Poppins-Bold.ttf);
+  font-family: "PlaywriteIN-Light";
+  src: url(./assets/fonts/PlaywriteIN-Light.ttf);
 }
 @font-face {
-  font-family: "Poppins-Light";
-  src: url(./assets/fonts/Poppins-Light.ttf);
+  font-family: "Oswald-Regular";
+  src: url(./assets/fonts/Oswald-Regular.ttf);
 }
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url(./assets/fonts/Oswald-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url(./assets/fonts/Oswald-Bold.ttf);
+}
+@font-face {
+  font-family: "Kanit-Regular";
+  src: url(./assets/fonts/Kanit-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Kanit-Light";
+  src: url(./assets/fonts/Kanit-Light.ttf);
+}
+
 #root {
   margin: 0;
   padding: 0;
@@ -136,7 +132,7 @@ body {
     top: 180px !important;
   }
 
-  .swipermain  {
+  .swipermain {
     height: 50% !important;
   }
   .reactNavbar-main {
@@ -148,7 +144,7 @@ body {
     top: 100px !important;
   }
 
-  .swipermain  {
+  .swipermain {
     height: 40% !important;
   }
   .reactNavbar-main {
@@ -157,14 +153,13 @@ body {
 }
 
 @media (max-width: 325px) {
-
   .home-title-box {
     top: 100px !important;
   }
   .reactNavbar-main {
     display: none !important;
   }
-  .swipermain{
+  .swipermain {
     height: 40% !important;
   }
 }

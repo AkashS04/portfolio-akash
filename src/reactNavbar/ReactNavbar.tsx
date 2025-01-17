@@ -4,7 +4,7 @@ import reactLogo from "../assets/react.svg";
 const Navtexttheme = createTheme({
   typography: {
     body1: {
-      fontFamily: "Raleway-Regular",
+      fontFamily: "Kanit-Regular",
       color: "#c9c9c9",
       transition: "0.3s",
       "&:hover": {
