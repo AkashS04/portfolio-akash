@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import About from "../about/About";
 import Contact from "../contact/Contact";
 import Project from "../project_details/Project";
@@ -21,13 +21,6 @@ const Home: React.FC = () => {
       console.log("ref is null");
     }
   };
-
-  useEffect(() => {
-    if (aboutRef.current) {
-      console.log("aboutRef current is set:", aboutRef.current);
-      aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, []);
 
   return (
     <>
