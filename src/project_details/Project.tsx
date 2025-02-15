@@ -7,6 +7,8 @@ import PersonalImg from "../assets/MyProjects/PersonalWebsite.jpg";
 import PortfolioImg from "../assets/MyProjects/PortfolioWebsite.jpg";
 
 const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: any) => {
+
+  console.log('<project >component')
   const projectData: any = [
     {
       id: 11 ,

@@ -8,6 +8,9 @@ import WhyChooseMe from "../whyChooseMe/WhyChooseMe";
 import Navbar from "./Navbar";
 
 const Home: React.FC = () => {
+
+  console.log('<home >component')
+
   const aboutRef = useRef<HTMLDivElement>(null);
   const whyChooseMeRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);

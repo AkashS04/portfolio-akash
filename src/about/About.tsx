@@ -4,6 +4,8 @@ import Skills from "./Skills";
 
 const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_, ref:any) => {
 
+  console.log('<about >component')
+
   return (
     <div ref={ref}>
       <Box sx={{ width: "100%" }}>

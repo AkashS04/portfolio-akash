@@ -37,6 +37,9 @@ function ReactNavbar({
   onProjectsClick,
   onContactClick,
 }: any) {
+
+  console.log('<reactnavbar >component')
+
   return (
     <div className="reactNavbar-main">
       <Box

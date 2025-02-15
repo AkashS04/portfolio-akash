@@ -6,7 +6,7 @@ import whatsApp from "../assets/icons/whatsapp.png";
 import linkedIN from "../assets/icons/linkedin.png";
 
 const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_,ref:any) => {
-
+  console.log('<contact >component')
 
   const clickCall = (value: any) => {
     if (value == 1) {

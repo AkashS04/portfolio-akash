@@ -16,6 +16,8 @@ function Navbar({
   onProjectsClick,
   onContactClick,
 }: any) {
+
+  console.log('<navbar >component')
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {

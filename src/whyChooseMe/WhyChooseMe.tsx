@@ -8,6 +8,8 @@ import MultiTasking from "../assets/skillsIcons/multitask.png";
 
 const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
   (_, ref: any) => {
+
+    console.log('<whychooseme >component')
     const Skillset = [
       {
         uId: 111,
