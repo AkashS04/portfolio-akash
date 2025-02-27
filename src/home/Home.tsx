@@ -6,6 +6,7 @@ import ReactNavbar from "../reactNavbar/ReactNavbar";
 import Title from "../title/Title";
 import WhyChooseMe from "../whyChooseMe/WhyChooseMe";
 import Navbar from "./Navbar";
+import BackToTop from "../backtotop/BackToTop";
 
 const Home: React.FC = () => {
 
@@ -43,6 +44,7 @@ const Home: React.FC = () => {
       <About ref={aboutRef} />
       <WhyChooseMe ref={whyChooseMeRef} />
       <Project ref={projectsRef} />
+      <BackToTop />
       <Contact ref={contactRef} />
     </>
   );

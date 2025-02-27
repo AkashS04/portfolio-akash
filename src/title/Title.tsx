@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import * as motion from "motion/react-client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,8 +10,7 @@ import slide2 from "../assets/slider_images/slide-2.jpg";
 import slide3 from "../assets/slider_images/slide-3.jpg";
 import { useState } from "react";
 function Title() {
-
-  console.log('<Title >component')
+  console.log("<Title >component");
 
   const swiperImage: any = [slide1, slide2, slide3];
   const [showDiv, setShowDiv] = useState(false);
@@ -53,7 +53,7 @@ function Title() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           {swiperImage.map((image: any) => (
-            <SwiperSlide key={image+"a2"} className="swipercontainer">
+            <SwiperSlide key={image + "a2"} className="swipercontainer">
               <img
                 className="swiperimage"
                 onLoad={() => setShowDiv(true)}
@@ -82,24 +82,39 @@ function Title() {
           >
             Hi,This is Akash
           </Typography>
-          <Typography
-            variant="h2"
-            sx={{
-              color: "#e3e3e3",
-              fontSize: {
-                lg: "4rem",
-                md: "3rem",
-                sm: "2.25rem",
-                xs: "2.25rem",
-              },
-              fontFamily: "Oswald-Regular",
-              textShadow:
-                " rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+          <motion.div
+            animate={{
+              scale: [1, 2, 2, 1, 1],
+              rotate: [0, 0, 180, 180, 0],
+              borderRadius: ["0%", "0%", "50%", "50%", "0%"],
             }}
-            gutterBottom
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              repeatDelay: 3,
+            }}
           >
-            React Developer
-          </Typography>
+            <Typography
+              variant="h2"
+              sx={{
+                color: "#e3e3e3",
+                fontSize: {
+                  lg: "4rem",
+                  md: "3rem",
+                  sm: "2.25rem",
+                  xs: "2.25rem",
+                },
+                fontFamily: "Oswald-Regular",
+                textShadow:
+                  " rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+              gutterBottom
+            >
+              React Developer
+            </Typography>
+          </motion.div>
         </Box>
       </div>
     </div>

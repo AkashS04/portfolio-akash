@@ -96,6 +96,12 @@ body {
   z-index: 1000;
 }
 
+.scroll-icon{
+  position: fixed;
+  bottom: 48px;
+  right: 14px;
+}
+
 @media (min-width: 1025px) and (max-width: 1440px) {
   .home-title-box {
     top: 125px !important;
