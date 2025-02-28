@@ -1,6 +1,5 @@
 import { Box, Typography, Paper } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import reactLogo from "../assets/react.svg";
 const Navtexttheme = createTheme({
   typography: {
     body1: {
@@ -42,11 +41,7 @@ function ReactNavbar({
 
   return (
     <div className="reactNavbar-main">
-      <Box
-        component="img"
-        sx={{ height: "60px", cursor: "pointer", alt: "react-logo" }}
-        src={reactLogo}
-      />
+
 
       <Box
         sx={{

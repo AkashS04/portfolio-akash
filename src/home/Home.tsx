@@ -44,8 +44,8 @@ const Home: React.FC = () => {
       <About ref={aboutRef} />
       <WhyChooseMe ref={whyChooseMeRef} />
       <Project ref={projectsRef} />
-      <BackToTop />
       <Contact ref={contactRef} />
+      <BackToTop />
     </>
   );
 };

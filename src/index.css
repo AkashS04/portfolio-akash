@@ -78,7 +78,7 @@ body {
 } */
 .reactNavbar-main {
   position: absolute;
-  top: 365px;
+  top: 430px;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -102,13 +102,17 @@ body {
   right: 14px;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .home-title-box {
     top: 125px !important;
   }
   .sidenav-mobile {
     display: none !important;
   }
+  .reactNavbar-main {
+    top:430px !important;
+  }
+  
 }
 @media (min-width: 1441px) and (max-width: 2560px) {
   .home-title-box {
@@ -118,17 +122,16 @@ body {
     display: none !important;
   }
   .reactNavbar-main {
-    top: 700px !important;
+    top:750px !important;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   .home-title-box {
     top: 165px !important ;
   }
-  .reactNavbar-main {
-    display: none !important;
+  .sidenav-mobile {
+    display: block !important;
   }
-
   .swipermain {
     height: 80% !important;
   }
@@ -139,7 +142,7 @@ body {
   }
 
   .swipermain {
-    height: 50% !important;
+    height: 52% !important;
   }
   .reactNavbar-main {
     display: none !important;
@@ -147,11 +150,11 @@ body {
 }
 @media (min-width: 326px) and (max-width: 425px) {
   .home-title-box {
-    top: 100px !important;
+    top: 60px !important;
   }
 
   .swipermain {
-    height: 40% !important;
+    height: 42% !important;
   }
   .reactNavbar-main {
     display: none !important;
@@ -160,7 +163,7 @@ body {
 
 @media (max-width: 325px) {
   .home-title-box {
-    top: 100px !important;
+    top: 38px !important;
   }
   .reactNavbar-main {
     display: none !important;
