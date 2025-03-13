@@ -41,6 +41,9 @@ body {
   padding: 0;
   background-color: rgb(31 31 31);
 }
+.titleDiv {
+  height: 100%;
+}
 .swipermain {
   height: 100vh;
 }
@@ -96,7 +99,7 @@ body {
   z-index: 1000;
 }
 
-.scroll-icon{
+.scroll-icon {
   position: fixed;
   bottom: 48px;
   right: 14px;
@@ -110,9 +113,8 @@ body {
     display: none !important;
   }
   .reactNavbar-main {
-    top:430px !important;
+    top: 430px !important;
   }
-  
 }
 @media (min-width: 1441px) and (max-width: 2560px) {
   .home-title-box {
@@ -122,7 +124,7 @@ body {
     display: none !important;
   }
   .reactNavbar-main {
-    top:750px !important;
+    top: 750px !important;
   }
 }
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -132,11 +134,17 @@ body {
   .sidenav-mobile {
     display: block !important;
   }
+  .titleDiv {
+    height: 80% !important;
+  }
   .swipermain {
     height: 80% !important;
   }
 }
 @media (min-width: 426px) and (max-width: 768px) {
+  .titleDiv {
+    height: 52% !important;
+  }
   .home-title-box {
     top: 180px !important;
   }
@@ -149,6 +157,9 @@ body {
   }
 }
 @media (min-width: 326px) and (max-width: 425px) {
+  .titleDiv {
+    height: 42% !important;
+  }
   .home-title-box {
     top: 60px !important;
   }
@@ -162,12 +173,16 @@ body {
 }
 
 @media (max-width: 325px) {
+  .titleDiv {
+    height: 40% !important;
+  }
   .home-title-box {
     top: 38px !important;
   }
   .reactNavbar-main {
     display: none !important;
   }
+
   .swipermain {
     height: 40% !important;
   }

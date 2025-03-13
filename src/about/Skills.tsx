@@ -2,16 +2,21 @@ import { Box, Typography } from "@mui/material";
 import LinearProgress from "@mui/material/LinearProgress";
 const Skills = () => {
   const coreSkills = [
-    { uID: 121, title: "HTML", value: 80, percentage: "80%" },
-    { uID: 122, title: "CSS", value: 75, percentage: "75%" },
-    { uID: 123, title: "JavaScript", value: 70, percentage: "70%" },
-    { uID: 124, title: "TypeScript", value: 70, percentage: "70%" },
-    { uID: 125, title: "React", value: 75, percentage: "75%" },
+    { uID: 121, title: "HTML5", value: 85, percentage: "85%" },
+    { uID: 122, title: "CSS3", value: 80, percentage: "80%" },
+    { uID: 123, title: "JavaScript", value: 90, percentage: "90%" },
+    { uID: 124, title: "TypeScript", value: 90, percentage: "90%" },
+    { uID: 125, title: "React", value: 85, percentage: "85%" },
+    { uID: 131, title: "Redux", value: 85, percentage: "85%" },
     { uID: 126, title: "Material-UI", value: 70, percentage: "70%" },
     { uID: 127, title: "Bootstrap", value: 80, percentage: "80%" },
+    { uID: 132, title: "Vitest", value: 75, percentage: "75%" },
     { uID: 128, title: "REST API", value: 70, percentage: "70%" },
     { uID: 129, title: "GitHub", value: 70, percentage: "70%" },
     { uID: 130, title: "JIRA", value: 70, percentage: "70%" },
+    { uID: 133, title: "Vite", value: 75, percentage: "75%" },
+    { uID: 134, title: "GitHub Actions", value: 75, percentage: "75%" },
+
   ];
 
   return (
@@ -50,7 +55,7 @@ const Skills = () => {
         >
           {coreSkills.map((skills: any) => (
             <Box
-            key={skills.uID}
+              key={skills.uID}
               sx={{
                 width: { lg: "40%", md: "40%", sm: "40%", xs: "80%" },
                 display: "flex",
@@ -90,14 +95,14 @@ const Skills = () => {
                 </Typography>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center" }}>
-                <Box sx={{ width: "100%", mr: 1 }}>
-                  <LinearProgress variant="determinate" value={skills.value} />
+                <Box sx={{ width: "100%", mr: 1}}>
+                  <LinearProgress sx={{backgroundColor:"#e3e3e3"}} variant="determinate" value={skills.value} />
                 </Box>
                 <Box sx={{ minWidth: 35 }}>
                   <Typography
                     variant="body2"
                     sx={{
-                      color: "#d52e2e",
+                      color: "#e3e3e3",
                       fontFamily: "Poppins-Semibold",
                       fontSize: {
                         lg: "1.1rem",

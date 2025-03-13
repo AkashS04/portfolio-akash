@@ -1,16 +1,15 @@
 import React, { useRef } from "react";
-import About from "../about/About";
-import Contact from "../contact/Contact";
-import Project from "../project_details/Project";
-import ReactNavbar from "../reactNavbar/ReactNavbar";
 import Title from "../title/Title";
-import WhyChooseMe from "../whyChooseMe/WhyChooseMe";
+import ReactNavbar from "../reactNavbar/ReactNavbar";
 import Navbar from "./Navbar";
+import About from "../about/About";
+import WhyChooseMe from "../whyChooseMe/WhyChooseMe";
+import Project from "../project_details/Project";
+import Contact from "../contact/Contact";
 import BackToTop from "../backtotop/BackToTop";
 
 const Home: React.FC = () => {
-
-  console.log('<home >component')
+  console.log("<home >component");
 
   const aboutRef = useRef<HTMLDivElement>(null);
   const whyChooseMeRef = useRef<HTMLDivElement>(null);
@@ -28,7 +27,9 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Title />
+      <div className="titleDiv">
+        <Title />
+      </div>
       <ReactNavbar
         onAboutClick={() => scrollToSection(aboutRef)}
         onWhyChooseMeClick={() => scrollToSection(whyChooseMeRef)}
