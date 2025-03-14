@@ -72,7 +72,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_,ref:a
             padding: "2rem 0rem",
             border: "1px solid #707070",
             borderRadius: ".5rem",
-            boxShadow: " rgb(131 38 38 / 14%) 0px 2px 8px 0px",
+            boxShadow: "#00d8ff 0px 0px 8px 0px"
           }}
         >
           <Box>

@@ -27,6 +27,10 @@ function LoadingThreeDotsJumping() {
             <motion.div className="dot" variants={dotVariants} />
             <motion.div className="dot" variants={dotVariants} />
             <motion.div className="dot" variants={dotVariants} />
+            <motion.div className="dot" variants={dotVariants} />
+            <motion.div className="dot" variants={dotVariants} />
+            <motion.div className="dot" variants={dotVariants} />
+            <motion.div className="dot" variants={dotVariants} />
             <StyleSheet />
         </motion.div>
         </Box>
@@ -49,9 +53,9 @@ function StyleSheet() {
             }
 
             .dot {
-                width: 25px;
-                height: 25px;
-                border-radius: 50%;
+                width: 2px;
+                height: 55px;
+                border-radius: 8px 2px;
                 background-color:#d52e2e;
                 will-change: transform;
             }

@@ -120,7 +120,7 @@ const Project = forwardRef<HTMLDivElement,React.PropsWithChildren<{}>>((_,ref: a
                 variant="h5"
                 sx={{
                   fontFamily: "Kanit-Regular",
-                  color: "#e3e3e3",
+                  color: "#00d8ff",
                   fontSize: {
                     lg: "1.5rem",
                     md: "1.5rem",

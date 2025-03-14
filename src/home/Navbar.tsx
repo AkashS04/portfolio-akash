@@ -43,6 +43,7 @@ function Navbar({
         backgroundColor: "#1e1e1e",
         color: "#e3e3e3",
         height: "100%",
+        boxShadow:"#00d8ff 0px 0px 50px 50px"
       }}
       role="presentation"
       onClick={toggleDrawer(false)}
@@ -53,7 +54,7 @@ function Navbar({
           position: "absolute",
           top: "10px",
           right: "10px",
-          color: "#e3e3e3",
+          color: "#00d8ff",
           zIndex:'999'
         }}
       >

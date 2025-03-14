@@ -25,7 +25,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((_, ref:an
           <Typography
             variant="h4"
             align="left"
-            sx={{ fontFamily: "Kanit-Regular", color: "#e3e3e3" ,fontSize:{
+            sx={{ fontFamily: "Kanit-Regular", color: "#00d8ff" ,fontSize:{
               lg: "2.5rem",
               md: "2rem",
               sm: "1.5rem",
