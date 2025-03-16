@@ -43,9 +43,14 @@ body {
 }
 .titleDiv {
   height: 100%;
+  width: auto;
 }
 .swipermain {
   height: 100vh;
+  width:auto;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 .swipermain::after {
   content: "";
@@ -58,13 +63,11 @@ body {
   z-index: 3;
 }
 .swiperimage {
+  height: auto;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
-.swipercontainer {
-  width: 100% !important;
-  margin: 0 !important;
-}
+
 .home-title-box {
   position: absolute;
   top: 250px;
@@ -136,6 +139,7 @@ body {
   }
   .titleDiv {
     height: 80% !important;
+    width: auto;
   }
   .swipermain {
     height: 80% !important;
@@ -144,6 +148,7 @@ body {
 @media (min-width: 426px) and (max-width: 768px) {
   .titleDiv {
     height: 52% !important;
+    width: auto;
   }
   .home-title-box {
     top: 180px !important;
@@ -159,6 +164,7 @@ body {
 @media (min-width: 326px) and (max-width: 425px) {
   .titleDiv {
     height: 42% !important;
+    width: auto;
   }
   .home-title-box {
     top: 60px !important;
@@ -175,6 +181,7 @@ body {
 @media (max-width: 325px) {
   .titleDiv {
     height: 40% !important;
+    width: auto;
   }
   .home-title-box {
     top: 38px !important;

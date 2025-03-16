@@ -12,18 +12,20 @@ const BackToTop: React.FC = () => {
     });
   }
   return (
-    <div className="scroll-icon">
-      <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-        <IconButton
-          onClick={handleScroll}
-          sx={{
-            color:"#ffffff"
-          }}
-        >
-          <ArrowCircleUpIcon fontSize="large" />
-        </IconButton>
-      </motion.div>
-    </div>
+    <>
+      <div className="scroll-icon">
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+          <IconButton
+            onClick={handleScroll}
+            sx={{
+              color: "#ffffff",
+            }}
+          >
+            <ArrowCircleUpIcon fontSize="large" />
+          </IconButton>
+        </motion.div>
+      </div>
+    </>
   );
 };
 
