@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-function ProjectImage({image}:any) {
+function ProjectImage({image,alt}:any) {
   return (
     <>
       <Box
@@ -11,6 +11,7 @@ function ProjectImage({image}:any) {
           width: { lg: "300px", md: "300px", sm: "300px", xs: "300px" },
         }}
         src={image}
+        alt={alt}
       />
     </>
   );

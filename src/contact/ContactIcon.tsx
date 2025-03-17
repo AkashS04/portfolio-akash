@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-const ContactIcon = ({ imgSrc, clickValue, clickCall }: any) => {
+const ContactIcon = ({ imgSrc, clickValue, clickCall ,alt}: any) => {
   const imageStlye = {
     cursor: "pointer",
     height: { lg: "100px", md: "80px", sm: "50px", xs: "40px" },
@@ -18,6 +18,7 @@ const ContactIcon = ({ imgSrc, clickValue, clickCall }: any) => {
       sx={imageStlye}
       src={imgSrc}
       onClick={() => clickCall(clickValue)}
+      alt={alt}
     />
   );
 };

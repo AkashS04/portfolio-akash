@@ -27,82 +27,81 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
     };
 
     const contactDetails = [
-      { iId: 887, imgsrc: phone, clickValue: 1 },
-      { iId: 888, imgsrc: email, clickValue: 2 },
-      { iId: 889, imgsrc: whatsApp, clickValue: 3 },
-      { iId: 890, imgsrc: linkedIN, clickValue: 4 },
+      { iId: 887, imgsrc: phone, clickValue: 1 ,alt:"mobile-link-icon" },
+      { iId: 888, imgsrc: email, clickValue: 2,alt:"email-link-icon" },
+      { iId: 889, imgsrc: whatsApp, clickValue: 3,alt:"whatsapp-link-icon" },
+      { iId: 890, imgsrc: linkedIN, clickValue: 4, alt:"linkedIn-link-icon"},
     ];
 
     return (
-      <>
+      <Box
+        ref={ref}
+        sx={{
+          borderTop: "1px solid #707070",
+          padding: {
+            lg: ".5rem 0rem 4rem 0rem",
+            md: ".5rem 0rem 4rem 0rem",
+            sm: ".5rem 0rem 2rem 0rem",
+            xs: ".5rem 0rem 2rem 0rem",
+          },
+        }}
+      >
         <Box
-          ref={ref}
           sx={{
-            borderTop: "1px solid #707070",
+            width: "auto",
             padding: {
-              lg: ".5rem 0rem 4rem 0rem",
-              md: ".5rem 0rem 4rem 0rem",
-              sm: ".5rem 0rem 2rem 0rem",
-              xs: ".5rem 0rem 2rem 0rem",
+              lg: "0rem 4rem",
+              md: "0rem 4rem",
+              sm: "0rem 3rem",
+              xs: "0rem 1rem",
             },
           }}
         >
+          <Box>
+            <Typography
+              variant="h4"
+              align="left"
+              sx={{
+                color: "#d52e2e",
+                fontFamily: "Oswald-Bold",
+                mt: "1rem",
+                fontSize: {
+                  lg: "3rem",
+                  md: "2.6rem",
+                  sm: "2.5rem",
+                  xs: "2.25rem",
+                },
+              }}
+              gutterBottom
+            >
+              CONTACT
+            </Typography>
+          </Box>
+
           <Box
             sx={{
-              width: "auto",
-              padding: {
-                lg: "0rem 4rem",
-                md: "0rem 4rem",
-                sm: "0rem 3rem",
-                xs: "0rem 1rem",
-              },
+              display: "flex",
+              flexWrap: "wrap",
+              width: "100%",
+              justifyContent: "space-around",
+              padding: "2rem 0rem",
+              border: "1px solid #707070",
+              borderRadius: ".5rem",
+              boxShadow: "#00d8ff 0px 0px 8px 0px",
             }}
           >
-            <Box>
-              <Typography
-                variant="h4"
-                align="left"
-                sx={{
-                  color: "#d52e2e",
-                  fontFamily: "Oswald-Bold",
-                  mt: "1rem",
-                  fontSize: {
-                    lg: "3rem",
-                    md: "2.6rem",
-                    sm: "2.5rem",
-                    xs: "2.25rem",
-                  },
-                }}
-                gutterBottom
-              >
-                CONTACT
-              </Typography>
-            </Box>
-
-            <Box
-              sx={{
-                display: "flex",
-                flexWrap: "wrap",
-                width: "100%",
-                justifyContent: "space-around",
-                padding: "2rem 0rem",
-                border: "1px solid #707070",
-                borderRadius: ".5rem",
-                boxShadow: "#00d8ff 0px 0px 8px 0px",
-              }}
-            >
-              {contactDetails.map((contact: any) => (
-                <ContactIcon
-                  key={contact.iId}
-                  imgSrc={contact.imgsrc}
-                  clickValue={contact.clickValue}
-                  clickCall={clickCall}
-                />
-              ))}
-            </Box>
+            {contactDetails.map((contact: any) => (
+              <ContactIcon
+                key={contact.iId}
+                imgSrc={contact.imgsrc}
+                clickValue={contact.clickValue}
+                clickCall={clickCall}
+                alt={contact.alt}
+              />
+            ))}
           </Box>
         </Box>
-      </>
+      </Box>
     );
   }
 );

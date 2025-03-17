@@ -22,7 +22,7 @@ return <>
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
         spaceBetween={1}
-        onSlideChange={() => console.log("slide change")}
+        speed={3000}
         onSwiper={(swiper:any) => console.log(swiper)}
       >
         {swiperImage.map((image: any) => (

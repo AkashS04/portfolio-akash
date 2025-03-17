@@ -18,7 +18,7 @@ const BackToTop: React.FC = () => {
           <IconButton
             onClick={handleScroll}
             sx={{
-              color: "#ffffff",
+              color: "#d52e2e",
             }}
           >
             <ArrowCircleUpIcon fontSize="large" />

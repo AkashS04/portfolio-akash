@@ -8,34 +8,44 @@ import ProjectImage from "./ProjectImage";
 function ProjectCard() {
   const projectData: any = [
     {
-      id: 11,
-      img: EcommerceImg,
-      title: "ECommerse Websites",
-      content: "Robust ECommerce Websites for Clients",
-    },
-    {
       id: 12,
       img: BussinessImg,
       title: "Bussiness Websites",
       content: "Robust Bussiness Websites for Clients",
+      alt:"bussiness-image"
     },
     {
-      id: 13,
-      img: StartupImg,
-      title: "StartUp Websites",
-      content: "Robust StartUp Websites for Clients",
+      id: 11,
+      img: EcommerceImg,
+      title: "ECommerse Websites",
+      content: "Robust ECommerce Websites for Clients",
+      alt:"ecommerce-image"
+
     },
+
     {
       id: 14,
       img: PersonalImg,
       title: "Personal Websites",
       content: "Robust Personal Websites for Clients",
+      alt:"personal-website-image"
+
     },
     {
       id: 15,
       img: PortfolioImg,
       title: "Portfolio Websites",
       content: "Robust Portfolio Websites for Clients",
+      alt:"porfolio-image"
+
+    },
+    {
+      id: 13,
+      img: StartupImg,
+      title: "StartUp Websites",
+      content: "Robust StartUp Websites for Clients",
+      alt:"startup-image"
+
     },
   ];
   return (
@@ -86,7 +96,7 @@ function ProjectCard() {
               },
             }}
           >
-            <ProjectImage image={data.img} />
+            <ProjectImage image={data.img} alt={data.alt}/>
             <Typography
               variant="h5"
               sx={{

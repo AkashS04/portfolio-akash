@@ -7,8 +7,8 @@ return <>
             sx={{
               color: "#e3e3e3",
               fontSize: {
-                lg: "6rem",
-                md: "4rem",
+                lg: "4rem",
+                md: "3rem",
                 sm: "3rem",
                 xs: "2rem",
               },
@@ -26,8 +26,8 @@ return <>
             sx={{
               color: "#e3e3e3",
               fontSize: {
-                lg: "4rem",
-                md: "3rem",
+                lg: "3rem",
+                md: "2rem",
                 sm: "2.25rem",
                 xs: "2.25rem",
               },

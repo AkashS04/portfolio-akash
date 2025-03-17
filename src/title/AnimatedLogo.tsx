@@ -33,6 +33,7 @@ const AnimatedLogo: React.FC = () => {
                 sm: "50px",
                 xs: "45px",
               },
+              width:"auto",
               cursor: "pointer",
             }}
             alt="react-logo"

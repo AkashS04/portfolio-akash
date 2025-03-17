@@ -19,7 +19,7 @@ const Navtexttheme = createTheme({
         root: {
           backgroundColor: "rgb(36 36 36)",
           borderRadius: "8px",
-          padding: "12px 16px",
+          padding: "8px 8px",
           cursor: "pointer",
           width: "150px",
           transition: "0.3s",
