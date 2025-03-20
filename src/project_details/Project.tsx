@@ -1,14 +1,18 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useContext} from "react";
 import { Box, Typography } from "@mui/material";
 import ProjectCard from "./ProjectCard";
+import { HomeCtx } from "../contexts/HomeCtx";
 
 const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
-  (_, ref: any) => {
-    console.log("<project >component");
+  (__) => {
+    console.log("<Project >component");
+    const homeCtx=useContext(HomeCtx)
+    const {projectsRef}=homeCtx
+
 
     return (
       <>
-        <div ref={ref}>
+        <div ref={projectsRef}>
           <Box>
             <Typography
               variant="h3"

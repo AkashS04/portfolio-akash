@@ -1,5 +1,7 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Box, Paper, Typography } from "@mui/material";
+import { useContext } from "react";
+import { HomeCtx } from "../contexts/HomeCtx";
 
 const Navtexttheme = createTheme({
   typography: {
@@ -32,13 +34,15 @@ const Navtexttheme = createTheme({
   },
 });
 const NavBarCBtn = ({ navData }: any) => {
+  const homeCtx = useContext(HomeCtx);
+  const { scrollToSection } = homeCtx;
   return (
     <>
       <ThemeProvider theme={Navtexttheme}>
-        {navData.map((nav: any) => 
+        {navData.map((nav: any) => (
           <Box
             key={nav.navKey}
-            onClick={nav.clickFunction}
+            onClick={() => scrollToSection(nav.ref)}
             sx={{
               transition: "transform 1s ease",
             }}
@@ -47,7 +51,7 @@ const NavBarCBtn = ({ navData }: any) => {
               <Typography variant="body1">{nav.title}</Typography>
             </Paper>
           </Box>
-        )}
+        ))}
       </ThemeProvider>
     </>
   );

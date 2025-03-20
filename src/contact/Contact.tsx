@@ -1,14 +1,17 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useContext } from "react";
 import { Box, Typography } from "@mui/material";
 import phone from "../assets/icons/phone-call.png";
 import email from "../assets/icons/email.png";
 import whatsApp from "../assets/icons/whatsapp.png";
 import linkedIN from "../assets/icons/linkedin.png";
 import ContactIcon from "./ContactIcon";
+import { HomeCtx } from "../contexts/HomeCtx";
 
 const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
-  (_, ref: any) => {
+  (__) => {
     console.log("<contact >component");
+    const homeCtx = useContext(HomeCtx);
+    const { contactRef } = homeCtx;
 
     const clickCall = (value: any) => {
       if (value == 1) {
@@ -27,15 +30,15 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
     };
 
     const contactDetails = [
-      { iId: 887, imgsrc: phone, clickValue: 1 ,alt:"mobile-link-icon" },
-      { iId: 888, imgsrc: email, clickValue: 2,alt:"email-link-icon" },
-      { iId: 889, imgsrc: whatsApp, clickValue: 3,alt:"whatsapp-link-icon" },
-      { iId: 890, imgsrc: linkedIN, clickValue: 4, alt:"linkedIn-link-icon"},
+      { iId: 887, imgsrc: phone, clickValue: 1, alt: "mobile-link-icon" },
+      { iId: 888, imgsrc: email, clickValue: 2, alt: "email-link-icon" },
+      { iId: 889, imgsrc: whatsApp, clickValue: 3, alt: "whatsapp-link-icon" },
+      { iId: 890, imgsrc: linkedIN, clickValue: 4, alt: "linkedIn-link-icon" },
     ];
 
     return (
       <Box
-        ref={ref}
+        ref={contactRef}
         sx={{
           borderTop: "1px solid #707070",
           padding: {

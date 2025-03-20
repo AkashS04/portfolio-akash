@@ -1,15 +1,18 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useContext } from "react";
 import { Box, Typography } from "@mui/material";
 import Skills from "./Skills";
+import { HomeCtx } from "../contexts/HomeCtx";
 
 const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
-  (_, ref: any) => {
+  (__) => {
     console.log("<about >component");
+    const homeCtx=useContext(HomeCtx);
+    const {aboutRef} = homeCtx;
+  
 
     return (
       <>
-        <div ref={ref}>
-          <Box sx={{ width: "100%" }}>
+          <Box ref={aboutRef} sx={{ width: "100%" }}>
             <Typography
               variant="h3"
               sx={{
@@ -78,7 +81,6 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             </Box>
             <Skills />
           </Box>
-        </div>
       </>
     );
   }

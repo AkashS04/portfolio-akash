@@ -1,14 +1,18 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useContext } from "react";
 import { Box, Typography } from "@mui/material";
 import WCMCard from "./WCMCard";
+import { HomeCtx } from "../contexts/HomeCtx";
 
 const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
-  (_, ref: any) => {
+  (__) => {
     console.log("<whychooseme >component");
+
+    const homeCtx = useContext(HomeCtx);
+    const { whyChooseMeRef } = homeCtx;
 
     return (
       <>
-        <div ref={ref}>
+        <div ref={whyChooseMeRef}>
           <Box sx={{ width: "auto" }}>
             <Typography
               variant="h3"

@@ -9,32 +9,31 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
+import { HomeCtx } from "../contexts/HomeCtx";
 
-function Navbar({
-  onAboutClick,
-  onWhyChooseMeClick,
-  onProjectsClick,
-  onContactClick,
-}: any) {
+function Navbar({}: any) {
+  const homeCtx = React.useContext(HomeCtx);
+  const { aboutRef, whyChooseMeRef, projectsRef, contactRef, scrollToSection } =
+    homeCtx;
 
-  console.log('<navbar >component')
+  console.log("<navbar >component");
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   };
 
-  const handleItemClick = (func: any) => {
-    func();
+  let navData = [
+    { text: "About", ref: aboutRef },
+    { text: "Why Choose Me", ref: whyChooseMeRef },
+    { text: "Projects", ref: projectsRef },
+    { text: "Contact", ref: contactRef },
+  ];
+
+  const handleItemClick = (funcRef: React.RefObject<HTMLElement>) => {
+    scrollToSection(funcRef);
     setOpen(false);
   };
-
-  let navData = [
-    { text: "About", func: onAboutClick },
-    { text: "Why Choose Me", func: onWhyChooseMeClick },
-    { text: "Projects", func: onProjectsClick },
-    { text: "Contact", func: onContactClick },
-  ];
 
   const DrawerList = (
     <Box
@@ -43,7 +42,7 @@ function Navbar({
         backgroundColor: "#1e1e1e",
         color: "#e3e3e3",
         height: "100%",
-        boxShadow:"#00d8ff 0px 0px 50px 50px"
+        boxShadow: "#00d8ff 0px 0px 50px 50px",
       }}
       role="presentation"
       onClick={toggleDrawer(false)}
@@ -55,7 +54,7 @@ function Navbar({
           top: "10px",
           right: "10px",
           color: "#00d8ff",
-          zIndex:'999'
+          zIndex: "999",
         }}
       >
         <CloseIcon />
@@ -63,7 +62,7 @@ function Navbar({
       <List>
         {navData.map((data: any) => (
           <ListItem key={data.text} disablePadding>
-            <ListItemButton onClick={() => handleItemClick(data.func)}>
+            <ListItemButton onClick={() => handleItemClick(data.ref)}>
               <ListItemText primary={data.text} />
             </ListItemButton>
           </ListItem>

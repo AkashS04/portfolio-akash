@@ -1,21 +1,35 @@
 import { Box } from "@mui/material";
 import NavBarCBtn from "./NavBarCBtn";
+import { useContext } from "react";
+import { HomeCtx } from "../contexts/HomeCtx";
 
-function ReactNavbar({
-  onAboutClick,
-  onWhyChooseMeClick,
-  onProjectsClick,
-  onContactClick,
-}: any) {
+function ReactNavbar({}: any) {
+  const homeCtx = useContext(HomeCtx);
 
-  const navData=[{navKey:343,title:"About",clickFunction:onAboutClick},
-    {navKey:344,title:"Why Choose Me",clickFunction:onWhyChooseMeClick},
-    {navKey:345,title:"Projects",clickFunction:onProjectsClick},
-    {navKey:346,title:"Contact",clickFunction:onContactClick},
+  const { aboutRef, whyChooseMeRef, projectsRef, contactRef } = homeCtx;
 
-  ]
+  const navData = [
+    { navKey: 343,
+      title: "About", 
+      ref: aboutRef },
+    {
+      navKey: 344,
+      title: "Why Choose Me",
+      ref: whyChooseMeRef,
+    },
+    {
+      navKey: 345,
+      title: "Projects",
+      ref: projectsRef,
+    },
+    {
+      navKey: 346,
+      title: "Contact",
+      ref: contactRef,
+    },
+  ];
 
-  console.log('<reactnavbar >component')
+  console.log("<reactnavbar >component");
 
   return (
     <div className="reactNavbar-main">
