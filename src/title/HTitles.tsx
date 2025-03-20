@@ -7,16 +7,24 @@ return <>
             sx={{
               color: "#e3e3e3",
               fontSize: {
-                lg: "4rem",
-                md: "3rem",
-                sm: "3rem",
-                xs: "2rem",
+                xl:"6rem",
+                lg: "6rem",
+                md: "5rem",
+                sm: "4rem",
+                xs: "3rem",
               },
-              fontFamily: "PlaywriteIN-Light",
+              marginBottom:{
+                xl:"1rem",
+                lg:"1rem",
+                md:"1rem",
+                sm:"0.8rem",
+                xs:"0.4rem"
+              },
+              fontFamily: "DancingScript-Regular",
               textShadow:
                 "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
             }}
-            gutterBottom
+            
           >
             Hi,This is Akash
           </Typography>

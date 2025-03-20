@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense} from "react";
 import ShimmerLayout from "../ShimmerLayout/ShimmerLayout";
 import HomeSplit from "./HomeSplit";
 
@@ -20,7 +20,7 @@ const Home: React.FC = (): any => {
         <ReactNavbarLazy />
         <NavbarLazy />
       </Suspense>
-      <HomeSplit />
+       <HomeSplit />
     </>
   );
 };

@@ -10,21 +10,21 @@ function ReactNavbar({}: any) {
 
   const navData = [
     { navKey: 343,
-      title: "About", 
+      title: "ABOUT", 
       ref: aboutRef },
     {
       navKey: 344,
-      title: "Why Choose Me",
+      title: "WHY CHOOSE ME",
       ref: whyChooseMeRef,
     },
     {
       navKey: 345,
-      title: "Projects",
+      title: "PROJECTS",
       ref: projectsRef,
     },
     {
       navKey: 346,
-      title: "Contact",
+      title: "CONTACT",
       ref: contactRef,
     },
   ];

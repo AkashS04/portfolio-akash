@@ -24,10 +24,10 @@ function Navbar({}: any) {
   };
 
   let navData = [
-    { text: "About", ref: aboutRef },
-    { text: "Why Choose Me", ref: whyChooseMeRef },
-    { text: "Projects", ref: projectsRef },
-    { text: "Contact", ref: contactRef },
+    { text: "ABOUT", ref: aboutRef },
+    { text: "WHY CHOOSE ME", ref: whyChooseMeRef },
+    { text: "PROJECTS", ref: projectsRef },
+    { text: "CONTACT", ref: contactRef },
   ];
 
   const handleItemClick = (funcRef: React.RefObject<HTMLElement>) => {

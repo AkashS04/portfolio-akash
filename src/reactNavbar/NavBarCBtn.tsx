@@ -20,8 +20,8 @@ const Navtexttheme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor: "rgb(36 36 36)",
-          borderRadius: "8px",
-          padding: "8px 8px",
+          borderRadius: "12px",
+          padding: "8px 16px",
           cursor: "pointer",
           width: "150px",
           transition: "0.3s",

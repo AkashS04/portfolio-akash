@@ -7,6 +7,7 @@ const ProjectLazy = React.lazy(() => import("../project_details/Project"));
 const ContactLazy = React.lazy(() => import("../contact/Contact"));
 
 const HomeSplit = () => {
+
   return (
     <>
       <Suspense
