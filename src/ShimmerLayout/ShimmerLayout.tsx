@@ -8,8 +8,7 @@ const ShimmerLayout = ({ contentText }: any) => {
     justifyContent: "center",
     alignItems: "center",
     borderRadius: "16px",
-    background:
-      "linear-gradient(90deg, rgba(213, 46, 46, 0.29),rgba(0, 217, 255, 0.32),rgba(213, 46, 46, 0.29))",
+    background: "linear-gradient(90deg, rgb(0 0 0 /29%), rgb(255 255 255 / 32%), rgb(0 0 0 / 29%))",
     backgroundSize: "200% 100%",
     animation: `${ShimmerBg} 3s infinite linear`,
   };
@@ -21,7 +20,7 @@ const ShimmerLayout = ({ contentText }: any) => {
         <Box sx={shimmerStyle}>
           <Box
             sx={{
-              height: "65vh",
+              height: "95vh",
               width: "auto",
               display: "flex",
               justifyContent: "center",

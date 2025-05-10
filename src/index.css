@@ -39,8 +39,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(31 31 31);
-  font-display: swap;
+  background-color: #1f1f1f;
 }
 .titleDiv {
   height: 100%;

@@ -18,7 +18,7 @@ function LoadingThreeDotsJumping() {
 
     return (
         <>
-        <Box sx={{display:"flex",justifyContent:"center",alignItem:"center", height:"100vh"}}>
+        <Box sx={{background:"#000",display:"flex",justifyContent:"center",alignItem:"center", height:"100vh"}}>
         <motion.div
             animate="jump"
             transition={{ staggerChildren: -0.2, staggerDirection: -1 }}

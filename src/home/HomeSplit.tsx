@@ -11,26 +11,26 @@ const HomeSplit = () => {
   return (
     <>
       <Suspense
-        fallback={<ShimmerLayout contentText={"Loading About contents... "} />}
+        fallback={<ShimmerLayout contentText={"Loading About Section... "} />}
       >
         <AboutLazy />
       </Suspense>
       <Suspense
         fallback={
-          <ShimmerLayout contentText={"Loading Why choose me contents ... "} />
+          <ShimmerLayout contentText={"Preparing Key Strength ... "} />
         }
       >
         <WCMLazy />
       </Suspense>
       <Suspense
         fallback={
-          <ShimmerLayout contentText={"Loading Project details ... "} />
+          <ShimmerLayout contentText={"Fetching Project List ... "} />
         }
       >
         <ProjectLazy />
       </Suspense>
       <Suspense
-        fallback={<ShimmerLayout contentText={"Loading Contact info ... "} />}
+        fallback={<ShimmerLayout contentText={"Preparing Contact Info ... "} />}
       >
         <ContactLazy />
       </Suspense>
