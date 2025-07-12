@@ -22,15 +22,14 @@ function SwiperImage() {
         loop={true}
         cssMode={true}
         autoplay={{
-          delay: 4000,
+          delay: 3000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
         spaceBetween={1}
-        speed={3000}
-        onSwiper={(swiper: any) => console.log(swiper)}
+        speed={800}
       >
         {swiperImage.map((image: any) => (
           <SwiperSlide key={image + "a2"}>

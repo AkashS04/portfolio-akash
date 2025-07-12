@@ -22,7 +22,7 @@ const AnimatedLogo: React.FC = () => {
       >
         <motion.div
           animate={{ rotate: 360 }}
-          transition={{ duration: 5, repeat: Infinity, repeatDelay: 0.5 }}
+          transition={{ duration: 6, repeat: Infinity, ease: "linear"}}
         >
           <Box
             component="img"

@@ -8,7 +8,7 @@ function LoadingThreeDotsJumping() {
         jump: {
             y: -30,
             transition: {
-                duration: 0.8,
+                duration: 0.78,
                 repeat: Infinity,
                 repeatType: "mirror",
                 ease: "easeInOut",

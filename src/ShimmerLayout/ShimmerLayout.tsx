@@ -10,7 +10,7 @@ const ShimmerLayout = ({ contentText }: any) => {
     borderRadius: "16px",
     background: "linear-gradient(90deg, rgb(0 0 0 /29%), rgb(255 255 255 / 32%), rgb(0 0 0 / 29%))",
     backgroundSize: "200% 100%",
-    animation: `${ShimmerBg} 3s infinite linear`,
+    animation: `${ShimmerBg} 2.8s infinite linear`,
   };
   return (
     <Box

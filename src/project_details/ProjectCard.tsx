@@ -89,7 +89,7 @@ function ProjectCard() {
                 left: "0px",
                 borderRadius: "1rem",
                 backgroundColor: "rgb(0 0 0 / 38%)",
-                transition: "transform 650ms ease",
+                transition: "transform 400ms ease-in-out",
               },
               "&:hover::after": {
                 transform: "translate(370px, 500px)",

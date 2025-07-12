@@ -29,7 +29,7 @@ function ReactNavbar({}: any) {
     },
   ];
 
-  console.log("<reactnavbar >component");
+  
 
   return (
     <div className="reactNavbar-main">
@@ -39,7 +39,7 @@ function ReactNavbar({}: any) {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "2rem",
+          gap: "3rem",
           marginTop: "2rem",
         }}
       >

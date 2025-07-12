@@ -8,7 +8,7 @@ const Navtexttheme = createTheme({
     body1: {
       fontFamily: "Kanit-Regular",
       color: "#c9c9c9",
-      transition: "0.3s",
+      transition: "0.2s",
       "&:hover": {
         color: "#e3e3e3",
       },
@@ -24,9 +24,10 @@ const Navtexttheme = createTheme({
           padding: "8px 16px",
           cursor: "pointer",
           width: "150px",
-          transition: "0.3s",
+          transition: "background-color 150ms ease-out , transform 150ms ease-out",
           "&:hover": {
             backgroundColor: "rgb(48 48 48)",
+            transform: "scale(1.025)"
           },
         },
       },
@@ -40,16 +41,15 @@ const NavBarCBtn = ({ navData }: any) => {
     <>
       <ThemeProvider theme={Navtexttheme}>
         {navData.map((nav: any) => (
-          <Box
-            key={nav.navKey}
-            onClick={() => scrollToSection(nav.ref)}
-            sx={{
-              transition: "transform 1s ease",
-            }}
-          >
-            <Paper>
-              <Typography variant="body1">{nav.title}</Typography>
-            </Paper>
+          <Box sx={{height:"40px",width:"160px"}}>
+            <Box
+              key={nav.navKey}
+              onClick={() => scrollToSection(nav.ref)}
+            >
+              <Paper>
+                <Typography variant="body1">{nav.title}</Typography>
+              </Paper>
+            </Box>
           </Box>
         ))}
       </ThemeProvider>

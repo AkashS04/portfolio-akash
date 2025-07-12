@@ -19,6 +19,7 @@ const BackToTop: React.FC = () => {
             onClick={handleScroll}
             sx={{
               color: "#d52e2e",
+              transition: "transform 150ms ease-out"
             }}
           >
             <ArrowCircleUpIcon fontSize="large" />
