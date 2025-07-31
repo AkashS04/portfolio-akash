@@ -19,28 +19,16 @@ const coreSkills = [
 
 const SkillDetails = () => {
   return (
-    <>
+    <Box  sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
       {coreSkills.map((skills: any) => (
         <Box
           key={skills.uID}
           sx={{
-            width: { lg: "40%", md: "40%", sm: "40%", xs: "80%" },
-            display: "flex",
-            flexDirection: "column",
             backgroundColor: "#48484894",
-            padding: {
-              lg: "1rem 2rem 3rem 2rem",
-              md: "1rem 2rem 3rem 2rem",
-              sm: "0.8rem 1rem 1.5rem 1rem",
-              xs: "0.8rem 0.8rem 1.5rem 0.8rem",
-            },
+            padding:"16px",
             borderRadius: "1rem",
-            margin: {
-              lg: "1rem",
-              md: "0.8rem",
-              sm: "0.7rem",
-              xs: "0.5rem",
-            },
+            margin:"16px",
+            width:"300px"
           }}
         >
           <ProgressBar
@@ -50,7 +38,7 @@ const SkillDetails = () => {
           />
         </Box>
       ))}
-    </>
+    </Box>
   );
 };
 export default SkillDetails;

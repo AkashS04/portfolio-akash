@@ -81,8 +81,8 @@ const WCMCard = () => {
                 margin: {
                   lg: "0.5rem 1rem",
                   md: "0.5rem 1rem",
-                  sm: "0.2rem 0.8rem",
-                  xs: "0rem 2rem",
+                  sm: "1rem 0.8rem",
+                  xs: "1rem 2rem",
                 },
                 padding: {
                   lg: "2rem",
@@ -109,6 +109,8 @@ const WCMCard = () => {
                       sm: "1.125rem",
                       xs: "1.125rem",
                     },
+                    letterSpacing:"1.6px",
+                    mb:1
                   }}
                 >
                   {skills.title}
@@ -125,6 +127,7 @@ const WCMCard = () => {
                       sm: "1rem",
                       xs: "1rem",
                     },
+                    letterSpacing:"0.8px"
                   }}
                 >
                   {skills.name}

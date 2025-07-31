@@ -23,7 +23,7 @@ const Navtexttheme = createTheme({
           borderRadius: "12px",
           padding: "8px 16px",
           cursor: "pointer",
-          width: "150px",
+          width: "165px",
           transition: "background-color 150ms ease-out , transform 150ms ease-out",
           "&:hover": {
             backgroundColor: "rgb(48 48 48)",
@@ -41,13 +41,13 @@ const NavBarCBtn = ({ navData }: any) => {
     <>
       <ThemeProvider theme={Navtexttheme}>
         {navData.map((nav: any) => (
-          <Box sx={{height:"40px",width:"160px"}}>
+          <Box sx={{height:"40px",width:"165px"}}>
             <Box
               key={nav.navKey}
               onClick={() => scrollToSection(nav.ref)}
             >
               <Paper>
-                <Typography variant="body1">{nav.title}</Typography>
+                <Typography variant="body1" sx={{letterSpacing:"1.2px"}}>{nav.title}</Typography>
               </Paper>
             </Box>
           </Box>

@@ -21,22 +21,20 @@ const Skills = () => {
         }}
       >
         <Typography
-          variant="h6"
+          variant="h4"
           sx={{
             color: "#e3e3e3",
             paddingLeft: "2rem",
-            fontFamily: "Oswald-Medium",
+            fontFamily: "Kanit-Regular",
             fontSize: "1.5rem",
+            letterSpacing:"1.8px",
+            mb: { lg: 4, md: 3, sm: 2, xs: 2 }
           }}
           align="left"
         >
-          CORE SKILLS
+          Core Skills
         </Typography>
-        <Box
-          sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
-        >
-          <SkillDetails />
-        </Box>
+        <SkillDetails />
       </Box>
     </Box>
   );

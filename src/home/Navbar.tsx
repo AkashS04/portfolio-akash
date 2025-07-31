@@ -63,7 +63,7 @@ function Navbar({}: any) {
         {navData.map((data: any) => (
           <ListItem key={data.text} disablePadding>
             <ListItemButton onClick={() => handleItemClick(data.ref)}>
-              <ListItemText primary={data.text} />
+              <ListItemText sx={{letterSpacing:"1.2px"}} primary={data.text} />
             </ListItemButton>
           </ListItem>
         ))}

@@ -77,7 +77,7 @@ function ProjectCard() {
                 lg: "0rem 0rem 2rem 0rem",
                 md: "0rem 0rem 2rem 0rem",
                 sm: "0rem 0rem 2rem 0rem",
-                xs: "0rem 1rem 1rem 1rem",
+                xs: "0rem 1rem 2rem 1rem",
               },
               cursor: "default",
               "::after": {
@@ -92,7 +92,7 @@ function ProjectCard() {
                 transition: "transform 400ms ease-in-out",
               },
               "&:hover::after": {
-                transform: "translate(370px, 500px)",
+                transform: "translate(370px, 500px) rotate(-60deg)",
               },
             }}
           >
@@ -108,6 +108,7 @@ function ProjectCard() {
                   sm: "1.5rem",
                   xs: "1.5rem",
                 },
+                letterSpacing:"1.6px",
               }}
               gutterBottom
             >
@@ -124,6 +125,7 @@ function ProjectCard() {
                   sm: "1rem",
                   xs: "1rem",
                 },
+                letterSpacing:"0.8px",
               }}
               gutterBottom
             >
