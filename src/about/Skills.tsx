@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import SkillDetails from "./SkillDetails";
 
 const Skills = () => {
@@ -17,7 +18,6 @@ const Skills = () => {
         sx={{
           padding: "1rem 0rem",
           border: "1px solid #707070",
-          borderRadius: ".5rem",
         }}
       >
         <Typography

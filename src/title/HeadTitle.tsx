@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import HTitles from "./HTitles";
 import AnimatedLogo from "./AnimatedLogo";
 

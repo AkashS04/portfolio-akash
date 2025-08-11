@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 
 import * as motion from "motion/react-client";
 import reactLogo from "../assets/react.svg";

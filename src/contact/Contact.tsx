@@ -1,5 +1,6 @@
 import React, { forwardRef, useContext } from "react";
-import { Box, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import phone from "../assets/icons/phone-call.png";
 import email from "../assets/icons/email.png";
 import whatsApp from "../assets/icons/whatsapp.png";
@@ -67,7 +68,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               sx={{
                 color: "#d52e2e",
                 fontFamily: "Oswald-Bold",
-                mt: { lg: 8, md: 6, sm: 4, xs: 3 }, mb: { lg: 8, md: 6, sm: 4, xs: 3 },
+                mt: { lg: 8, md: 6, sm: 4, xs: 3 }, mb: { lg: 8, md: 6, sm: 4, xs: 4 },
                 fontSize: {
                   lg: "3rem",
                   md: "2.6rem",
@@ -90,8 +91,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               justifyContent: "space-around",
               padding: "2rem 0rem",
               border: "1px solid #707070",
-              borderRadius: ".5rem",
-              boxShadow: "#00d8ff 0px 0px 8px 0px",
+              boxShadow: "#00d8ff61 0px 0px 8px 0px",
             }}
           >
             {contactDetails.map((contact: any) => (

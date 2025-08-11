@@ -12,7 +12,7 @@ const Home: React.FC = (): any => {
   return (
     <>
       <Suspense
-        fallback={<ShimmerLayout contentText={"Fetching Introduction ... "} />}
+        fallback={<ShimmerLayout contentText={"Loading Introduction ... "} />}
       >
         <div className="titleDiv">
           <TitleLazy />

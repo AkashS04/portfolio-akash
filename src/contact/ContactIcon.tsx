@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import Box  from "@mui/material/Box";
 
 const ContactIcon = ({ imgSrc, clickValue, clickCall ,alt}: any) => {
   const imageStlye = {

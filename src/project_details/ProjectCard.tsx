@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import EcommerceImg from "../assets/MyProjects/ECommerceWebsite.jpg";
 import BussinessImg from "../assets/MyProjects/BussinessWebsite.jpg";
 import StartupImg from "../assets/MyProjects/StartupWebsite.jpg";
@@ -101,7 +102,7 @@ function ProjectCard() {
               variant="h5"
               sx={{
                 fontFamily: "Kanit-Regular",
-                color: "#00d8ff",
+                color: "#00d9ffd7",
                 fontSize: {
                   lg: "1.5rem",
                   md: "1.5rem",

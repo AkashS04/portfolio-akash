@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import Box  from "@mui/material/Box";
 import ProgressBar from "./ProgressBar";
 const coreSkills = [
   { uID: 121, title: "HTML5", value: 85, percentage: "85%" },

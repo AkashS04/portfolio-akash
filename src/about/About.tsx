@@ -1,5 +1,6 @@
 import React, { forwardRef, useContext } from "react";
-import { Box, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import Skills from "./Skills";
 import { HomeCtx } from "../contexts/HomeCtx";
 
@@ -44,7 +45,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             align="left"
             sx={{
               fontFamily: "Kanit-Regular",
-              color: "#00d8ff",
+              color: "#e6e6e6",
               fontSize: {
                 lg: "2.5rem",
                 md: "2rem",
@@ -65,13 +66,14 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
                fontFamily: "Kanit-Light",
               color: "#e3e3e3",
               letterSpacing: "1.2px",
+              textAlign: "justify"
             }}
             gutterBottom
           >
 
-            Hi, I’m Akash — a React front-end developer with 2+ years of
+            A React front-end developer with 2+ years of
             experience building clean, scalable, and responsive web applications
-            using React, TypeScript, Tailwind, and Redux.
+            using React, TypeScript, Tailwind CSS, and Redux.
             <br />I believe in clarity — in design, in code, and in
             communication. My curiosity goes beyond tech — I explore systems,
             structures, and even the deeper roots of the Tamil language and
@@ -80,7 +82,6 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             From dynamic dashboards to e-commerce platforms, I focus on creating
             interfaces that are not just functional, but thoughtful. I value
             discipline, minimalism, and user-first development.
-            <br />
             Let’s build something meaningful — together.
           </Typography>
         </Box>

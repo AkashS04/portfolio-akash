@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import LinearProgress from "@mui/material/LinearProgress";
 
 const ProgressBar = ({ title, value, percentage }: any) => {
@@ -19,7 +20,7 @@ const ProgressBar = ({ title, value, percentage }: any) => {
       </Box>
       <Box sx={{ display: "flex", alignItems: "center", justifyItems: "center" }}>
         <LinearProgress
-          sx={{ backgroundColor: "#e3e3e3",width:"100%" }}
+          sx={{ backgroundColor: "#e3e3e3", width:"100%" }}
           variant="determinate"
           value={value}
         />

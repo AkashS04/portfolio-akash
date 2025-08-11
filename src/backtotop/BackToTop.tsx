@@ -1,6 +1,6 @@
 import React from "react";
 import * as motion from "motion/react-client";
-import { IconButton } from "@mui/material";
+import IconButton  from "@mui/material/IconButton";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 
 const BackToTop: React.FC = () => {

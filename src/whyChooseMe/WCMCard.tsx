@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import ProblemSolving from "../assets/skillsIcons/problem-solving.png";
 import TeamPlayer from "../assets/skillsIcons/team.png";
 import ProjectPlaning from "../assets/skillsIcons/project.png";
@@ -104,13 +105,14 @@ const WCMCard = () => {
                     fontFamily: "Kanit-Regular",
                     color: "#e3e3e3",
                     fontSize: {
-                      lg: "2.25rem",
+                      xl: "2.25rem",
+                      lg: "1.8rem",
                       md: "1.125rem",
                       sm: "1.125rem",
                       xs: "1.125rem",
                     },
-                    letterSpacing:"1.6px",
-                    mb:1
+                    letterSpacing: "1.6px",
+                    mb: 1
                   }}
                 >
                   {skills.title}
@@ -127,7 +129,7 @@ const WCMCard = () => {
                       sm: "1rem",
                       xs: "1rem",
                     },
-                    letterSpacing:"0.8px"
+                    letterSpacing: "0.8px"
                   }}
                 >
                   {skills.name}

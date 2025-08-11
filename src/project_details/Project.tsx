@@ -1,5 +1,6 @@
 import React, { forwardRef, useContext} from "react";
-import { Box, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";;
 import ProjectCard from "./ProjectCard";
 import { HomeCtx } from "../contexts/HomeCtx";
 
@@ -25,7 +26,7 @@ const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                   sm: "2.5rem",
                   xs: "2.25rem",
                 },
-                mt:{lg:8,md:6,sm:4 ,xs:3},mb:{lg:8,md:6,sm:4 ,xs:3},
+                mt:{lg:8,md:6,sm:4 ,xs:3},mb:{lg:8,md:6,sm:4 ,xs:4},
                 letterSpacing: "4px"
               }}
               gutterBottom
