@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import {keyframes} from "@emotion/react";
+import { keyframes } from "@emotion/react";
 
 
 const ShimmerBg = keyframes`0% {background-position: -200% 0}
@@ -19,7 +19,7 @@ const ShimmerLayout = ({ contentText }: any) => {
     <Box
       sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
     >
-      <Box sx={{ width: "95%",margin:"8px" }}>
+      <Box sx={{ width: "95%", margin: "8px" }}>
         <Box sx={shimmerStyle}>
           <Box
             sx={{
@@ -28,7 +28,7 @@ const ShimmerLayout = ({ contentText }: any) => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-             
+
             }}
           >
             <Typography variant="h6" sx={{ color: "#e3e3e3" }}>

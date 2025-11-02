@@ -68,10 +68,10 @@ function ProjectCard() {
             key={data.id}
             sx={{
               width: { lg: "300px", md: "300px", sm: "300px", xs: "300px" },
-              backgroundColor: "#181818",
+              backgroundColor: "#18181880",
               position: "relative",
               overflow: "hidden",
-              padding: { lg: "2rem", md: "2rem", sm: "1rem", xs: "1rem" },
+              padding: { lg: "1rem", md: "1rem", sm: ".5rem", xs: ".5rem" },
               border: "1px solid #121212",
               borderRadius: "1rem",
               margin: {
@@ -89,11 +89,11 @@ function ProjectCard() {
                 top: "0px",
                 left: "0px",
                 borderRadius: "1rem",
-                backgroundColor: "rgb(0 0 0 / 38%)",
+                backgroundColor: "rgb(0 0 0 / 18%)",
                 transition: "transform 400ms ease-in-out",
               },
               "&:hover::after": {
-                transform: "translate(370px, 500px) rotate(-60deg)",
+                transform: "translate(370px, 500px) rotate(-135deg)",
               },
             }}
           >
