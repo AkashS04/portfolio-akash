@@ -1,9 +1,8 @@
-import React, { Suspense} from "react";
+import React, { Suspense } from "react";
 import ShimmerLayout from "../ShimmerLayout/ShimmerLayout";
 import HomeSplit from "./HomeSplit";
 
 const TitleLazy = React.lazy(() => import("../title/Title"));
-const ReactNavbarLazy = React.lazy(() => import("../reactNavbar/ReactNavbar"));
 const NavbarLazy = React.lazy(() => import("./Navbar"));
 
 const Home: React.FC = (): any => {
@@ -17,10 +16,9 @@ const Home: React.FC = (): any => {
         <div className="titleDiv">
           <TitleLazy />
         </div>
-        <ReactNavbarLazy />
         <NavbarLazy />
       </Suspense>
-       <HomeSplit />
+      <HomeSplit />
     </>
   );
 };

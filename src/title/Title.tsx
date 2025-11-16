@@ -9,10 +9,11 @@ function Title() {
       const { titleLoading } = homeCtx;
 
   return (
-    <>
+    <div className="newTitleCss">
       <SwiperImage />
       {titleLoading && <HeadTitle />}
-    </>
+
+    </div>
   );
 }
 export default Title;

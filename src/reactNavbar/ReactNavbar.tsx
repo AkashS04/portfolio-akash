@@ -1,4 +1,4 @@
-import Box  from "@mui/material/Box";
+  import Box  from "@mui/material/Box";
 import NavBarCBtn from "./NavBarCBtn";
 import { useContext } from "react";
 import { HomeCtx } from "../contexts/HomeCtx";
