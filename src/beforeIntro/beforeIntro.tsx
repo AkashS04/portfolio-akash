@@ -18,8 +18,8 @@ function LoadingThreeDotsJumping() {
 
     return (
         <>
-            <Box sx={{ background: "#000", padding: "16px", height: "100vh" }}>
-                <Box sx={{ border: "2px #d52e2edc solid" }}>
+            <Box sx={{ background: "#000000e4", padding: "16px", height: "100vh" }}>
+                <Box sx={{ border: "0.25px #d52e2edc solid" }}>
                     <Box sx={{ display: "flex", justifyContent: "center", alignItem: "center", height: "calc(100vh - 32px)" }}>
                         <motion.div
                             animate="jump"
@@ -58,7 +58,7 @@ function StyleSheet() {
             }
 
             .dot {
-                width: 2px;
+                width: 0.25px;
                 height: 50px;
                 border-radius: 8px 2px;
                 background-color:#d52e2e;

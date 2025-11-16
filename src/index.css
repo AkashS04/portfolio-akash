@@ -46,6 +46,7 @@ body {
   width: auto;
 }
 .swipermain {
+  height: 100vh;
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden !important;
@@ -105,7 +106,7 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1440px) {
   .home-title-box {
-    top: 35% !important;
+    top: 30% !important;
   }
   .sidenav-mobile {
     display: none !important;

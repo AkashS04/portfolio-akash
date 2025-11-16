@@ -41,7 +41,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
       <Box
         ref={contactRef}
         sx={{
-          borderTop: "1px solid #707070",
+          borderTop: "0.25px solid #707070",
           padding: {
             lg: ".5rem 0rem 4rem 0rem",
             md: ".5rem 0rem 4rem 0rem",
@@ -90,8 +90,9 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               width: "100%",
               justifyContent: "space-around",
               padding: "2rem 0rem",
-              border: "1px solid #707070",
+              border: "0.25px solid #707070",
               boxShadow: "#00d8ff61 0px 0px 8px 0px",
+              borderRadius: "8px",
             }}
           >
             {contactDetails.map((contact: any) => (

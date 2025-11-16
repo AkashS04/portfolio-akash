@@ -27,7 +27,7 @@ const SkillDetails = () => {
           sx={{
             backgroundColor: "#48484894",
             padding: "16px",
-            borderRadius: "1rem",
+            borderRadius: "8px",
             margin: "16px",
             width: "300px"
           }}

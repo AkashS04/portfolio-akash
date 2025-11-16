@@ -17,7 +17,7 @@ const Skills = () => {
       <Box
         sx={{
           padding: "1rem 0rem",
-          border: "1px solid #707070",
+          border: "0.25px solid #707070",
         }}
       >
         <Typography

@@ -73,7 +73,7 @@ function ProjectCard() {
               overflow: "hidden",
               padding: { lg: "1rem", md: "1rem", sm: ".5rem", xs: ".5rem" },
               border: "1px solid #121212",
-              borderRadius: "1rem",
+              borderRadius: "8px",
               margin: {
                 lg: "0rem 0rem 2rem 0rem",
                 md: "0rem 0rem 2rem 0rem",
@@ -88,7 +88,7 @@ function ProjectCard() {
                 width: "400px",
                 top: "0px",
                 left: "0px",
-                borderRadius: "1rem",
+                borderRadius: "8px",
                 backgroundColor: "rgb(0 0 0 / 18%)",
                 transition: "transform 400ms ease-in-out",
               },
