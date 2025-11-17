@@ -11,7 +11,14 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
 
   return (
     <>
-      <Box ref={aboutRef} sx={{ width: "100%",mt:{lg:8,md:6,sm:4 ,xs:3},mb:{lg:8,md:6,sm:4 ,xs:3} }}>
+      <Box
+        ref={aboutRef}
+        sx={{
+          width: "100%",
+          mt: { lg: 8, md: 6, sm: 4, xs: 3 },
+          mb: { lg: 8, md: 6, sm: 4, xs: 3 },
+        }}
+      >
         <Typography
           variant="h2"
           sx={{
@@ -23,7 +30,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
               sm: "2.5rem",
               xs: "2.25rem",
             },
-            letterSpacing: "4px"
+            letterSpacing: "4px",
           }}
           gutterBottom
         >
@@ -37,7 +44,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
               sm: "1rem 2rem",
               xs: "0.5rem 2rem",
             },
-            mb: { lg: 5, md: 4, sm: 3, xs: 2 }
+            mb: { lg: 5, md: 4, sm: 3, xs: 2 },
           }}
         >
           <Typography
@@ -53,7 +60,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
                 xs: "1.5rem",
               },
               letterSpacing: "1.8px",
-              mb: { lg: 5, md: 4, sm: 3, xs: 3 }
+              mb: { lg: 5, md: 4, sm: 3, xs: 3 },
             }}
             gutterBottom
           >
@@ -63,25 +70,28 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             variant="body1"
             align="left"
             sx={{
-               fontFamily: "Kanit-Light",
+              fontFamily: "Kanit-Light",
               color: "#e3e3e3",
               letterSpacing: "1.2px",
-              textAlign: "justify"
+              textAlign: "justify",
             }}
             gutterBottom
           >
-
-            A React front-end developer with 2+ years of
-            experience building clean, scalable, and responsive web applications
-            using React, TypeScript, Tailwind CSS, and Redux.
-            <br />I believe in clarity — in design, in code, and in
-            communication. My curiosity goes beyond tech — I explore systems,
-            structures, and even the deeper roots of the Tamil language and
-            logic.
+            React Front-end Developer from India with 2+ years of experience
+            building fast, scalable, and maintainable web applications. Skilled
+            in React, TypeScript, Tailwind CSS, Redux, and REST APIs, with a
+            strong focus on clean architecture, reusable components, and
+            predictable UI behavior.
             <br />
-            From dynamic dashboards to e-commerce platforms, I focus on creating
-            interfaces that are not just functional, but thoughtful. I value
-            discipline, minimalism, and user-first development.
+            Work includes crafting dashboards, workflow systems, and responsive
+            interfaces that balance performance with user experience. Strong
+            understanding of state management, API integration, testing (Jest,
+            RTL, Playwright), CI/CD, SEO, and cross-browser compatibility
+            ensures that every solution is reliable in real-world environments.
+            <br />
+            Driven by curiosity for how systems connect and scale, paired with a
+            mindset built around clarity, structure, and thoughtful design.
+            <br />
             Let’s build something meaningful — together.
           </Typography>
         </Box>
