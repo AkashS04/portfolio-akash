@@ -71,9 +71,16 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             align="left"
             sx={{
               fontFamily: "Kanit-Light",
+              fontSize: {
+                lg:"1.174rem",
+                md:"1.1rem",
+                sm:"1rem",
+                xs:"0.9rem"
+              },
               color: "#e3e3e3",
               letterSpacing: "1.2px",
               textAlign: "justify",
+              lineHeight:"1.59"
             }}
             gutterBottom
           >
