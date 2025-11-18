@@ -55,11 +55,12 @@ function ProjectCard() {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          padding: {
-            lg: "2rem 4rem 2rem 4rem",
-            md: "2rem 4rem 2rem 4rem",
-            sm: "2rem 2rem",
-          },
+          // padding: {
+          //   lg: "2rem 4rem 2rem 4rem",
+          //   md: "2rem 4rem 2rem 4rem",
+          //   sm: "2rem 2rem",
+          // },
+          padding: "8% ",
           justifyContent: "space-around",
         }}
       >

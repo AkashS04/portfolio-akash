@@ -138,6 +138,11 @@ body {
     height: 80% !important;
   }
 }
+@media(max-width:764px){
+  .skill-box{
+    width:100% !important;
+  }
+}
 @media (min-width: 427px) and (max-width: 900px) {
   .titleDiv {
     height: 52% !important;

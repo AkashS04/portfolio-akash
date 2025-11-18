@@ -6,12 +6,13 @@ const Skills = () => {
   return (
     <Box
       sx={{
-        padding: {
-          lg: "0rem 4rem",
-          md: "0rem 3rem",
-          sm: "0rem 2rem",
-          xs: "0rem 2rem",
-        },
+        // padding: {
+        //   lg: "0rem 4rem",
+        //   md: "0rem 3rem",
+        //   sm: "0rem 2rem",
+        //   xs: "0rem 2rem",
+        // },
+        padding: "0% 8% 8% 8% ",
       }}
     >
       <Box
@@ -27,8 +28,8 @@ const Skills = () => {
             paddingLeft: "2rem",
             fontFamily: "Kanit-Regular",
             fontSize: "1.5rem",
-            letterSpacing:"1.8px",
-            mb: { lg: 4, md: 3, sm: 2, xs: 2 }
+            letterSpacing: "1.8px",
+            mb: { lg: 4, md: 3, sm: 2, xs: 2 },
           }}
           align="left"
         >

@@ -46,7 +46,10 @@ const Skillset = [
 const WCMCard = () => {
   return (
     <>
-      <Box sx={{ padding: { lg: "2rem 4rem", md: "1rem 3rem" } }}>
+      <Box sx={{ 
+        // padding: { lg: "2rem 4rem", md: "1rem 3rem" } 
+        padding:"8%"
+        }}>
         <Box
           sx={{
             display: "flex",
@@ -62,9 +65,10 @@ const WCMCard = () => {
                 width: {
                   lg: "40%",
                   md: "40%",
-                  sm: "40%",
-                  xs: "80%",
+                  sm: "100%",
+                  xs: "100%",
                 },
+                // width:"100%",
                 height: {
                   lg: "140px",
                   md: "140px",
@@ -79,12 +83,12 @@ const WCMCard = () => {
                   sm: "0.5rem",
                   xs: "0.5rem",
                 },
-                margin: {
-                  lg: "0.5rem 1rem",
-                  md: "0.5rem 1rem",
-                  sm: "1rem 0.8rem",
-                  xs: "1rem 2rem",
-                },
+                // margin: {
+                //   lg: "0.5rem 1rem",
+                //   md: "0.5rem 1rem",
+                //   sm: "1rem 0.8rem",
+                //   xs: "1rem 2rem",
+                // },
                 padding: {
                   lg: "2rem",
                   md: "1.5rem",

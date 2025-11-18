@@ -29,8 +29,9 @@ const SkillDetails = () => {
             padding: "16px",
             borderRadius: "8px",
             margin: "16px",
-            width: "300px"
+            width:"40%"
           }}
+          className="skill-box"
         >
           <ProgressBar
             title={skills.title}

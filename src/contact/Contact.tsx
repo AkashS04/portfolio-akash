@@ -53,12 +53,13 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
         <Box
           sx={{
             width: "auto",
-            padding: {
-              lg: "0rem 4rem",
-              md: "0rem 4rem",
-              sm: "0rem 3rem",
-              xs: "0rem 1rem",
-            },
+            // padding: {
+            //   lg: "0rem 4rem",
+            //   md: "0rem 4rem",
+            //   sm: "0rem 3rem",
+            //   xs: "0rem 1rem",
+            // },
+            padding: "0% 8% ",
           }}
         >
           <Box>
