@@ -13,12 +13,14 @@ const Skills = () => {
         //   xs: "0rem 2rem",
         // },
         padding: "0% 8% 8% 8% ",
+        
       }}
     >
       <Box
         sx={{
-          padding: "1rem 0rem",
-          border: "0.25px solid #707070",
+          backgroundColor: "#0000003b",
+          padding: "2rem 0rem 1rem 0rem",
+          borderRadius:"16px"
         }}
       >
         <Typography

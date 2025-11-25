@@ -45,7 +45,6 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             //   xs: "0.5rem 2rem",
             // },
             padding: "8% ",
-            mb: { lg: 5, md: 4, sm: 3, xs: 2 },
           }}
         >
           <Typography
@@ -85,7 +84,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             }}
             gutterBottom
           >
-            React Front-end Developer from India with 2+ years of experience
+            2+ years of experience
             building fast, scalable, and maintainable web applications. Skilled
             in React, TypeScript, Tailwind CSS, Redux, and REST APIs, with a
             strong focus on clean architecture, reusable components, and
