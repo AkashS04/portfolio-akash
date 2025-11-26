@@ -13,7 +13,7 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
 
     return (
       <>
-        <div ref={whyChooseMeRef}>
+        <div ref={whyChooseMeRef} className="whyChooseMeroot">
           <Box sx={{ width: "auto" }}>
             <Typography
               variant="h3"
