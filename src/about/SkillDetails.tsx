@@ -1,6 +1,14 @@
 import Box from "@mui/material/Box";
 import ProgressBar from "./ProgressBar";
-const coreSkills = [
+
+interface coreSkills {
+  uID: number;
+  title: string;
+  value: number;
+  percentage: string;
+}
+
+const coreSkills: coreSkills[] = [
   { uID: 125, title: "React", value: 90, percentage: "90%" },
   { uID: 124, title: "TypeScript", value: 90, percentage: "90%" },
   { uID: 135, title: "Tailwind CSS", value: 85, percentage: "85%" },
@@ -12,7 +20,7 @@ const coreSkills = [
     percentage: "80%",
   },
   { uID: 136, title: "Playwright", value: 75, percentage: "75%" },
-  { uID: 128, title: "RESTfull APIs", value: 90, percentage: "90%" },
+  { uID: 128, title: "RESTful APIs", value: 90, percentage: "90%" },
   { uID: 129, title: "GitHub", value: 70, percentage: "70%" },
   { uID: 134, title: "GitHub Actions", value: 75, percentage: "75%" },
   { uID: 133, title: "Vite", value: 75, percentage: "75%" },
@@ -27,7 +35,7 @@ const coreSkills = [
 const SkillDetails = () => {
   return (
     <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-      {coreSkills.map((skills: any) => (
+      {coreSkills.map((skills: coreSkills) => (
         <Box
           key={skills.uID}
           sx={{

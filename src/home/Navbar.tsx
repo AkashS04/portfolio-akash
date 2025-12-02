@@ -10,7 +10,10 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import { HomeCtx } from "../contexts/HomeCtx";
-
+interface navItem {
+  text: string;
+  ref: React.RefObject<HTMLElement>;
+}
 function Navbar({}: any) {
   const homeCtx = React.useContext(HomeCtx);
   const { aboutRef, whyChooseMeRef, projectsRef, contactRef, scrollToSection } =
@@ -23,7 +26,7 @@ function Navbar({}: any) {
     setOpen(newOpen);
   };
 
-  let navData = [
+  let navData: navItem[] = [
     { text: "About", ref: aboutRef },
     { text: "Why Choose Me", ref: whyChooseMeRef },
     { text: "Projects", ref: projectsRef },
@@ -60,10 +63,13 @@ function Navbar({}: any) {
         <CloseIcon />
       </IconButton>
       <List>
-        {navData.map((data: any) => (
+        {navData.map((data: navItem) => (
           <ListItem key={data.text} disablePadding>
             <ListItemButton onClick={() => handleItemClick(data.ref)}>
-              <ListItemText sx={{letterSpacing:"1.2px"}} primary={data.text} />
+              <ListItemText
+                sx={{ letterSpacing: "1.2px" }}
+                primary={data.text}
+              />
             </ListItemButton>
           </ListItem>
         ))}

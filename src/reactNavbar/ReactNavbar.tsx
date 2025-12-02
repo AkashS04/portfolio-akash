@@ -1,17 +1,20 @@
-  import Box  from "@mui/material/Box";
+import Box from "@mui/material/Box";
 import NavBarCBtn from "./NavBarCBtn";
 import { useContext } from "react";
 import { HomeCtx } from "../contexts/HomeCtx";
+export interface navData {
+  navKey: number;
+  title: string;
+  ref: React.RefObject<HTMLElement>;
+}
 
 function ReactNavbar({}: any) {
   const homeCtx = useContext(HomeCtx);
 
   const { aboutRef, whyChooseMeRef, projectsRef, contactRef } = homeCtx;
 
-  const navData = [
-    { navKey: 343,
-      title: "About", 
-      ref: aboutRef },
+  const navData: navData[] = [
+    { navKey: 343, title: "About", ref: aboutRef },
     {
       navKey: 344,
       title: "Why Choose Me",
@@ -29,8 +32,6 @@ function ReactNavbar({}: any) {
     },
   ];
 
-  
-
   return (
     <div className="reactNavbar-main">
       <Box
@@ -43,7 +44,7 @@ function ReactNavbar({}: any) {
           marginTop: "2rem",
         }}
       >
-        <NavBarCBtn navData={navData} />
+        <NavBarCBtn navItems={navData} />
       </Box>
     </div>
   );

@@ -6,12 +6,6 @@ const Skills = () => {
   return (
     <Box
       sx={{
-        // padding: {
-        //   lg: "0rem 4rem",
-        //   md: "0rem 3rem",
-        //   sm: "0rem 2rem",
-        //   xs: "0rem 2rem",
-        // },
         padding: "0% 8% 8% 8% ",
         
       }}

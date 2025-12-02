@@ -30,7 +30,14 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
       }
     };
 
-    const contactDetails = [
+    interface contactDetails {
+      iId: number;
+      imgsrc: string;
+      clickValue: number;
+      alt: string;
+    }
+
+    const contactDetails: contactDetails[] = [
       { iId: 887, imgsrc: phone, clickValue: 1, alt: "mobile-link-icon" },
       { iId: 888, imgsrc: email, clickValue: 2, alt: "email-link-icon" },
       { iId: 889, imgsrc: whatsApp, clickValue: 3, alt: "whatsapp-link-icon" },
@@ -63,14 +70,15 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               sx={{
                 color: "#d52e2e",
                 fontFamily: "Oswald-Bold",
-                mt: { lg: 8, md: 6, sm: 4, xs: 3 }, mb: { lg: 8, md: 6, sm: 4, xs: 4 },
+                mt: { lg: 8, md: 6, sm: 4, xs: 3 },
+                mb: { lg: 8, md: 6, sm: 4, xs: 4 },
                 fontSize: {
                   lg: "3rem",
                   md: "2.6rem",
                   sm: "2.5rem",
                   xs: "2.25rem",
                 },
-                letterSpacing: "4px"
+                letterSpacing: "4px",
               }}
               gutterBottom
             >
@@ -90,7 +98,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               borderRadius: "8px",
             }}
           >
-            {contactDetails.map((contact: any) => (
+            {contactDetails.map((contact: contactDetails) => (
               <ContactIcon
                 key={contact.iId}
                 imgSrc={contact.imgsrc}

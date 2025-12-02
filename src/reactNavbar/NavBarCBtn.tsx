@@ -4,6 +4,11 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import { useContext } from "react";
 import { HomeCtx } from "../contexts/HomeCtx";
+import { navData } from "./ReactNavbar";
+
+interface navDataProps{
+  navItems:navData[]
+}
 
 const Navtexttheme = createTheme({
   typography: {
@@ -26,30 +31,30 @@ const Navtexttheme = createTheme({
           padding: "8px",
           cursor: "pointer",
           width: "165px",
-          transition: "background-color 150ms ease-out , transform 150ms ease-out",
+          transition:
+            "background-color 150ms ease-out , transform 150ms ease-out",
           "&:hover": {
             backgroundColor: "rgb(48 48 48)",
-            transform: "scale(1.025)"
+            transform: "scale(1.025)",
           },
         },
       },
     },
   },
 });
-const NavBarCBtn = ({ navData }: any) => {
+const NavBarCBtn = ({navItems}: navDataProps) => {
   const homeCtx = useContext(HomeCtx);
   const { scrollToSection } = homeCtx;
   return (
     <>
       <ThemeProvider theme={Navtexttheme}>
-        {navData.map((nav: any) => (
-          <Box sx={{height:"40px",width:"165px"}}>
-            <Box
-              key={nav.navKey}
-              onClick={() => scrollToSection(nav.ref)}
-            >
+        {navItems.map((nav: navData) => (
+          <Box sx={{ height: "40px", width: "165px" }}>
+            <Box key={nav.navKey} onClick={() => scrollToSection(nav.ref)}>
               <Paper>
-                <Typography variant="body1" sx={{letterSpacing:"1.2px"}}>{nav.title}</Typography>
+                <Typography variant="body1" sx={{ letterSpacing: "1.2px" }}>
+                  {nav.title}
+                </Typography>
               </Paper>
             </Box>
           </Box>

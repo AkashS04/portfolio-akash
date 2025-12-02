@@ -9,7 +9,7 @@ import slide3 from "../assets/slider_images/slide-3.jpg";
 import { useContext, useState } from "react";
 import { HomeCtx } from "../contexts/HomeCtx";
 function SwiperImage() {
-  const swiperImage: any = [slide1, slide2, slide3];
+  const swiperImage: string[] = [slide1, slide2, slide3];
   const homeCtx = useContext(HomeCtx);
   const { setTitleLoading } = homeCtx;
   const [imgLoading, setImgLoading] = useState(true);
@@ -31,7 +31,7 @@ function SwiperImage() {
         spaceBetween={1}
         speed={6000}
       >
-        {swiperImage.map((image: any) => (
+        {swiperImage.map((image: string) => (
           <SwiperSlide key={image + "a2"}>
             <img
               className="swiperimage"

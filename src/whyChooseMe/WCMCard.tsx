@@ -6,7 +6,15 @@ import ProjectPlaning from "../assets/skillsIcons/project.png";
 import Research from "../assets/skillsIcons/research.png";
 import MultiTasking from "../assets/skillsIcons/multitask.png";
 import WCMImage from "./WCMImage";
-const Skillset = [
+
+interface skillSet {
+  uId: number;
+  skillIcon: string;
+  title: string;
+  name: string;
+  alt: string;
+}
+const Skillset: skillSet[] = [
   {
     uId: 111,
     skillIcon: ProblemSolving,
@@ -46,9 +54,11 @@ const Skillset = [
 const WCMCard = () => {
   return (
     <>
-      <Box sx={{ 
-        padding:"4% 8% 8% 8%"
-        }}>
+      <Box
+        sx={{
+          padding: "4% 8% 8% 8%",
+        }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -57,7 +67,7 @@ const WCMCard = () => {
             justifyContent: "center",
           }}
         >
-          {Skillset.map((skills: any) => (
+          {Skillset.map((skills: skillSet) => (
             <Box
               key={skills.uId}
               sx={{
@@ -82,12 +92,6 @@ const WCMCard = () => {
                   sm: "0.5rem",
                   xs: "0.5rem",
                 },
-                // margin: {
-                //   lg: "0.5rem 1rem",
-                //   md: "0.5rem 1rem",
-                //   sm: "1rem 0.8rem",
-                //   xs: "1rem 2rem",
-                // },
                 padding: {
                   lg: "2rem",
                   md: "1.5rem",
@@ -115,7 +119,7 @@ const WCMCard = () => {
                       xs: "1.125rem",
                     },
                     letterSpacing: "1.6px",
-                    mb: 1
+                    mb: 1,
                   }}
                 >
                   {skills.title}
@@ -132,7 +136,7 @@ const WCMCard = () => {
                       sm: "1rem",
                       xs: "1rem",
                     },
-                    letterSpacing: "0.8px"
+                    letterSpacing: "0.8px",
                   }}
                 >
                   {skills.name}
