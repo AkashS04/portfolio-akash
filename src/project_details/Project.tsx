@@ -1,15 +1,15 @@
-import React, { forwardRef, useContext} from "react";
+import React, { forwardRef, useContext } from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";;
+import Typography from "@mui/material/Typography";
+import ProjecetInfo from "./projectInfo";
 import ProjectCard from "./ProjectCard";
 import { HomeCtx } from "../contexts/HomeCtx";
 
 const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
   (__) => {
     console.log("<Project >component");
-    const homeCtx=useContext(HomeCtx)
-    const {projectsRef}=homeCtx
-
+    const homeCtx = useContext(HomeCtx);
+    const { projectsRef } = homeCtx;
 
     return (
       <>
@@ -26,13 +26,15 @@ const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                   sm: "2.5rem",
                   xs: "2.25rem",
                 },
-                mt:{lg:8,md:6,sm:4 ,xs:3},mb:{lg:8,md:6,sm:4 ,xs:4},
-                letterSpacing: "4px"
+                mt: { lg: 8, md: 6, sm: 4, xs: 3 },
+                mb: { lg: 8, md: 6, sm: 4, xs: 4 },
+                letterSpacing: "4px",
               }}
               gutterBottom
             >
               PROJECTS
             </Typography>
+            <ProjecetInfo />
             <ProjectCard />
           </Box>
         </div>
