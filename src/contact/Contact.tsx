@@ -86,6 +86,47 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             </Typography>
           </Box>
 
+          <Typography
+            variant="body1"
+            sx={{
+              color: "#e3e3e3",
+              fontFamily: "Kanit-Regular",
+              fontSize: {
+                lg: "1.5rem",
+                md: "1.3rem",
+                sm: "1.2rem",
+                xs: "1.1rem",
+              },
+              letterSpacing: "1.8px",
+              mb: 2,
+              textAlign: "left",
+            }}
+          >
+            Let's Work Together!
+          </Typography>
+          <Typography
+            variant="body1"
+            align="left"
+            sx={{
+              fontFamily: "Kanit-Light",
+              fontSize: {
+                lg: "1.174rem",
+                md: "1.1rem",
+                sm: "1rem",
+                xs: "0.9rem",
+              },
+              color: "#e3e3e3",
+              letterSpacing: "1.2px",
+              textAlign: "justify",
+              lineHeight: "1.59",
+              marginBottom: "2rem",
+            }}
+          >
+            I'm currently looking for a React Front-End Developer role If you
+            have an oppertunity or want to collaborate with, feel free to reach
+            out.
+          </Typography>
+
           <Box
             sx={{
               display: "flex",
