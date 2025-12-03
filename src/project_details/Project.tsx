@@ -1,9 +1,9 @@
 import React, { forwardRef, useContext } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { HomeCtx } from "../contexts/HomeCtx";
 import ProjectInfo from "./projectInfo";
 import ProjectCard from "./ProjectCard";
-import { HomeCtx } from "../contexts/HomeCtx";
 
 const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
   (__) => {

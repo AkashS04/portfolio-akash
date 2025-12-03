@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
-const ProjectInfo: React.FC = () => {
+function ProjectInfo() {
   return (
     <>
       <Box
@@ -384,5 +384,5 @@ const ProjectInfo: React.FC = () => {
       </Box>
     </>
   );
-};
+}
 export default ProjectInfo;
