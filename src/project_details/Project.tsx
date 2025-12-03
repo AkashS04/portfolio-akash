@@ -1,7 +1,7 @@
 import React, { forwardRef, useContext } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import ProjecetInfo from "./projectInfo";
+import ProjectInfo from "./projectInfo";
 import ProjectCard from "./ProjectCard";
 import { HomeCtx } from "../contexts/HomeCtx";
 
@@ -34,7 +34,7 @@ const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             >
               PROJECTS
             </Typography>
-            <ProjecetInfo />
+            <ProjectInfo />
             <ProjectCard />
           </Box>
         </div>
