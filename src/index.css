@@ -162,6 +162,11 @@ body {
     width: 100% !important;
   }
 }
+@media(max-width:520px){
+  .main-deiv-skills{
+    flex-direction: column !important;
+  }
+}
 @media (min-width: 427px) and (max-width: 900px) {
   .titleDiv {
     height: 52% !important;

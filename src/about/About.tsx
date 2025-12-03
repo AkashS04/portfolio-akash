@@ -1,8 +1,8 @@
 import React, { forwardRef, useContext } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Skills from "./Skills";
 import { HomeCtx } from "../contexts/HomeCtx";
+import Skills from "./Skills";
 
 const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
   console.log("<about >component");
@@ -38,12 +38,6 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
         </Typography>
         <Box
           sx={{
-            // padding: {
-            //   lg: "1rem 4rem",
-            //   md: "1rem 4rem",
-            //   sm: "1rem 2rem",
-            //   xs: "0.5rem 2rem",
-            // },
             padding: "8% ",
           }}
         >

@@ -1,60 +1,31 @@
-import Box from "@mui/material/Box";
-import ProgressBar from "./ProgressBar";
+// import Box from "@mui/material/Box";
+// import ProgressBar from "./ProgressBar";
+// import { coreSkills, coreSkillsType, } from "./skillsData.ts";
 
-interface coreSkills {
-  uID: number;
-  title: string;
-  value: number;
-  percentage: string;
-}
 
-const coreSkills: coreSkills[] = [
-  { uID: 125, title: "React", value: 90, percentage: "90%" },
-  { uID: 124, title: "TypeScript", value: 90, percentage: "90%" },
-  { uID: 135, title: "Tailwind CSS", value: 85, percentage: "85%" },
-  { uID: 131, title: "Redux", value: 85, percentage: "85%" },
-  {
-    uID: 132,
-    title: "Jest + React Testing Library",
-    value: 80,
-    percentage: "80%",
-  },
-  { uID: 136, title: "Playwright", value: 75, percentage: "75%" },
-  { uID: 128, title: "RESTful APIs", value: 90, percentage: "90%" },
-  { uID: 129, title: "GitHub", value: 70, percentage: "70%" },
-  { uID: 134, title: "GitHub Actions", value: 75, percentage: "75%" },
-  { uID: 133, title: "Vite", value: 75, percentage: "75%" },
-  { uID: 121, title: "HTML5", value: 95, percentage: "95%" },
-  { uID: 122, title: "CSS3", value: 90, percentage: "90%" },
-  { uID: 123, title: "JavaScript", value: 90, percentage: "90%" },
-  { uID: 126, title: "Material-UI", value: 70, percentage: "70%" },
-  { uID: 127, title: "Bootstrap", value: 80, percentage: "80%" },
-  { uID: 130, title: "JIRA", value: 70, percentage: "70%" },
-];
-
-const SkillDetails = () => {
-  return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-      {coreSkills.map((skills: coreSkills) => (
-        <Box
-          key={skills.uID}
-          sx={{
-            backgroundColor: "#48484894",
-            padding: "16px",
-            borderRadius: "8px",
-            margin: "16px",
-            width: "40%",
-          }}
-          className="skill-box"
-        >
-          <ProgressBar
-            title={skills.title}
-            value={skills.value}
-            percentage={skills.percentage}
-          />
-        </Box>
-      ))}
-    </Box>
-  );
-};
-export default SkillDetails;
+// const SkillDetails = () => {
+//   return (
+//     <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+//       {coreSkills.map((skills: coreSkillsType) => (
+//         <Box
+//           key={skills.uID}
+//           sx={{
+//             backgroundColor: "#48484894",
+//             padding: "16px",
+//             borderRadius: "8px",
+//             margin: "16px",
+//             width: "40%",
+//           }}
+//           className="skill-box"
+//         >
+//           <ProgressBar
+//             title={skills.title}
+//             value={skills.value}
+//             percentage={skills.percentage}
+//           />
+//         </Box>
+//       ))}
+//     </Box>
+//   );
+// };
+// export default SkillDetails;
