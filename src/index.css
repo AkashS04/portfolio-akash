@@ -66,7 +66,7 @@ body {
   z-index: 3;
 }
 .swiperimage {
-  height: auto;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
 }
@@ -103,11 +103,11 @@ body {
 .newTitleCss {
   position: relative;
 }
-.whyChooseMeroot{
+.whyChooseMeroot {
   background: #ffe3e303;
   padding-top: 30px;
 }
-.project-swiper{
+.project-swiper {
   height: auto;
   margin: 0 !important;
   padding: 0 !important;
@@ -117,9 +117,9 @@ body {
   width: 100%;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   .home-title-box {
-    top: 30% !important;
+    top: 25% !important;
   }
   .sidenav-mobile {
     display: none !important;
@@ -139,21 +139,27 @@ body {
     top: 750px !important;
   }
 }
-@media (min-width: 901px) and (max-width: 1023px) {
+@media (min-width: 901px) and (max-width: 1024px) {
   .sidenav-mobile {
     display: block !important;
+  }
+  .reactNavbar-main {
+    display: none !important;
   }
   .titleDiv {
     height: 80% !important;
     width: auto;
   }
-  .swipermain {
+  /* .swipermain {
     height: 80% !important;
+  } */
+  .home-title-box {
+    top: 25% !important;
   }
 }
-@media(max-width:764px){
-  .skill-box{
-    width:100% !important;
+@media (max-width: 764px) {
+  .skill-box {
+    width: 100% !important;
   }
 }
 @media (min-width: 427px) and (max-width: 900px) {
@@ -161,10 +167,13 @@ body {
     height: 52% !important;
     width: auto;
   }
-
-  .swipermain {
-    height: 52% !important;
+  .home-title-box {
+    top: 30% !important;
   }
+
+  /* .swipermain {
+    height: 52% !important;
+  } */
   .reactNavbar-main {
     display: none !important;
   }
@@ -178,9 +187,9 @@ body {
     top: 30% !important;
   }
 
-  .swipermain {
+  /* .swipermain {
     height: 42% !important;
-  }
+  } */
   .reactNavbar-main {
     display: none !important;
   }
@@ -192,13 +201,13 @@ body {
     width: auto;
   }
   .home-title-box {
-    top: 15% !important;
+    top: 35% !important;
   }
   .reactNavbar-main {
     display: none !important;
   }
 
-  .swipermain {
+  /* .swipermain {
     height: 40% !important;
-  }
+  } */
 }
