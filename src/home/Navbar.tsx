@@ -60,12 +60,25 @@ function Navbar({}: any) {
           zIndex: "999",
         }}
       >
-        <CloseIcon />
+        <CloseIcon
+          sx={{
+            fontSize: "28px",
+            textShadow:
+              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            transition: "transform 150ms ease-out",
+            "&:hover": {
+              transform: "scale(1.060)",
+            },
+          }}
+        />
       </IconButton>
-      <List>
+      <List sx={{ paddingTop: "25%" }}>
         {navData.map((data: navItem) => (
           <ListItem key={data.text} disablePadding>
-            <ListItemButton onClick={() => handleItemClick(data.ref)}>
+            <ListItemButton
+              onClick={() => handleItemClick(data.ref)}
+              sx={{ padding: "4% 10%" }}
+            >
               <ListItemText
                 sx={{ letterSpacing: "1.2px" }}
                 primary={data.text}
@@ -81,7 +94,18 @@ function Navbar({}: any) {
     <div className="sidenav-mobile">
       <Button onClick={toggleDrawer(true)}>
         {" "}
-        <MenuIcon sx={{ color: "#e3e3e3" }} />
+        <MenuIcon
+          sx={{
+            color: "#e3e3e3",
+            fontSize: "40px",
+            textShadow:
+              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+            transition: "transform 150ms ease-out",
+            "&:hover": {
+              transform: "scale(1.060)",
+            },
+          }}
+        />
       </Button>
       <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
         {DrawerList}
