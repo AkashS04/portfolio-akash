@@ -28,7 +28,7 @@ const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                 },
                 mt: { lg: 8, md: 6, sm: 4, xs: 3 },
                 mb: { lg: 8, md: 6, sm: 4, xs: 4 },
-                letterSpacing: "4px",
+                letterSpacing: "1.0pt",
               }}
               gutterBottom
             >

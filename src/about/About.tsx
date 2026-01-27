@@ -30,7 +30,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
               sm: "2.5rem",
               xs: "2.25rem",
             },
-            letterSpacing: "4px",
+            letterSpacing: "1pt",
           }}
           gutterBottom
         >
@@ -53,7 +53,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
                 sm: "1.5rem",
                 xs: "1.5rem",
               },
-              letterSpacing: "1.8px",
+              letterSpacing: "0.25pt",
               mb: { lg: 5, md: 4, sm: 3, xs: 3 },
             }}
             gutterBottom
@@ -72,7 +72,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
                 xs: "0.9rem",
               },
               color: "#e3e3e3",
-              letterSpacing: "1.2px",
+              letterSpacing: "0pt",
               textAlign: "justify",
               lineHeight: "1.59",
             }}

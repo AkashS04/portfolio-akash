@@ -21,7 +21,7 @@ export interface projectExplaination {
 export const projectDetails: projectExplaination[] = [
   {
     eId: 56,
-    projectName: "Project 1: Server Management System",
+    projectName: "Server Management System",
     projectRole: "Front End Developer",
     techUsed: "React, TypeScript, Redux Toolkit, RESTful APIs, Tailwind CSS",
     projectOverView:
@@ -60,7 +60,7 @@ export const projectDetails: projectExplaination[] = [
   },
   {
     eId: 57,
-    projectName: "Project 2: Asset Management System",
+    projectName: "Asset Management System",
     projectRole: "Front End Developer",
     techUsed: "React, TypeScript, Redux Toolkit, RESTful APIs, Material UI",
     projectOverView:

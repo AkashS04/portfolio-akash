@@ -28,7 +28,7 @@ function ProjectInfo() {
                 sm: "1.4rem",
                 xs: "1.2rem",
               },
-              letterSpacing: "1.8px",
+              letterSpacing: "1.0pt",
               mb: { lg: 5, md: 4, sm: 3, xs: 3 },
             }}
             gutterBottom
@@ -46,7 +46,7 @@ function ProjectInfo() {
                 sm: "1.3rem",
                 xs: "1rem",
               },
-              letterSpacing: "1.8px",
+              letterSpacing: "0.5pt",
               mb: { lg: 2, md: 3, sm: 2, xs: 2 },
             }}
             align="left"
@@ -64,7 +64,7 @@ function ProjectInfo() {
                 sm: "1.2rem",
                 xs: "1rem",
               },
-              letterSpacing: "1.8px",
+              letterSpacing: "0.5pt",
               mb: { lg: 2, md: 3, sm: 2, xs: 2 },
             }}
             align="left"
@@ -82,7 +82,7 @@ function ProjectInfo() {
                 sm: "1.2rem",
                 xs: "1rem",
               },
-              letterSpacing: "1.8px",
+              letterSpacing: "0.5pt",
               mb: { lg: 2, md: 3, sm: 2, xs: 2 },
             }}
             align="left"
@@ -101,7 +101,7 @@ function ProjectInfo() {
                 xs: "0.9rem",
               },
               color: "#e3e3e3",
-              letterSpacing: "1.2px",
+              letterSpacing: "0pt",
               textAlign: "justify",
               lineHeight: "1.59",
               mb: { lg: 4, md: 3, sm: 2, xs: 2 },
@@ -120,7 +120,7 @@ function ProjectInfo() {
                 sm: "1.2rem",
                 xs: "1rem",
               },
-              letterSpacing: "1.8px",
+              letterSpacing: "0.5pt",
               mb: { lg: 4, md: 3, sm: 2, xs: 2 },
             }}
             align="left"
@@ -139,7 +139,7 @@ function ProjectInfo() {
                 xs: "0.9rem",
               },
               color: "#e3e3e3",
-              letterSpacing: "1.2px",
+              letterSpacing: "0pt",
               textAlign: "justify",
               lineHeight: "1.59",
             }}
@@ -163,7 +163,7 @@ function ProjectInfo() {
                 sm: "1.2rem",
                 xs: "1rem",
               },
-              letterSpacing: "1.8px",
+              letterSpacing: "0.5pt",
               mb: { lg: 4, md: 3, sm: 2, xs: 2 },
             }}
             align="left"
@@ -182,7 +182,7 @@ function ProjectInfo() {
                 xs: "0.9rem",
               },
               color: "#e3e3e3",
-              letterSpacing: "1.2px",
+              letterSpacing: "0pt",
               textAlign: "justify",
               lineHeight: "1.59",
             }}

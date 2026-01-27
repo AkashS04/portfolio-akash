@@ -18,7 +18,7 @@ const HTitles = () => {
             },
             marginBottom: "1rem",
             fontFamily: "DancingScript-Regular",
-            letterSpacing: "4px",
+            letterSpacing: "1pt",
             textShadow:
               "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
           }}
@@ -38,7 +38,7 @@ const HTitles = () => {
             },
              marginBottom: "1rem",
             fontFamily: "Oswald-Regular",
-            letterSpacing: "4px",
+            letterSpacing: "0.5pt",
             textShadow:
               " rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
           }}
@@ -59,7 +59,7 @@ const HTitles = () => {
             },
             marginBottom: "1rem",
             fontFamily: "Kanit-Light",
-            letterSpacing: "4px",
+            letterSpacing: "0.15pt",
             textShadow:
               " rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
           }}

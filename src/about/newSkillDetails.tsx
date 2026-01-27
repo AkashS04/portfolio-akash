@@ -22,7 +22,7 @@ const NewSkillDetails = () => {
                     sm: "1.3rem",
                     xs: "1.2rem",
                   },
-                  letterSpacing: "1.8px",
+                  letterSpacing: "0.5pt",
                   mb: { lg: 4, md: 3, sm: 2, xs: 2 },
                 }}
                 align="center"

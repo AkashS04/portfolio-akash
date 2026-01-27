@@ -68,7 +68,7 @@ const WCMCard = () => {
                       sm: "1.125rem",
                       xs: "1.125rem",
                     },
-                    letterSpacing: "1.6px",
+                    letterSpacing: "0.5pt",
                     mb: 1,
                   }}
                 >
@@ -86,7 +86,7 @@ const WCMCard = () => {
                       sm: "1rem",
                       xs: "1rem",
                     },
-                    letterSpacing: "0.8px",
+                    letterSpacing: "0pt",
                   }}
                 >
                   {skills.name}

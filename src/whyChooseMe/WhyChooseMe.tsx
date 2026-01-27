@@ -27,7 +27,7 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                   sm: "2.5rem",
                   xs: "2.25rem",
                 },
-                letterSpacing: "4px"
+                letterSpacing: "1.0pt"
               }}
               gutterBottom
             >

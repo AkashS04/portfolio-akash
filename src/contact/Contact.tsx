@@ -78,7 +78,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                   sm: "2.5rem",
                   xs: "2.25rem",
                 },
-                letterSpacing: "4px",
+                letterSpacing: "1pt",
               }}
               gutterBottom
             >
@@ -97,7 +97,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                 sm: "1.2rem",
                 xs: "1.1rem",
               },
-              letterSpacing: "1.8px",
+              letterSpacing: "0.5pt",
               mb: 2,
               textAlign: "left",
             }}
@@ -116,7 +116,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                 xs: "0.9rem",
               },
               color: "#e3e3e3",
-              letterSpacing: "1.2px",
+              letterSpacing: "0pt",
               textAlign: "justify",
               lineHeight: "1.59",
               marginBottom: "2rem",

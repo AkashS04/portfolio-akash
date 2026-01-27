@@ -49,10 +49,10 @@ const NavBarCBtn = ({navItems}: navDataProps) => {
     <>
       <ThemeProvider theme={Navtexttheme}>
         {navItems.map((nav: navData) => (
-          <Box sx={{ height: "40px", width: "165px" }}>
+          <Box sx={{ height: "40px", width: "155px" }}>
             <Box key={nav.navKey} onClick={() => scrollToSection(nav.ref)}>
               <Paper>
-                <Typography variant="body1" sx={{ letterSpacing: "1.2px" }}>
+                <Typography variant="body1" sx={{ letterSpacing: "0.15pt" }}>
                   {nav.title}
                 </Typography>
               </Paper>

@@ -11,7 +11,7 @@ const ProgressBar = ({ title, value, percentage }: any) => {
           sx={{
             color: "#e3e3e3",
             fontFamily: "Oswald-Regular",
-            letterSpacing:"0.8px"
+            letterSpacing:"0pt"
           }}
           align="left"
         >

@@ -83,7 +83,7 @@ function ProjectCard() {
                       sm: "1.2rem",
                       xs: "1.5rem",
                     },
-                    letterSpacing: "1.6px",
+                    letterSpacing: "0.5pt",
                   }}
                   gutterBottom
                 >
@@ -100,7 +100,7 @@ function ProjectCard() {
                       sm: "1rem",
                       xs: "1rem",
                     },
-                    letterSpacing: "0.8px",
+                    letterSpacing: "0pt",
                     padding: "0px 8px 0px 8px",
                   }}
                   gutterBottom

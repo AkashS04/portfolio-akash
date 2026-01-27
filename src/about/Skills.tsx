@@ -28,7 +28,7 @@ const Skills = () => {
               sm: "1.6rem",
               xs: "1.5rem",
             },
-            letterSpacing: "1.8px",
+            letterSpacing: "1pt",
             mb: { lg: 4, md: 3, sm: 2, xs: 2 },
           }}
           align="left"
