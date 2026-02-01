@@ -27,10 +27,13 @@ const Navtexttheme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor: "rgb(36 36 36)",
-          borderRadius: "8px",
+          boxShadow: "-19px 17px 23px -17px rgba(0,0,0,0.52)",
+          WebkitBoxShadow: "-19px 17px 23px -17px rgba(0,0,0,0.52)",
+          MozBoxShadow: "-19px 17px 23px -17px rgba(0,0,0,0.52)",
+          borderRadius: "24px",
           padding: "8px",
           cursor: "pointer",
-          width: "165px",
+          width: "154px",
           transition:
             "background-color 150ms ease-out , transform 150ms ease-out",
           "&:hover": {

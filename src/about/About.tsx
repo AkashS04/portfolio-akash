@@ -38,7 +38,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
         </Typography>
         <Box
           sx={{
-            padding: "8% ",
+            padding: "6% 8%",
           }}
         >
           <Typography

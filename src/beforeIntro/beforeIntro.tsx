@@ -19,7 +19,7 @@ function LoadingThreeDotsJumping() {
   return (
     <Box sx={{ height: "100vh", margin: 0 }}>
       <Box sx={{ padding: "16px" }}>
-        <Box sx={{ border: "1.25px #d52e2edc solid", borderRadius: "8px" }}>
+        <Box sx={{ border: "1.25px #00d8ff solid", borderRadius: "8px" }}>
           <Box
             sx={{
               display: "flex",
@@ -33,7 +33,6 @@ function LoadingThreeDotsJumping() {
               transition={{ staggerChildren: -0.2, staggerDirection: -1 }}
               className="container"
             >
-              <motion.div className="dot" variants={dotVariants} />
               <motion.div className="dot" variants={dotVariants} />
               <motion.div className="dot" variants={dotVariants} />
               <motion.div className="dot" variants={dotVariants} />
@@ -60,14 +59,14 @@ function StyleSheet() {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 10px;
+                gap:6px;
             }
 
             .dot {
-                width: 8.25px;
+                width: 8px;
                 height: 8px;
-                border-radius: 8px 2px;
-                background-color:#d52e2e;
+                border-radius: 8px ;
+                background-color:#00d8ff;
                 will-change: transform;
             }
             `}
