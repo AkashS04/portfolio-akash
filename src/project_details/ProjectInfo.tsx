@@ -10,7 +10,7 @@ function ProjectInfo() {
   return (
     <Box
       sx={{
-        padding: "4% 8% 0 8%",
+        padding: { lg: "4% 8% 0 8%", md: "4% 6% 0 6%", sm: "4% 3% 0 3%", xs: "4% 3% 0 3%" },
       }}
     >
       {projectDetails.map((details: projectExplaination) => (

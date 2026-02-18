@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <Box
       sx={{
-        padding: "0% 8% 8% 8% ",
+        padding: { lg: "0% 8% 8% 8%", md: "0% 6% 8% 6%", sm: "0% 3% 8% 3%", xs: "0% 3% 8% 3%" },
       }}
     >
       <Box

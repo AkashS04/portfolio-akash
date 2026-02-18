@@ -13,7 +13,7 @@ function ProjectCard() {
     <>
       <Box
         sx={{
-          padding: "8% ",
+          padding: { lg: "8% 8%", md: "8% 6%", sm: "8% 3%", xs: "8% 3%" },
         }}
       >
         <Swiper
@@ -28,12 +28,12 @@ function ProjectCard() {
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
           breakpoints={{
-            640: { slidesPerView: 1 },
+            640: { slidesPerView: 1.5 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
             1600: { slidesPerView: 4 },
           }}
-          spaceBetween={20}
+          spaceBetween={10}
           speed={6000}
         >
           {projectData.map((data: projectDataType) => (

@@ -60,7 +60,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
         <Box
           sx={{
             width: "auto",
-            padding: "0% 8% ",
+            padding: { lg: "0% 8% 0% 8%", md: "0% 6% 0% 6%", sm: "0% 3% 0% 3%", xs: "0% 3% 0% 3%" },
           }}
         >
           <Box>

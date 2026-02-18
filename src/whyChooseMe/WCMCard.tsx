@@ -7,7 +7,7 @@ const WCMCard = () => {
     <>
       <Box
         sx={{
-          padding: "4% 8% 8% 8%",
+          padding: { lg: "4% 8% 8% 8%", md: "4% 6% 8% 6%", sm: "4% 3% 8% 3%", xs: "4% 3% 8% 3%" },
         }}
       >
         <Box
