@@ -48,7 +48,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
       <Box
         ref={contactRef}
         sx={{
-          background: "#e3f2ff0a",
+          background:" linear-gradient(128deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)",
           padding: {
             lg: ".5rem 0rem 4rem 0rem",
             md: ".5rem 0rem 4rem 0rem",
@@ -68,7 +68,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               variant="h4"
               align="left"
               sx={{
-                color: "#d52e2e",
+                color: "#d9d7da",
                 fontFamily: "Oswald-Bold",
                 mt: { lg: 8, md: 6, sm: 4, xs: 3 },
                 mb: { lg: 8, md: 6, sm: 4, xs: 4 },
@@ -89,8 +89,9 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
           <Typography
             variant="body1"
             sx={{
-              color: "#e3e3e3",
-              fontFamily: "Kanit-Regular",
+              color: "#ffffffb3",
+               fontFamily: "Sora",
+                fontWeight: "300",
               fontSize: {
                 lg: "1.5rem",
                 md: "1.3rem",
@@ -108,14 +109,15 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             variant="body1"
             align="left"
             sx={{
-              fontFamily: "Kanit-Light",
+               fontFamily: "Inter",
+                fontWeight: "300",
               fontSize: {
                 lg: "1.174rem",
                 md: "1.1rem",
                 sm: "1rem",
                 xs: "0.9rem",
               },
-              color: "#e3e3e3",
+              color: "#ffffffa8",
               letterSpacing: "0pt",
               textAlign: "justify",
               lineHeight: "1.59",

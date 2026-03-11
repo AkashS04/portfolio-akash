@@ -9,7 +9,7 @@ export const HomeProvider: React.FC<{ children: React.ReactNode }> = ({
   const whyChooseMeRef = useRef<HTMLDivElement | null>(null);
   const projectsRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
-  const [titleLoading, setTitleLoading] = useState(false);
+  // const [titleLoading, setTitleLoading] = useState(false);
 
   const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
     console.log(ref.current);
@@ -27,8 +27,8 @@ export const HomeProvider: React.FC<{ children: React.ReactNode }> = ({
         whyChooseMeRef,
         projectsRef,
         contactRef,
-        titleLoading,
-        setTitleLoading,
+        // titleLoading,
+        // setTitleLoading,
         scrollToSection,
       }}
     >

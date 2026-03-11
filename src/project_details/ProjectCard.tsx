@@ -75,7 +75,8 @@ function ProjectCard() {
                 <Typography
                   variant="h5"
                   sx={{
-                    fontFamily: "Kanit-Regular",
+                    fontFamily: "Sora",
+                fontWeight: "300",
                     color: "#00d9ffd7",
                     fontSize: {
                       lg: "1.5rem",
@@ -92,7 +93,8 @@ function ProjectCard() {
                 <Typography
                   variant="body1"
                   sx={{
-                    fontFamily: "Kanit-Light",
+                      fontFamily: "Inter",
+                fontWeight: "300",
                     color: "#e3e3e3",
                     fontSize: {
                       lg: "1.125rem",

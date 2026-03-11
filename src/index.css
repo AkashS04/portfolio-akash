@@ -39,7 +39,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1f1f1f;
+  /* background: linear-gradient(135deg,  #4B0082 0%,  #6A0DAD 40%, #000000 100%  ); */
+  background-color:#4B0082 ;
 }
 .titleDiv {
   height: 100%;
@@ -71,7 +72,7 @@ body {
   object-fit: cover;
 }
 
-.home-title-box {
+/* .home-title-box {
   position: absolute;
   top: 40%;
   bottom: 0px;
@@ -79,7 +80,7 @@ body {
   right: 0px;
   z-index: 99;
   margin: 0;
-}
+} */
 
 .reactNavbar-main {
   display: flex;
@@ -101,10 +102,17 @@ body {
   right: 14px;
 }
 .newTitleCss {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+background: linear-gradient(475deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%);
 }
+
 .whyChooseMeroot {
-  background: #ffe3e303;
+  background: linear-gradient(110deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%);
   padding-top: 30px;
 }
 .project-swiper {
@@ -118,9 +126,9 @@ body {
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .home-title-box {
+  /* .home-title-box {
     top: 24% !important;
-  }
+  } */
   .sidenav-mobile {
     display: none !important;
   }
@@ -129,9 +137,9 @@ body {
   }
 }
 @media (min-width: 1441px) and (max-width: 2560px) {
-  .home-title-box {
+  /* .home-title-box {
     top: 24% !important;
-  }
+  } */
   .sidenav-mobile {
     display: none !important;
   }
@@ -153,17 +161,17 @@ body {
   /* .swipermain {
     height: 80% !important;
   } */
-  .home-title-box {
+  /* .home-title-box {
     top: 25% !important;
-  }
+  } */
 }
 @media (max-width: 764px) {
   .skill-box {
     width: 100% !important;
   }
 }
-@media(max-width:520px){
-  .main-deiv-skills{
+@media (max-width: 520px) {
+  .main-deiv-skills {
     flex-direction: column !important;
   }
 }
@@ -172,9 +180,9 @@ body {
     height: 52% !important;
     width: auto;
   }
-  .home-title-box {
+  /* .home-title-box {
     top: 30% !important;
-  }
+  } */
 
   /* .swipermain {
     height: 52% !important;
@@ -188,9 +196,9 @@ body {
     height: 42% !important;
     width: auto;
   }
-  .home-title-box {
+  /* .home-title-box {
     top: 30% !important;
-  }
+  } */
 
   /* .swipermain {
     height: 42% !important;
@@ -205,9 +213,9 @@ body {
     height: 40% !important;
     width: auto;
   }
-  .home-title-box {
+  /* .home-title-box {
     top: 35% !important;
-  }
+  } */
   .reactNavbar-main {
     display: none !important;
   }

@@ -1,5 +1,6 @@
 "use client";
 
+import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import { motion, Variants } from "motion/react";
 
@@ -18,30 +19,42 @@ function LoadingThreeDotsJumping() {
 
   return (
     <Box sx={{ height: "100vh", margin: 0 }}>
-      <Box sx={{ padding: "16px" }}>
-        <Box sx={{ border: "1.25px #00d8ff solid", borderRadius: "8px" }}>
-          <Box
+      <Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItem: "center",
+            height: "calc(100vh - 34px) !important",
+          }}
+        >
+          <motion.div
+            animate="jump"
+            transition={{ staggerChildren: -0.2, staggerDirection: -1 }}
+            className="container"
+          >
+            <motion.div className="dot" variants={dotVariants} />
+            <motion.div className="dot" variants={dotVariants} />
+            <motion.div className="dot" variants={dotVariants} />
+            <motion.div className="dot" variants={dotVariants} />
+            <motion.div className="dot" variants={dotVariants} />
+            <motion.div className="dot" variants={dotVariants} />
+            <StyleSheet />
+          </motion.div>
+          <Typography
+            variant="body1"
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItem: "center",
-              height: "calc(100vh - 34px) !important",
+                  fontFamily:"Inter",
+            fontWeight:"400",
+              lineHeight: "1.5",
+              marginTop: "1rem",
+              color: "#ffffffa8",
+              textAlign: "center",
             }}
           >
-            <motion.div
-              animate="jump"
-              transition={{ staggerChildren: -0.2, staggerDirection: -1 }}
-              className="container"
-            >
-              <motion.div className="dot" variants={dotVariants} />
-              <motion.div className="dot" variants={dotVariants} />
-              <motion.div className="dot" variants={dotVariants} />
-              <motion.div className="dot" variants={dotVariants} />
-              <motion.div className="dot" variants={dotVariants} />
-              <motion.div className="dot" variants={dotVariants} />
-              <StyleSheet />
-            </motion.div>
-          </Box>
+            Initailizing Portfolio...
+          </Typography>
         </Box>
       </Box>
     </Box>
@@ -63,8 +76,8 @@ function StyleSheet() {
             }
 
             .dot {
-                width: 8px;
-                height: 8px;
+                width: 4px;
+                height: 4px;
                 border-radius: 8px ;
                 background-color:#00d8ff;
                 will-change: transform;

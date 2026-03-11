@@ -13,11 +13,12 @@ interface navDataProps{
 const Navtexttheme = createTheme({
   typography: {
     body1: {
-      fontFamily: "Kanit-Regular",
-      color: "#c9c9c9",
+      fontFamily: "Inter",
+      fontWeight:"300",
+      color: "#c9c9c9c4",
       transition: "0.2s",
       "&:hover": {
-        color: "#e3e3e3",
+        color: "#e3e3e3f4",
       },
       fontSize: "1.125rem",
     },

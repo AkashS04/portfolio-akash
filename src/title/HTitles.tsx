@@ -8,28 +8,29 @@ const HTitles = () => {
         <Typography
           variant="h1"
           sx={{
-            color: "#e3e3e3",
+            color: "#e3e3e3f2",
             fontSize: {
               xl: "6rem",
               lg: "6rem",
               md: "5rem",
               sm: "4rem",
-              xs: "3rem",
+              xs: "2.5rem",
             },
             marginBottom: "1rem",
-            fontFamily: "DancingScript-Regular",
+            fontFamily: "Space Grotesk",
+            fontWeight: "400",
             letterSpacing: "1pt",
             textShadow:
               "3px 2px 8px rgba(32,14,9,0.7)"
           }}
         >
-         Hi, This is Akash
+         Hi, I'm Akash
         </Typography>
 
         <Typography
           variant="h2"
           sx={{
-            color: "#e3e3e3",
+            color: "#ffffffb3",
             fontSize: {
               lg: "2.7rem",
               md: "2rem",
@@ -37,8 +38,10 @@ const HTitles = () => {
               xs: "1.5rem",
             },
              marginBottom: "1rem",
-            fontFamily: "Oswald-Regular",
+            fontFamily: "Sora",
+            fontWeight:"300",
             letterSpacing: "0.5pt",
+            lineHeight: "1.5",
             textShadow:
               "3px 2px 8px rgba(32,14,9,0.7)",
           }}
@@ -50,7 +53,7 @@ const HTitles = () => {
         <Typography
           variant="body1"
           sx={{
-            color: "#e3e3e3",
+            color: "#ffffffa8",
             fontSize: {
               lg: "1.174rem",
               md: "1.1rem",
@@ -58,14 +61,15 @@ const HTitles = () => {
               xs: "0.9rem",
             },
             marginBottom: "1rem",
-            fontFamily: "Kanit-Light",
+            fontFamily: "Inter",
+            fontWeight:"300",
             letterSpacing: "0.15pt",
             textShadow:
               " rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
           }}
           gutterBottom
         >
-          I build clean, responsive, fast user interfaces using modern React
+          Focused on scalable frontend architecture, clean component design, and performance optimization.
         </Typography>
       </Box>
     </>

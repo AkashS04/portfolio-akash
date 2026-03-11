@@ -1,17 +1,19 @@
-import { useContext } from "react";
+// import { useContext } from "react";
 import HeadTitle from "./HeadTitle";
-import SwiperImage from "./SwiperImage";
-import { HomeCtx } from "../contexts/HomeCtx";
+// import SwiperImage from "./SwiperImage";
+// import { HomeCtx } from "../contexts/HomeCtx";
 
 function Title() {
   console.log("<Title >component");
-      const homeCtx = useContext(HomeCtx);
-      const { titleLoading } = homeCtx;
+      // const homeCtx = useContext(HomeCtx);
+      // const { titleLoading } = homeCtx;
 
   return (
     <div className="newTitleCss">
-      <SwiperImage />
-      {titleLoading && <HeadTitle />}
+      {/* <SwiperImage /> */}
+      {/* {titleLoading &&  */}
+      <HeadTitle />
+      {/* // } */}
 
     </div>
   );

@@ -8,8 +8,10 @@ const ContactIcon = ({ imgSrc, clickValue, clickCall, alt }: any) => {
     filter:
       "invert(85%) sepia(7%) saturate(26%) hue-rotate(319deg) brightness(101%) contrast(104%)",
     transition: "transform 150ms ease-out",
+    opacity:"0.7",
     "&:hover": {
       transform: "scale(1.060)",
+      opacity:"0.9"
     },
   };
   return (

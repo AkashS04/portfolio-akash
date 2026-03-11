@@ -13,12 +13,12 @@ const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
 
     return (
       <>
-        <div ref={projectsRef}>
-          <Box>
+        <div ref={projectsRef} >
+          <Box sx={{ background:" linear-gradient(82deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)"}}>
             <Typography
               variant="h3"
               sx={{
-                color: "#d52e2e",
+                color: "#d9d7da",
                 fontFamily: "Oswald-Bold",
                 fontSize: {
                   lg: "3rem",
@@ -26,8 +26,8 @@ const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                   sm: "2.5rem",
                   xs: "2.25rem",
                 },
-                mt: { lg: 8, md: 6, sm: 4, xs: 3 },
-                mb: { lg: 8, md: 6, sm: 4, xs: 4 },
+                pt: { lg: 8, md: 6, sm: 4, xs: 3 },
+                pb: { lg: 8, md: 6, sm: 4, xs: 4 },
                 letterSpacing: "1.0pt",
               }}
               gutterBottom

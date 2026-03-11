@@ -6,7 +6,12 @@ const Skills = () => {
   return (
     <Box
       sx={{
-        padding: { lg: "0% 8% 8% 8%", md: "0% 6% 8% 6%", sm: "0% 3% 8% 3%", xs: "0% 3% 8% 3%" },
+        padding: {
+          lg: "0% 8% 8% 8%",
+          md: "0% 6% 8% 6%",
+          sm: "0% 3% 8% 3%",
+          xs: "0% 3% 8% 3%",
+        },
       }}
     >
       <Box
@@ -14,17 +19,18 @@ const Skills = () => {
           backgroundColor: "#0000003b",
           padding: "2rem 0rem 1rem 0rem",
           borderRadius: "16px",
-           boxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
-            WebkitBoxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
-            MozBoxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
+          boxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
+          WebkitBoxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
+          MozBoxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
         }}
       >
         <Typography
           variant="h4"
           sx={{
-            color: "#d52e2e",
+            color: "#d9d7da",
             paddingLeft: "2rem",
-            fontFamily: "Kanit-Regular",
+            fontFamily: "Sora",
+            fontWeight: "400",
             fontSize: {
               lg: "2rem",
               md: "1.8rem",

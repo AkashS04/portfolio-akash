@@ -10,7 +10,12 @@ function ProjectInfo() {
   return (
     <Box
       sx={{
-        padding: { lg: "4% 8% 0 8%", md: "4% 6% 0 6%", sm: "4% 3% 0 3%", xs: "4% 3% 0 3%" },
+        padding: {
+          lg: "4% 8% 0 8%",
+          md: "4% 6% 0 6%",
+          sm: "4% 3% 0 3%",
+          xs: "4% 3% 0 3%",
+        },
       }}
     >
       {projectDetails.map((details: projectExplaination) => (
@@ -30,8 +35,9 @@ function ProjectInfo() {
               variant="h3"
               align="left"
               sx={{
-                fontFamily: "Kanit-Regular",
-                color: "#e6e6e6",
+                fontFamily: "Sora",
+                fontWeight: "400",
+                color: "#ffffffb3",
                 fontSize: {
                   lg: "2rem",
                   md: "1.5rem",
@@ -48,8 +54,9 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#e3e3e3",
-                fontFamily: "Kanit-Regular",
+                color: "#ffffffb3",
+                fontFamily: "Sora",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.5rem",
                   md: "1.4rem",
@@ -67,14 +74,15 @@ function ProjectInfo() {
               variant="body1"
               align="left"
               sx={{
-                fontFamily: "Kanit-Light",
+                fontFamily: "Inter",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.174rem",
                   md: "1.1rem",
                   sm: "1rem",
                   xs: "0.9rem",
                 },
-                color: "#e3e3e3",
+                color: "#ffffffa8",
                 letterSpacing: "0pt",
                 textAlign: "justify",
                 lineHeight: "1.59",
@@ -87,8 +95,9 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#e3e3e3",
-                fontFamily: "Kanit-Regular",
+                color: "#ffffffb3",
+                fontFamily: "Sora",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.4rem",
                   md: "1.3rem",
@@ -106,14 +115,15 @@ function ProjectInfo() {
               variant="body1"
               align="left"
               sx={{
-                fontFamily: "Kanit-Light",
+                fontFamily: "Inter",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.174rem",
                   md: "1.1rem",
                   sm: "1rem",
                   xs: "0.9rem",
                 },
-                color: "#e3e3e3",
+                color: "#ffffffa8",
                 letterSpacing: "0pt",
                 textAlign: "justify",
                 lineHeight: "1.59",
@@ -125,8 +135,9 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#e3e3e3",
-                fontFamily: "Kanit-Regular",
+                color: "#ffffffb3",
+                fontFamily: "Sora",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.4rem",
                   md: "1.3rem",
@@ -144,14 +155,15 @@ function ProjectInfo() {
               variant="body1"
               align="left"
               sx={{
-                fontFamily: "Kanit-Light",
+                fontFamily: "Inter",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.174rem",
                   md: "1.1rem",
                   sm: "1rem",
                   xs: "0.9rem",
                 },
-                color: "#e3e3e3",
+                color: "#ffffffa8",
                 letterSpacing: "0pt",
                 textAlign: "justify",
                 lineHeight: "1.59",
@@ -163,8 +175,9 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#e3e3e3",
-                fontFamily: "Kanit-Regular",
+                color: "#ffffffb3",
+                fontFamily: "Sora",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.4rem",
                   md: "1.3rem",
@@ -182,14 +195,15 @@ function ProjectInfo() {
               variant="body1"
               align="left"
               sx={{
-                fontFamily: "Kanit-Light",
+                fontFamily: "Inter",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.174rem",
                   md: "1.1rem",
                   sm: "1rem",
                   xs: "0.9rem",
                 },
-                color: "#e3e3e3",
+                color: "#ffffffa8",
                 letterSpacing: "0pt",
                 textAlign: "justify",
                 lineHeight: "1.59",
@@ -206,8 +220,9 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#e3e3e3",
-                fontFamily: "Kanit-Regular",
+                color: "#ffffffb3",
+                fontFamily: "Sora",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.4rem",
                   md: "1.3rem",
@@ -225,14 +240,15 @@ function ProjectInfo() {
               variant="body1"
               align="left"
               sx={{
-                fontFamily: "Kanit-Light",
+                fontFamily: "Inter",
+                fontWeight: "300",
                 fontSize: {
                   lg: "1.174rem",
                   md: "1.1rem",
                   sm: "1rem",
                   xs: "0.9rem",
                 },
-                color: "#e3e3e3",
+                color: "#ffffffa8",
                 letterSpacing: "0pt",
                 textAlign: "justify",
                 lineHeight: "1.59",

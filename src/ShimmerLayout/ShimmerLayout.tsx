@@ -31,7 +31,8 @@ const ShimmerLayout = ({ contentText }: any) => {
 
             }}
           >
-            <Typography variant="h6" sx={{ color: "#e3e3e3" }}>
+            <Typography variant="h6" sx={{ color: "#ffffffa8"  ,    fontFamily:"Inter",
+            fontWeight:"300",}}>
               {contentText}
             </Typography>
           </Box>

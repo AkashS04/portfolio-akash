@@ -59,8 +59,9 @@ const WCMCard = () => {
                   variant="h5"
                   align="left"
                   sx={{
-                    fontFamily: "Kanit-Regular",
-                    color: "#e3e3e3",
+                   fontFamily: "Sora",
+                fontWeight: "300",
+                    color: "#ffffffb3",
                     fontSize: {
                       xl: "2.25rem",
                       lg: "1.8rem",
@@ -78,8 +79,9 @@ const WCMCard = () => {
                   variant="body1"
                   align="left"
                   sx={{
-                    fontFamily: "kanit-Light",
-                    color: "#e3e3e3",
+                  fontFamily: "Inter",
+                fontWeight: "300",
+                    color: "#ffffffa8",
                     fontSize: {
                       lg: "1.125rem",
                       md: "1.125rem",

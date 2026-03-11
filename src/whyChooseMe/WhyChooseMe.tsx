@@ -14,13 +14,13 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
     return (
       <>
         <div ref={whyChooseMeRef} className="whyChooseMeroot">
-          <Box sx={{ width: "auto" }}>
+          <Box sx={{ width: "auto" }}  >
             <Typography
               variant="h3"
               sx={{
-                color: "#d52e2e",
+                color: "#d9d7da",
                 fontFamily: "Oswald-Bold",
-                mt:{lg:8,md:6,sm:4 ,xs:4},mb:{lg:8,md:6,sm:4 ,xs:4},
+                pt:{lg:8,md:6,sm:4 ,xs:4},pb:{lg:8,md:6,sm:4 ,xs:4},
                 fontSize: {
                   lg: "3rem",
                   md: "2.6rem",

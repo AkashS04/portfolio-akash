@@ -42,7 +42,7 @@ function Navbar({}: any) {
     <Box
       sx={{
         width: 250,
-        backgroundColor: "#1e1e1e",
+        backgroundColor: "#4B0082",
         color: "#e3e3e3",
         height: "100%",
         boxShadow: "#00d8ff 0px 0px 50px 50px",
@@ -80,7 +80,11 @@ function Navbar({}: any) {
               sx={{ padding: "4% 10%" }}
             >
               <ListItemText
-                sx={{ letterSpacing: "1.2px" }}
+                sx={{
+                  letterSpacing: "1.2px",
+                  fontFamily: "Inter !important",
+                  fontWeight: "300 !important",
+                }}
                 primary={data.text}
               />
             </ListItemButton>
