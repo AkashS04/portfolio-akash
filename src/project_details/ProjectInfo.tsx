@@ -24,9 +24,9 @@ function ProjectInfo() {
             padding: "4% 6%",
             marginBottom: "4%",
             borderRadius: "16px",
-            boxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
-            WebkitBoxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
-            MozBoxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
+            boxShadow: "rgb(0 0 0 / 24%) -2px 2px 12px -3px",
+            WebkitBoxShadow: "rgb(0 0 0 / 24%) -2px 2px 12px -3px",
+            MozBoxShadow: "rgb(0 0 0 / 24%) -2px 2px 12px -3px",
           }}
           key={details.eId}
         >

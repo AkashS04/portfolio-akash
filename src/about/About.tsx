@@ -16,7 +16,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
         sx={{
           width: "100%",
           pt: { lg: 8, md: 6, sm: 4, xs: 3 },
-          pb: { lg: 8, md: 6, sm: 4, xs: 3 },
+          // pb: { lg: 8, md: 6, sm: 4, xs: 3 },
       background: "linear-gradient(81deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)",
 
         }}

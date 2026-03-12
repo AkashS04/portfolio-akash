@@ -19,9 +19,9 @@ const Skills = () => {
           backgroundColor: "#0000003b",
           padding: "2rem 0rem 1rem 0rem",
           borderRadius: "16px",
-          boxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
-          WebkitBoxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
-          MozBoxShadow: "-7px 6px 26px -5px rgba(0,0,0,0.62)",
+          boxShadow: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+          WebkitBoxShadow: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+          MozBoxShadow: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
         }}
       >
         <Typography
