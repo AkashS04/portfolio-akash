@@ -2,9 +2,11 @@ import { Box, Typography } from "@mui/material";
 import {
   projectDetails,
   projectExplaination,
+  techUsed,
   whatIbuilt,
   whatILearned,
 } from "./projectDetails.ts";
+import TechBatch from "./TechBatch.tsx";
 
 function ProjectInfo() {
   return (
@@ -111,27 +113,13 @@ function ProjectInfo() {
             >
               Tech:
             </Typography>
-            <Typography
-              variant="body1"
-              align="left"
-              sx={{
-                fontFamily: "Inter",
-                fontWeight: "300",
-                fontSize: {
-                  lg: "1.174rem",
-                  md: "1.1rem",
-                  sm: "1rem",
-                  xs: "0.9rem",
-                },
-                color: "#ffffffa8",
-                letterSpacing: "0pt",
-                textAlign: "justify",
-                lineHeight: "1.59",
-                mb: { lg: 4, md: 3, sm: 2, xs: 2 },
-              }}
-            >
-              {details.techUsed}
-            </Typography>
+            <Box sx={{display:"flex", gap:"8px"}}>
+           
+              {details.techUsed.map((data: techUsed) => (
+                <TechBatch key={data.tId} data={data.techName} />
+              ))}
+            </Box>
+
             <Typography
               variant="body1"
               sx={{

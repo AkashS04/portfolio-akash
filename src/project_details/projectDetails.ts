@@ -7,12 +7,16 @@ export interface whatILearned {
   wLId: number;
   data: string;
 }
+export interface techUsed{
+  tId:number;
+  techName:string
+}
 
 export interface projectExplaination {
   eId: number;
   projectName: string;
   projectRole: string;
-  techUsed: string;
+  techUsed: techUsed[];
   projectOverView: string;
   whatIbuilt: whatIbuilt[];
   whatILearned: whatILearned[];
@@ -23,7 +27,7 @@ export const projectDetails: projectExplaination[] = [
     eId: 56,
     projectName: "Server Management System",
     projectRole: "Front End Developer",
-    techUsed: "React, TypeScript, Redux Toolkit, RESTful APIs, Tailwind CSS",
+    techUsed:[ {tId:26,techName:"React"}, {tId:27,techName:"TypeScript"}, {tId:28,techName:"Redux Toolkit"}, {tId:29,techName:"RESTful APIs"}, {tId:30,techName:"Tailwind CSS"},],
     projectOverView:
       "Handling the inward and outward flow of server assets, managing inventory, tracking server locations, and generating reports. The system streamlines server allocation, monitors maintenance schedules, and provides real-time updates on server status, enhancing operational efficiency and reducing downtime.",
     whatIbuilt: [
@@ -62,9 +66,9 @@ export const projectDetails: projectExplaination[] = [
     eId: 57,
     projectName: "Asset Management System",
     projectRole: "Front End Developer",
-    techUsed: "React, TypeScript, Redux Toolkit, RESTful APIs, Material UI",
+    techUsed: [{tId:21,techName:"React"}, {tId:22,techName:"TypeScript"}, {tId:23,techName:"Redux Toolkit"}, {tId:24,techName:"RESTful APIs"}, {tId:25,techName:"Material UI"},],
     projectOverView:
-      "Printers, Switches, Pendrives, Cameras, Fingerprint Sensors, RAM & ROM Memories. managing Recording the inward and outward persons Data and locations of assets.",
+      "Manages organizational assets such as printers, switches, cameras, fingerprint devices, and storage components. Tracks asset allocatoin, movement, user assignments, and location details accross departments.",
     whatIbuilt: [
       {
         wId: 41,
