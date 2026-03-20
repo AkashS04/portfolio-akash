@@ -17,8 +17,8 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
           width: "100%",
           pt: { lg: 8, md: 6, sm: 4, xs: 3 },
           // pb: { lg: 8, md: 6, sm: 4, xs: 3 },
-      background: "linear-gradient(81deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)",
-
+          background:
+            "linear-gradient(81deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)",
         }}
       >
         <Typography
@@ -48,7 +48,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             align="left"
             sx={{
               fontFamily: "Sora",
-              fontWeight:"400",
+              fontWeight: "400",
               color: "#ffffffb3",
               fontSize: {
                 lg: "2.5rem",
@@ -68,7 +68,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             align="left"
             sx={{
               fontFamily: "Inter",
-              fontWeight:"300",
+              fontWeight: "300",
               fontSize: {
                 lg: "1rem",
                 md: "0.8rem",
@@ -77,63 +77,44 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
               },
               color: "#ffffffa8",
               letterSpacing: "0.3pt",
-              wordSpacing:"6px",
+              wordSpacing: "6px",
               textAlign: "justify",
               lineHeight: "1.59",
             }}
             gutterBottom
           >
-            Frontend Engineer with 2+ years of experience building fast,
+            React Frontend Developer with 2+ years of experience building fast,
             scalable, and maintainable web applications.
             <br />
             Focused on scalable frontend architecture, clean component design,
-            and predictable UI systems. Strong hands-on experience with React,
-            TypeScript, Tailwind CSS, Redux Toolkit, and REST API integration.
+            and predictable UI systems, with strong hands-on experience with
+            React, TypeScript, Tailwind CSS, Redux Toolkit, and REST API
+            integration.
             <br />
             Started my career as an Angular Developer at Ieyal Solutions,
             contributing to e-commerce platforms and dynamic web applications.
-            Later transitioned to React.js at Satvat Infosol, where I worked on
-            component-driven interfaces, API integration, and performance
-            optimization, strengthening my foundation in modern frontend
-            engineering.
+            Later transitioned to React.js at Satvat Infosol, where I designed
+            and Implemented Feature-based modular Architecture, along with API
+            integration, and performance optimization, strengthening my
+            foundation in modern frontend engineering.
             <br />
-            Experience includes developing dashboards, workflow systems, and
-            responsive interfaces that balance performance with usability.
-            Strong understanding of state management, testing strategies (Jest,
-            React Testing Library, Playwright), CI/CD basics, SEO, and
-            cross-browser compatibility.
+            I have built dashboards and workflow-based applications with a
+            strong focus on performance and user experience. I work extensively
+            with state management, and testing tools such as Jest, React Testing
+            Library and Playwright, and have practical experience with CI/CD,
+            SEO, and cross-browser compatibility.
             <br />
             <br />
-            Technical Focus:
+            Technical Focus Includes:
             <ul>
-              <li>Scalable frontend architecture</li>
+              <li>Feature-based architecture</li>
               <li>Reusable component systems </li>
               <li>Predictable state management</li>
               <li>Performance optimization </li>
               <li>Maintainable and clean codebases </li>
             </ul>
-            <br />
-            Technologies:
-            <ul>
-              <li>React</li>
-              <li>TypeScript </li>
-              <li>Redux Toolkit</li>
-              <li>Tailwind CSS </li>
-              <li>REST APIs </li>
-              <li>Axios</li>
-              <li>Jest </li>
-              <li>React Testing Library</li>
-              <li>Playwright </li>
-              <li>CI/CD</li>
-              <li>SEO </li>
-              <li>Performance Optimization</li>
-            </ul>
-            Passionate about building intuitive user interfaces, improving user
-            experience, and creating maintainable frontend systems that scale
-            with real-world products.
-            <br />
             Currently seeking a React Frontend Developer role to contribute to
-            impactful and well-engineered web applications.
+            well-engineered and scalable web applications.
           </Typography>
         </Box>
         <Skills />

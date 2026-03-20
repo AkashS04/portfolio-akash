@@ -17,7 +17,7 @@ function ReactNavbar({}: any) {
     { navKey: 343, title: "About", ref: aboutRef },
     {
       navKey: 344,
-      title: "Why Choose Me",
+      title: "How I Work",
       ref: whyChooseMeRef,
     },
     {

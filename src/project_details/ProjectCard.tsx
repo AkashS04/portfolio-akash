@@ -20,11 +20,11 @@ function ProjectCard() {
           className="project-swiper"
           loop={true}
           cssMode={true}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
+          // autoplay={{
+          //   delay: 4000,
+          //   disableOnInteraction: false,
+          //   pauseOnMouseEnter: true,
+          // }}
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
           breakpoints={{
@@ -44,6 +44,12 @@ function ProjectCard() {
                   // width: { lg: "300px", md: "300px", sm: "300px", xs: "300px" },
                   backgroundColor: "#18181880",
                   position: "relative",
+                  height: {
+                    xl: "460px",
+                    lg: "405px",
+                    md: "375px",
+                    sm: "335px",
+                  },
                   overflow: "hidden",
                   padding: { lg: "1rem", md: "1rem", sm: ".5rem", xs: ".5rem" },
                   border: "1px solid #121212",
@@ -58,7 +64,7 @@ function ProjectCard() {
                   "::after": {
                     content: '""',
                     position: "absolute",
-                    height: "400px",
+                    height: "490px",
                     width: "100%",
                     top: "0px",
                     left: "0px",
@@ -76,7 +82,7 @@ function ProjectCard() {
                   variant="h5"
                   sx={{
                     fontFamily: "Sora",
-                fontWeight: "300",
+                    fontWeight: "300",
                     color: "#00d9ffd7",
                     fontSize: {
                       lg: "1.5rem",
@@ -93,8 +99,8 @@ function ProjectCard() {
                 <Typography
                   variant="body1"
                   sx={{
-                      fontFamily: "Inter",
-                fontWeight: "300",
+                    fontFamily: "Inter",
+                    fontWeight: "300",
                     color: "#e3e3e3",
                     fontSize: {
                       lg: "1.125rem",

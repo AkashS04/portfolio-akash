@@ -7,9 +7,9 @@ export interface whatILearned {
   wLId: number;
   data: string;
 }
-export interface techUsed{
-  tId:number;
-  techName:string
+export interface techUsed {
+  tId: number;
+  techName: string;
 }
 
 export interface projectExplaination {
@@ -26,74 +26,92 @@ export const projectDetails: projectExplaination[] = [
   {
     eId: 56,
     projectName: "Server Management System",
-    projectRole: "Front End Developer",
-    techUsed:[ {tId:26,techName:"React"}, {tId:27,techName:"TypeScript"}, {tId:28,techName:"Redux Toolkit"}, {tId:29,techName:"RESTful APIs"}, {tId:30,techName:"Tailwind CSS"},],
+    projectRole: "React Frontend Developer",
+    techUsed: [
+      { tId: 26, techName: "React" },
+      { tId: 27, techName: "TypeScript" },
+      { tId: 28, techName: "Redux Toolkit" },
+      { tId: 29, techName: "RESTful APIs" },
+      { tId: 30, techName: "Tailwind CSS" },
+    ],
     projectOverView:
-      "Handling the inward and outward flow of server assets, managing inventory, tracking server locations, and generating reports. The system streamlines server allocation, monitors maintenance schedules, and provides real-time updates on server status, enhancing operational efficiency and reducing downtime.",
+      "Built a system to manage server assets, track inventory, and monitor server status in real-time, improving operational efficiency and reducing downtime",
     whatIbuilt: [
       {
         wId: 61,
-        data: "Developed reusable and scalable components using React",
+        data: "Designed reusable and scalable component architecture using React",
       },
       {
         wId: 62,
-        data: "Implemented API integration with Axios",
+        data: "Structured state management using Redux Toolkit to handle complex data flows",
       },
       {
         wId: 63,
-        data: "Managed global state using Redux Toolkit",
+        data: "Integrated REST APIs and handled asynchronous data efficiently using Axios and Redux Thunk",
       },
       {
         wId: 64,
-        data: "Integrated with redux-thunk",
+        data: "Improved application performance using lazy loading and memoization to reduce unnecessary re-renders",
       },
       {
         wId: 65,
-        data: "Improved load time using lazy loading",
-      },
-      {
-        wId: 66,
-        data: "optimized performance using memoization",
+        data: "Built maintainable and modular UI system to support scalability",
       },
     ],
     whatILearned: [
-      { wLId: 71, data: "Clean architecture" },
-      { wLId: 72, data: "Handling async API flows" },
-      { wLId: 73, data: "Component composition patterns" },
+      { wLId: 71, data: "Designed scalable fronend architecture" },
+      { wLId: 72, data: "Handling complex asynchronous data flows" },
+      { wLId: 73, data: "Writing modular and maintainable component systems" },
     ],
   },
   {
     eId: 57,
     projectName: "Asset Management System",
-    projectRole: "Front End Developer",
-    techUsed: [{tId:21,techName:"React"}, {tId:22,techName:"TypeScript"}, {tId:23,techName:"Redux Toolkit"}, {tId:24,techName:"RESTful APIs"}, {tId:25,techName:"Material UI"},],
+    projectRole: "React Frontend Developer",
+    techUsed: [
+      { tId: 21, techName: "React" },
+      { tId: 22, techName: "TypeScript" },
+      { tId: 23, techName: "Redux Toolkit" },
+      { tId: 24, techName: "RESTful APIs" },
+      { tId: 25, techName: "Material UI" },
+    ],
     projectOverView:
-      "Manages organizational assets such as printers, switches, cameras, fingerprint devices, and storage components. Tracks asset allocatoin, movement, user assignments, and location details accross departments.",
+      "Built an asset management system to track and manage organizational resources such as printers, switches, cameras, and storage devices. The application handles asset allocation, movement, and user assignment across departments, improving visibility and operational efficiency ",
     whatIbuilt: [
       {
         wId: 41,
-        data: "Built responsive UI",
+        data: "Developed responsive and user-friendly interfaces with focus on usability",
       },
       {
         wId: 42,
-        data: "Implemented search, filters, sorting",
+        data: "Implemented advanced features such as search, filtering, sorting for better data handling",
       },
       {
         wId: 43,
-        data: "Used custom hooks for reusable logic",
+        data: "Created reusable logic using custom hooks to improve code maintainability",
       },
       {
         wId: 44,
-        data: "Managed global state using Redux Toolkit",
+        data: "Managed application state efffectively using Redux Toolkit",
       },
       {
         wId: 45,
-        data: "Added form validation using React Hook Form",
+        data: "Implemented form validation using React Hook Form to ensure data integrity",
       },
     ],
     whatILearned: [
-      { wLId: 31, data: "Managing component state and prop drilling" },
-      { wLId: 32, data: "Writing cleaner reusable code" },
+      {
+        wLId: 31,
+        data: "Managing component-level and global state efficiently",
+      },
+      {
+        wLId: 32,
+        data: "Reducing prop drilling using better state structuring",
+      },
+      {
+        wLId: 33,
+        data: "Writing cleaner and reusable code for scalable applications",
+      },
     ],
   },
 ];

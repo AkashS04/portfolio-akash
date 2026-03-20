@@ -47,7 +47,7 @@ const HTitles = () => {
           }}
           gutterBottom
         >
-          Front-End Developer (React + TypeScript)
+          React Frontend Developer (TypeScript)
         </Typography>
 
         <Typography
@@ -69,7 +69,7 @@ const HTitles = () => {
           }}
           gutterBottom
         >
-          Focused on scalable frontend architecture, clean component design, and performance optimization.
+          Building scalable fronend architecture, maintainable component systems and high-performance user interfaces
         </Typography>
       </Box>
     </>

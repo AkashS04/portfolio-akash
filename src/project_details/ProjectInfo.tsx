@@ -113,7 +113,7 @@ function ProjectInfo() {
             >
               Tech:
             </Typography>
-            <Box sx={{display:"flex", gap:"8px"}}>
+            <Box sx={{display:"flex", gap:"8px", flexWrap:"wrap"}}>
            
               {details.techUsed.map((data: techUsed) => (
                 <TechBatch key={data.tId} data={data.techName} />

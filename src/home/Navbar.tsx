@@ -28,7 +28,7 @@ function Navbar({}: any) {
 
   let navData: navItem[] = [
     { text: "About", ref: aboutRef },
-    { text: "Why Choose Me", ref: whyChooseMeRef },
+    { text: "How I Work", ref: whyChooseMeRef },
     { text: "Projects", ref: projectsRef },
     { text: "Contact", ref: contactRef },
   ];

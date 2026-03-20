@@ -31,7 +31,7 @@ const WhyChooseMe = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               }}
               gutterBottom
             >
-              WHY CHOOSE ME
+              HOW I WORK
             </Typography>
             <WCMCard />
           </Box>

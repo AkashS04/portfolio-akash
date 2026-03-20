@@ -25,7 +25,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
       } else if (value == 4) {
         window.open(
           "https://www.linkedin.com/in/akash-s-frontend-react10111212",
-          "_blank"
+          "_blank",
         );
       }
     };
@@ -48,7 +48,8 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
       <Box
         ref={contactRef}
         sx={{
-          background:" linear-gradient(128deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)",
+          background:
+            " linear-gradient(128deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)",
           padding: {
             lg: ".5rem 0rem 4rem 0rem",
             md: ".5rem 0rem 4rem 0rem",
@@ -60,7 +61,12 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
         <Box
           sx={{
             width: "auto",
-            padding: { lg: "0% 8% 0% 8%", md: "0% 6% 0% 6%", sm: "0% 3% 0% 3%", xs: "0% 3% 0% 3%" },
+            padding: {
+              lg: "0% 8% 0% 8%",
+              md: "0% 6% 0% 6%",
+              sm: "0% 3% 0% 3%",
+              xs: "0% 3% 0% 3%",
+            },
           }}
         >
           <Box>
@@ -90,8 +96,8 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             variant="body1"
             sx={{
               color: "#ffffffb3",
-               fontFamily: "Sora",
-                fontWeight: "300",
+              fontFamily: "Sora",
+              fontWeight: "300",
               fontSize: {
                 lg: "1.5rem",
                 md: "1.3rem",
@@ -103,14 +109,14 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               textAlign: "left",
             }}
           >
-            Let's Work Together!
+            Let's build something impactful together!
           </Typography>
           <Typography
             variant="body1"
             align="left"
             sx={{
-               fontFamily: "Inter",
-                fontWeight: "300",
+              fontFamily: "Inter",
+              fontWeight: "300",
               fontSize: {
                 lg: "1.174rem",
                 md: "1.1rem",
@@ -124,9 +130,8 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
               marginBottom: "2rem",
             }}
           >
-            I'm currently looking for a React Front-End Developer role If you
-            have an oppertunity or want to collaborate with, feel free to reach
-            out.
+            I'm currently seeking a React Frontend Developer role and open to
+            collaboration oppertunities. feel free to reach out.
           </Typography>
 
           <Box
@@ -154,6 +159,6 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
         </Box>
       </Box>
     );
-  }
+  },
 );
 export default Contact;
