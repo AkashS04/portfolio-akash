@@ -69,6 +69,10 @@ function Navbar({}: any) {
             transform: "scale(0.8)",
           },
           overflow: "hidden",
+          WebkitUserDrag:"none",
+          userSelect:"none",
+          WebkitTapHighlightColor:"transparent",
+          outline:"none"
         }}
       >
         <CloseIcon
