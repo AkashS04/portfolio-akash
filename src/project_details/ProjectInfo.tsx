@@ -26,6 +26,8 @@ function ProjectInfo() {
             padding: "4% 6%",
             marginBottom: "4%",
             borderRadius: "16px",
+            backdropFilter:"blur(8px)",
+            background:"rgba(255,255,255,0.08)",
             boxShadow: "rgb(0 0 0 / 24%) -2px 2px 12px -3px",
             WebkitBoxShadow: "rgb(0 0 0 / 24%) -2px 2px 12px -3px",
             MozBoxShadow: "rgb(0 0 0 / 24%) -2px 2px 12px -3px",

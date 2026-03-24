@@ -69,15 +69,13 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             sx={{
               fontFamily: "Inter",
               fontWeight: "300",
-              fontSize: {
-                lg: "1rem",
-                md: "0.8rem",
-                sm: "1rem",
-                xs: "0.9rem",
-              },
+               fontSize: {
+                      lg: "1.125rem",
+                      md: "1.125rem",
+                      sm: "1rem",
+                      xs: "1rem",
+                    },
               color: "#ffffffa8",
-              letterSpacing: "0.3pt",
-              wordSpacing: "6px",
               textAlign: "justify",
               lineHeight: "1.59",
             }}

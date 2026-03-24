@@ -7,12 +7,19 @@ const ContactIcon = ({ imgSrc, clickValue, clickCall, alt }: any) => {
     width: "auto",
     filter:
       "invert(85%) sepia(7%) saturate(26%) hue-rotate(319deg) brightness(101%) contrast(104%)",
-    transition: "transform 150ms ease-out",
-    opacity:"0.7",
+    transition: "transform 140ms ease-out",
+    opacity: "0.7",
     "&:hover": {
       transform: "scale(1.060)",
-      opacity:"0.9"
+      opacity: "0.9",
     },
+    "&:active": {
+      transform: "scale(0.8)",
+    },
+    userSelect: "none",
+    webKitUserDrag: "none",
+    pointerEvent: "none",
+    outLine:"none"
   };
   return (
     <Box

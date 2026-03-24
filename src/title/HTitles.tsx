@@ -4,33 +4,40 @@ import Typography from "@mui/material/Typography";
 const HTitles = () => {
   return (
     <>
-      <Box sx={{padding:"1% 4%"}}>
+      <Box sx={{textAlign:"left"}}>
         <Typography
           variant="h1"
           sx={{
-            color: "#e3e3e3f2",
+            color: "#d9d9d9f2",
             fontSize: {
               xl: "6rem",
               lg: "6rem",
               md: "5rem",
               sm: "4rem",
-              xs: "2.5rem",
+              xs: "5.25rem",
             },
             marginBottom: "1rem",
             fontFamily: "Space Grotesk",
             fontWeight: "400",
-            letterSpacing: "1pt",
+            letterSpacing: {
+              lg:"1pt",
+              xs:"0pt"
+            },
+            lineHeight:{
+              lg:"1.1",
+              xs:"1"
+            },
             textShadow:
               "3px 2px 8px rgba(32,14,9,0.7)"
           }}
         >
-         Hi, I'm Akash
+         HI, I'M AKASH
         </Typography>
 
         <Typography
           variant="h2"
           sx={{
-            color: "#ffffffb3",
+            color: "#e4e3e3b3",
             fontSize: {
               lg: "2.7rem",
               md: "2rem",
@@ -47,13 +54,13 @@ const HTitles = () => {
           }}
           gutterBottom
         >
-          React Frontend Developer (TypeScript)
+          REACT FRONTEND DEVELOPER (TYPESCRIPT)
         </Typography>
 
         <Typography
           variant="body1"
           sx={{
-            color: "#ffffffa8",
+            color: "#b4b4b4a8",
             fontSize: {
               lg: "1.174rem",
               md: "1.1rem",

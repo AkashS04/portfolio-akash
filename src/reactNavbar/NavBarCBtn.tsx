@@ -6,15 +6,15 @@ import { useContext } from "react";
 import { HomeCtx } from "../contexts/HomeCtx";
 import { navData } from "./ReactNavbar";
 
-interface navDataProps{
-  navItems:navData[]
+interface navDataProps {
+  navItems: navData[];
 }
 
 const Navtexttheme = createTheme({
   typography: {
     body1: {
       fontFamily: "Inter",
-      fontWeight:"300",
+      fontWeight: "300",
       color: "#c9c9c9c4",
       transition: "0.2s",
       "&:hover": {
@@ -35,26 +35,34 @@ const Navtexttheme = createTheme({
           padding: "8px",
           cursor: "pointer",
           width: "154px",
-          transition:
-            "background-color 150ms ease-out , transform 150ms ease-out",
+          transition: "all 150ms ease-out",
           "&:hover": {
             backgroundColor: "rgb(48 48 48)",
             transform: "scale(1.025)",
+          },
+          "&:active": {
+            backgroundColor: "rgb(36 36 36)",
+            transform: "scale(0.85)",
           },
         },
       },
     },
   },
 });
-const NavBarCBtn = ({navItems}: navDataProps) => {
+const NavBarCBtn = ({ navItems }: navDataProps) => {
   const homeCtx = useContext(HomeCtx);
   const { scrollToSection } = homeCtx;
+  const handleClick = (nav: any) => {
+    setTimeout(() => {
+      scrollToSection(nav);
+    }, 300);
+  };
   return (
     <>
       <ThemeProvider theme={Navtexttheme}>
         {navItems.map((nav: navData) => (
           <Box sx={{ height: "40px", width: "155px" }}>
-            <Box key={nav.navKey} onClick={() => scrollToSection(nav.ref)}>
+            <Box key={nav.navKey} onClick={() => handleClick(nav.ref)}>
               <Paper>
                 <Typography variant="body1" sx={{ letterSpacing: "0.15pt" }}>
                   {nav.title}

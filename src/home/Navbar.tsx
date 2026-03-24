@@ -23,7 +23,9 @@ function Navbar({}: any) {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
-    setOpen(newOpen);
+    setTimeout(() => {
+      setOpen(newOpen);
+    }, 150);
   };
 
   let navData: navItem[] = [
@@ -34,7 +36,9 @@ function Navbar({}: any) {
   ];
 
   const handleItemClick = (funcRef: React.RefObject<HTMLElement>) => {
-    scrollToSection(funcRef);
+    setTimeout(() => {
+      scrollToSection(funcRef);
+    }, 450);
     setOpen(false);
   };
 
@@ -48,7 +52,6 @@ function Navbar({}: any) {
         boxShadow: "#00d8ff 0px 0px 50px 50px",
       }}
       role="presentation"
-      onClick={toggleDrawer(false)}
     >
       <IconButton
         onClick={toggleDrawer(false)}
@@ -58,6 +61,14 @@ function Navbar({}: any) {
           right: "10px",
           color: "#00d8ff",
           zIndex: "999",
+          transition: "all 220ms ease-out",
+          "&:hover": {
+            transform: "scale(1)",
+          },
+          "&:active": {
+            transform: "scale(0.8)",
+          },
+          overflow: "hidden",
         }}
       >
         <CloseIcon
@@ -65,9 +76,9 @@ function Navbar({}: any) {
             fontSize: "28px",
             textShadow:
               "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-            transition: "transform 150ms ease-out",
+            transition: "transform 300ms ease-out",
             "&:hover": {
-              transform: "scale(1.060)",
+              transform: "scale(2)",
             },
           }}
         />
@@ -77,7 +88,16 @@ function Navbar({}: any) {
           <ListItem key={data.text} disablePadding>
             <ListItemButton
               onClick={() => handleItemClick(data.ref)}
-              sx={{ padding: "4% 10%" }}
+              sx={{
+                padding: "4% 10%",
+                transition: "all 220ms ease-out",
+                "&:hover": {
+                  transform: "scale(1)",
+                },
+                "&:active": {
+                  transform: "scale(0.8)",
+                },
+              }}
             >
               <ListItemText
                 sx={{
@@ -104,10 +124,14 @@ function Navbar({}: any) {
             fontSize: "40px",
             textShadow:
               "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-            transition: "transform 150ms ease-out",
+            transition: "transform 220ms ease-out",
             "&:hover": {
-              transform: "scale(1.060)",
+              transform: "scale(1)",
             },
+            "&:active": {
+              transform: "scale(0.8)",
+            },
+            overflow: "hidden",
           }}
         />
       </Button>
