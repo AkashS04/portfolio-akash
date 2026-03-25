@@ -14,17 +14,20 @@ function ProjectCard() {
       <Box
         sx={{
           padding: { lg: "8% 8%", md: "8% 6%", sm: "8% 3%", xs: "8% 3%" },
+          WebkitBackdropFilter: " blur(8px)",
+          backdropFilter: "blur(8px)",
+          background: "rgb(4 0 255 / 8%)",
         }}
       >
         <Swiper
           className="project-swiper"
           loop={true}
           cssMode={true}
-          // autoplay={{
-          //   delay: 4000,
-          //   disableOnInteraction: false,
-          //   pauseOnMouseEnter: true,
-          // }}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
           breakpoints={{
@@ -34,7 +37,7 @@ function ProjectCard() {
             1600: { slidesPerView: 4 },
           }}
           spaceBetween={10}
-          speed={6000}
+          speed={300}
         >
           {projectData.map((data: projectDataType) => (
             <SwiperSlide key={data.id}>
@@ -60,6 +63,11 @@ function ProjectCard() {
                     sm: "0rem 0rem 2rem 0rem",
                     xs: "0rem 1rem 2rem 1rem",
                   },
+                  transition: "all 250ms ease-in",
+                  "&:hover": {
+                    transform: "scale(0.98)",
+                    overflow: "hidden",
+                  },
                   cursor: "default",
                   "::after": {
                     content: '""',
@@ -70,7 +78,7 @@ function ProjectCard() {
                     left: "0px",
                     borderRadius: "8px",
                     backgroundColor: "rgb(0 0 0 / 18%)",
-                    transition: "transform 400ms ease-in-out",
+                    transition: "transform 300ms ease-in-out",
                   },
                   "&:hover::after": {
                     transform: "translate(370px, 500px) rotate(-135deg)",

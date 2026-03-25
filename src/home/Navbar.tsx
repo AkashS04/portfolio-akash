@@ -25,7 +25,7 @@ function Navbar({}: any) {
   const toggleDrawer = (newOpen: boolean) => () => {
     setTimeout(() => {
       setOpen(newOpen);
-    }, 150);
+    }, 260);
   };
 
   let navData: navItem[] = [
@@ -55,24 +55,38 @@ function Navbar({}: any) {
     >
       <IconButton
         onClick={toggleDrawer(false)}
+        disableRipple
+        disableFocusRipple
         sx={{
           position: "absolute",
           top: "10px",
           right: "10px",
           color: "#00d8ff",
           zIndex: "999",
-          transition: "all 220ms ease-out",
+          background: "transparent",
+          transition: "all 250ms ease-out",
           "&:hover": {
-            transform: "scale(1)",
+            transform: "scale(1.1)",
+            background: "transparent",
           },
           "&:active": {
             transform: "scale(0.8)",
           },
+          "&:focus": {
+            outline: "none",
+            boxShadow: "none",
+          },
+
+          "&:focus-visible": {
+            outline: "none",
+            boxShadow: "none",
+          },
+
           overflow: "hidden",
-          WebkitUserDrag:"none",
-          userSelect:"none",
-          WebkitTapHighlightColor:"transparent",
-          outline:"none"
+          WebkitUserDrag: "none",
+          userSelect: "none",
+          WebkitTapHighlightColor: "transparent",
+          outline: "none",
         }}
       >
         <CloseIcon
@@ -80,10 +94,7 @@ function Navbar({}: any) {
             fontSize: "28px",
             textShadow:
               "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-            transition: "transform 300ms ease-out",
-            "&:hover": {
-              transform: "scale(2)",
-            },
+            display: "block",
           }}
         />
       </IconButton>
@@ -120,22 +131,52 @@ function Navbar({}: any) {
 
   return (
     <div className="sidenav-mobile">
-      <Button onClick={toggleDrawer(true)}>
-        {" "}
+      <Button
+        onClick={toggleDrawer(true)}
+        disableRipple
+        disableFocusRipple
+        disableElevation
+        sx={{
+          border: "none",
+          cursor: "pointer",
+          background: "transparent",
+          overflow: "hidden",
+          transition: "transform 250ms ease-out",
+
+          "&:hover": {
+            transform: "scale(1.1)",
+            background: "transparent",
+          },
+
+          "&:active": {
+            transform: "scale(0.8)",
+          },
+
+          "&:focus": {
+            outline: "none",
+            boxShadow: "none",
+          },
+
+          "&:focus-visible": {
+            outline: "none",
+            boxShadow: "none",
+          },
+
+          WebkitTapHighlightColor: "transparent",
+
+          "& svg": {
+            userSelect: "none",
+            pointerEvents: "none",
+          },
+        }}
+      >
         <MenuIcon
           sx={{
             color: "#e3e3e3",
             fontSize: "40px",
+            display: "block",
             textShadow:
               "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-            transition: "transform 220ms ease-out",
-            "&:hover": {
-              transform: "scale(1)",
-            },
-            "&:active": {
-              transform: "scale(0.8)",
-            },
-            overflow: "hidden",
           }}
         />
       </Button>
