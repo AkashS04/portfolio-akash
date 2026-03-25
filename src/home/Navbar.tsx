@@ -25,7 +25,7 @@ function Navbar({}: any) {
   const toggleDrawer = (newOpen: boolean) => () => {
     setTimeout(() => {
       setOpen(newOpen);
-    }, 260);
+    }, 250);
   };
 
   let navData: navItem[] = [
@@ -36,10 +36,10 @@ function Navbar({}: any) {
   ];
 
   const handleItemClick = (funcRef: React.RefObject<HTMLElement>) => {
+    setOpen(false);
     setTimeout(() => {
       scrollToSection(funcRef);
-    }, 450);
-    setOpen(false);
+    }, 250);
   };
 
   const DrawerList = (
@@ -50,6 +50,7 @@ function Navbar({}: any) {
         color: "#e3e3e3",
         height: "100%",
         boxShadow: "#00d8ff 0px 0px 50px 50px",
+        overflow:"hidden"
       }}
       role="presentation"
     >
@@ -68,9 +69,11 @@ function Navbar({}: any) {
           "&:hover": {
             transform: "scale(1.1)",
             background: "transparent",
+
           },
           "&:active": {
             transform: "scale(0.8)",
+
           },
           "&:focus": {
             outline: "none",
@@ -98,16 +101,17 @@ function Navbar({}: any) {
           }}
         />
       </IconButton>
-      <List sx={{ paddingTop: "25%" }}>
+      <List sx={{ paddingTop: "25%", 
+       }}>
         {navData.map((data: navItem) => (
           <ListItem key={data.text} disablePadding>
             <ListItemButton
               onClick={() => handleItemClick(data.ref)}
               sx={{
                 padding: "4% 10%",
-                transition: "all 220ms ease-out",
+                transition: "transform 250ms ease-out",
                 "&:hover": {
-                  transform: "scale(1)",
+                  transform: "scale(1.1)",
                 },
                 "&:active": {
                   transform: "scale(0.8)",
@@ -146,6 +150,7 @@ function Navbar({}: any) {
           "&:hover": {
             transform: "scale(1.1)",
             background: "transparent",
+            overflow:"hidden"
           },
 
           "&:active": {
