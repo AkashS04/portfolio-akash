@@ -61,12 +61,7 @@ const HTitles = () => {
           variant="body1"
           sx={{
             color: "#b4b4b4a8",
-            fontSize: {
-              lg: "1.174rem",
-              md: "1.1rem",
-              sm: "1rem",
-              xs: "0.9rem",
-            },
+            fontSize:"16px",
             marginBottom: "1rem",
             fontFamily: "Inter",
             fontWeight:"300",

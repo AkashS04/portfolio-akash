@@ -15,8 +15,8 @@ function ProjectInfo() {
         padding: {
           lg: "4% 8% 0 8%",
           md: "4% 6% 0 6%",
-          sm: "4% 3% 0 3%",
-          xs: "4% 3% 0 3%",
+          sm: "4% 4% 0 4%",
+          xs: "4% 4% 0 4%",
         },
       }}
     >
@@ -58,7 +58,7 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#ffffffb3",
+                color: "#e4e3e3b3",
                 fontFamily: "Sora",
                 fontWeight: "300",
                 fontSize: {
@@ -68,7 +68,7 @@ function ProjectInfo() {
                   xs: "1rem",
                 },
                 letterSpacing: "0.5pt",
-                mb: { lg: 2, md: 3, sm: 2, xs: 2 },
+                 mb: "16px",
               }}
               align="left"
             >
@@ -80,13 +80,8 @@ function ProjectInfo() {
               sx={{
                 fontFamily: "Inter",
                 fontWeight: "300",
-                fontSize: {
-                  lg: "1.174rem",
-                  md: "1.1rem",
-                  sm: "1rem",
-                  xs: "0.9rem",
-                },
-                color: "#ffffffa8",
+                fontSize: "16px",
+                color: "#b4b4b4a8",
                 letterSpacing: "0pt",
                 textAlign: "justify",
                 lineHeight: "1.59",
@@ -99,7 +94,7 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#ffffffb3",
+                color: "#e4e3e3b3",
                 fontFamily: "Sora",
                 fontWeight: "300",
                 fontSize: {
@@ -109,7 +104,7 @@ function ProjectInfo() {
                   xs: "1rem",
                 },
                 letterSpacing: "0.5pt",
-                mb: { lg: 2, md: 3, sm: 2, xs: 2 },
+                mb: "16px",
               }}
               align="left"
             >
@@ -125,7 +120,7 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#ffffffb3",
+                color: "#e4e3e3b3",
                 fontFamily: "Sora",
                 fontWeight: "300",
                 fontSize: {
@@ -135,7 +130,7 @@ function ProjectInfo() {
                   xs: "1rem",
                 },
                 letterSpacing: "0.5pt",
-                mb: { lg: 2, md: 3, sm: 2, xs: 2 },
+                mb: "16px",
               }}
               align="left"
             >
@@ -147,13 +142,8 @@ function ProjectInfo() {
               sx={{
                 fontFamily: "Inter",
                 fontWeight: "300",
-                fontSize: {
-                  lg: "1.174rem",
-                  md: "1.1rem",
-                  sm: "1rem",
-                  xs: "0.9rem",
-                },
-                color: "#ffffffa8",
+                fontSize: "16px",
+                color: "#b4b4b4a8",
                 letterSpacing: "0pt",
                 textAlign: "justify",
                 lineHeight: "1.59",
@@ -165,7 +155,7 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#ffffffb3",
+                color: "#e4e3e3b3",
                 fontFamily: "Sora",
                 fontWeight: "300",
                 fontSize: {
@@ -175,7 +165,7 @@ function ProjectInfo() {
                   xs: "1rem",
                 },
                 letterSpacing: "0.5pt",
-                mb: { lg: 4, md: 3, sm: 2, xs: 2 },
+                mb: "16px",
               }}
               align="left"
             >
@@ -187,13 +177,8 @@ function ProjectInfo() {
               sx={{
                 fontFamily: "Inter",
                 fontWeight: "300",
-                fontSize: {
-                  lg: "1.174rem",
-                  md: "1.1rem",
-                  sm: "1rem",
-                  xs: "0.9rem",
-                },
-                color: "#ffffffa8",
+                fontSize: "16px",
+                color: "#b4b4b4a8",
                 letterSpacing: "0pt",
                 textAlign: "justify",
                 lineHeight: "1.59",
@@ -210,7 +195,7 @@ function ProjectInfo() {
             <Typography
               variant="body1"
               sx={{
-                color: "#ffffffb3",
+                color: "#e4e3e3b3",
                 fontFamily: "Sora",
                 fontWeight: "300",
                 fontSize: {
@@ -220,7 +205,7 @@ function ProjectInfo() {
                   xs: "1rem",
                 },
                 letterSpacing: "0.5pt",
-                mb: { lg: 4, md: 3, sm: 2, xs: 2 },
+                mb: "16px",
               }}
               align="left"
             >
@@ -232,13 +217,8 @@ function ProjectInfo() {
               sx={{
                 fontFamily: "Inter",
                 fontWeight: "300",
-                fontSize: {
-                  lg: "1.174rem",
-                  md: "1.1rem",
-                  sm: "1rem",
-                  xs: "0.9rem",
-                },
-                color: "#ffffffa8",
+                fontSize:"16px",
+                color: "#b4b4b4a8",
                 letterSpacing: "0pt",
                 textAlign: "justify",
                 lineHeight: "1.59",

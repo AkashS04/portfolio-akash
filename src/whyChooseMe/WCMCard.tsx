@@ -7,7 +7,7 @@ const WCMCard = () => {
     <>
       <Box
         sx={{
-          padding: { lg: "4% 8% 8% 8%", md: "4% 6% 8% 6%", sm: "4% 3% 8% 3%", xs: "4% 3% 8% 3%" },
+          padding: { lg: "4% 8% 8% 8%", md: "4% 6% 8% 6%", sm: "4% 4% 8% 4%", xs: "4% 4% 8% 4%" },
         }}
       >
         <Box
@@ -61,7 +61,7 @@ const WCMCard = () => {
                   sx={{
                    fontFamily: "Sora",
                 fontWeight: "300",
-                    color: "#ffffffb3",
+                    color: "#e4e3e3b3",
                     fontSize: {
                       xl: "2.25rem",
                       lg: "1.8rem",
@@ -81,13 +81,8 @@ const WCMCard = () => {
                   sx={{
                   fontFamily: "Inter",
                 fontWeight: "300",
-                    color: "#ffffffa8",
-                    fontSize: {
-                      lg: "1.125rem",
-                      md: "1.125rem",
-                      sm: "1rem",
-                      xs: "1rem",
-                    },
+                    color: "#b4b4b4a8",
+                    fontSize: "16px",
                     letterSpacing: "0pt",
                   }}
                 >

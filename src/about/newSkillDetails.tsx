@@ -14,7 +14,7 @@ const NewSkillDetails = () => {
               <Typography
                 variant="body1"
                 sx={{
-                  color: "#ffffffb3",
+                  color: "#e4e3e3a3",
                    fontFamily: "Sora",
                 fontWeight: "300",
                   fontSize: {

@@ -64,8 +64,8 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             padding: {
               lg: "0% 8% 0% 8%",
               md: "0% 6% 0% 6%",
-              sm: "0% 3% 0% 3%",
-              xs: "0% 3% 0% 3%",
+              sm: "0% 4% 0% 4%",
+              xs: "0% 4% 0% 4%",
             },
           }}
         >
@@ -95,7 +95,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
           <Typography
             variant="body1"
             sx={{
-              color: "#ffffffb3",
+              color: "#e4e3e3b3",
               fontFamily: "Sora",
               fontWeight: "300",
               fontSize: {
@@ -117,13 +117,8 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             sx={{
               fontFamily: "Inter",
               fontWeight: "300",
-              fontSize: {
-                lg: "1.174rem",
-                md: "1.1rem",
-                sm: "1rem",
-                xs: "0.9rem",
-              },
-              color: "#ffffffa8",
+              fontSize: "16px",
+              color: "#b4b4b4a8",
               letterSpacing: "0pt",
               textAlign: "justify",
               lineHeight: "1.59",

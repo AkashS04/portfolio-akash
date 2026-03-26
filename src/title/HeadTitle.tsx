@@ -11,7 +11,7 @@ const HeadTitle: React.FC = () => {
         sx={{
           width: "100%",
           height: "auto",
-           padding: { lg: "6% 8%", md: "6% 6%", sm: "6% 3%", xs: "6% 3%" },
+           padding: { lg: "6% 8%", md: "6% 6%", sm: "6% 4%", xs: "6% 4%" },
         }}
       >
         <HTitles />
@@ -20,5 +20,6 @@ const HeadTitle: React.FC = () => {
       </Box>
     </>
   );
+  
 };
 export default HeadTitle;

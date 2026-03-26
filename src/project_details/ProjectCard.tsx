@@ -44,7 +44,6 @@ function ProjectCard() {
               <Box
                 key={data.id}
                 sx={{
-                  // width: { lg: "300px", md: "300px", sm: "300px", xs: "300px" },
                   backgroundColor: "#18181880",
                   position: "relative",
                   height: {
@@ -109,13 +108,8 @@ function ProjectCard() {
                   sx={{
                     fontFamily: "Inter",
                     fontWeight: "300",
-                    color: "#e3e3e3",
-                    fontSize: {
-                      lg: "1.125rem",
-                      md: "1.125rem",
-                      sm: "1rem",
-                      xs: "1rem",
-                    },
+                    color: "#b4b4b4a8",
+                    fontSize:"16px",
                     letterSpacing: "0pt",
                     padding: "0px 8px 0px 8px",
                   }}

@@ -40,7 +40,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
         </Typography>
         <Box
           sx={{
-            padding: { lg: "6% 8%", md: "6% 6%", sm: "6% 3%", xs: "6% 3%" },
+            padding: { lg: "6% 8%", md: "6% 6%", sm: "6% 4%", xs: "6% 4%" },
           }}
         >
           <Typography
@@ -49,7 +49,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             sx={{
               fontFamily: "Sora",
               fontWeight: "400",
-              color: "#ffffffb3",
+              color: "#e4e3e3b3",
               fontSize: {
                 lg: "2.5rem",
                 md: "2rem",
@@ -69,15 +69,10 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             sx={{
               fontFamily: "Inter",
               fontWeight: "300",
-               fontSize: {
-                      lg: "1.125rem",
-                      md: "1.125rem",
-                      sm: "1rem",
-                      xs: "1rem",
-                    },
-              color: "#ffffffa8",
+               fontSize: "16px",
+              color: "#b4b4b4a8",
               textAlign: "justify",
-              lineHeight: "1.59",
+              lineHeight: "1.5",
             }}
             gutterBottom
           >
