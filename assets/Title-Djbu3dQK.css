@@ -1,0 +1,1 @@
+@keyframes slideLeft{0%{opacity:0;transform:translate(-60px)}to{opacity:1;transform:translate(0)}}.slide-left{opacity:0;animation:slideLeft .4s ease-out forwards}.delay-0{animation-delay:0ms}.delay-1{animation-delay:.1s}.delay-2{animation-delay:.2s}.delay-3{animation-delay:.3s}
