@@ -18,7 +18,7 @@ function LoadingThreeDotsJumping() {
   };
 
   return (
-    <Box sx={{ height: "100vh", margin: 0, background:"linear-gradient(29deg, #000000, #5a205aeb, #00000082)" }}>
+    <Box sx={{ height: "100vh", margin: 0, background:"linear-gradient(135deg, #000000 0%, #2e003e 50%, #0000ff 100%)" }}>
       <Box>
         <Box
           sx={{

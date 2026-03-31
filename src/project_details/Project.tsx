@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import { HomeCtx } from "../contexts/HomeCtx";
 import ProjectInfo from "./ProjectInfo";
 import ProjectCard from "./ProjectCard";
+import Framer from "../framer/Framer";
 
 const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
   (__) => {
@@ -14,11 +15,12 @@ const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
     return (
       <>
         <div ref={projectsRef} >
-          <Box sx={{ background:" linear-gradient(82deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)"}}>
+          <Box className="projects-linear">
+            <Framer>
             <Typography
               variant="h3"
               sx={{
-                color: "#d9d7da",
+                color: "#ffffff",
                 fontFamily: "Oswald-Bold",
                 fontSize: {
                   lg: "3rem",
@@ -34,6 +36,7 @@ const Project = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             >
               PROJECTS
             </Typography>
+            </Framer>
             <ProjectInfo />
             <ProjectCard />
           </Box>

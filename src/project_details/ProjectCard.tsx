@@ -7,10 +7,12 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { projectData, projectDataType } from "./projectData.ts";
 import ProjectImage from "./ProjectImage";
+import Framer from "../framer/Framer.tsx";
 
 function ProjectCard() {
   return (
     <>
+    <Framer>
       <Box
         sx={{
           padding: { lg: "8% 8%", md: "8% 6%", sm: "8% 3%", xs: "8% 3%" },
@@ -108,7 +110,7 @@ function ProjectCard() {
                   sx={{
                     fontFamily: "Inter",
                     fontWeight: "300",
-                    color: "#b4b4b4a8",
+                    color: " #c7c7c7",
                     fontSize:"16px",
                     letterSpacing: "0pt",
                     padding: "0px 8px 0px 8px",
@@ -122,6 +124,7 @@ function ProjectCard() {
           ))}
         </Swiper>
       </Box>
+      </Framer>
     </>
   );
 }

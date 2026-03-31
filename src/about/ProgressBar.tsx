@@ -9,7 +9,7 @@ const ProgressBar = ({ title, value, percentage }: any) => {
         <Typography
           variant="body1"
           sx={{
-            color: "#b4b4b4a8",
+            color: " #c7c7c7",
            fontFamily: "Inter",
                 fontWeight: "300",
             letterSpacing:"0pt"
@@ -21,7 +21,7 @@ const ProgressBar = ({ title, value, percentage }: any) => {
       </Box>
       <Box sx={{ display: "flex", alignItems: "center", justifyItems: "center" }}>
         <LinearProgress
-          sx={{ backgroundColor: "#b4b4b4a8", width:"100%" }}
+          sx={{ backgroundColor: " #c7c7c7", width:"100%" }}
           variant="determinate"
           value={value}
         />
@@ -29,7 +29,7 @@ const ProgressBar = ({ title, value, percentage }: any) => {
         <Typography
           variant="body2"
           sx={{
-            color: "#b4b4b4a8",
+            color: " #c7c7c7",
             fontFamily: "Poppins-Semibold",
             ml: 1
           }}

@@ -33,7 +33,7 @@ function ReactNavbar({}: any) {
   ];
 
   return (
-    <div className="reactNavbar-main">
+    <div className="reactNavbar-main slide-left delay-3">
       <Box
         sx={{
           width: "auto",

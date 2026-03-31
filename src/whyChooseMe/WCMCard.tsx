@@ -61,7 +61,7 @@ const WCMCard = () => {
                   sx={{
                    fontFamily: "Sora",
                 fontWeight: "300",
-                    color: "#e4e3e3b3",
+                    color: "#e8e8e8 ",
                     fontSize: {
                       xl: "2.25rem",
                       lg: "1.8rem",
@@ -81,7 +81,7 @@ const WCMCard = () => {
                   sx={{
                   fontFamily: "Inter",
                 fontWeight: "300",
-                    color: "#b4b4b4a8",
+                    color: " #c7c7c7",
                     fontSize: "16px",
                     letterSpacing: "0pt",
                   }}

@@ -7,6 +7,7 @@ import whatsApp from "../assets/icons/whatsapp.png";
 import linkedIN from "../assets/icons/linkedin.png";
 import ContactIcon from "./ContactIcon";
 import { HomeCtx } from "../contexts/HomeCtx";
+import Framer from "../framer/Framer";
 
 const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
   (__) => {
@@ -49,7 +50,7 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
         ref={contactRef}
         sx={{
           background:
-            " linear-gradient(128deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)",
+            "linear-gradient(150deg, #000000 0%, #2e003e 50%, #0000ff 100%)",
           padding: {
             lg: ".5rem 0rem 4rem 0rem",
             md: ".5rem 0rem 4rem 0rem",
@@ -69,88 +70,92 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
             },
           }}
         >
-          <Box>
+          <Framer>
+            <Box>
+              <Typography
+                variant="h4"
+                align="left"
+                sx={{
+                  color: "#ffffff",
+                  fontFamily: "Oswald-Bold",
+                  mt: { lg: 8, md: 6, sm: 4, xs: 3 },
+                  mb: { lg: 8, md: 6, sm: 4, xs: 4 },
+                  fontSize: {
+                    lg: "3rem",
+                    md: "2.6rem",
+                    sm: "2.5rem",
+                    xs: "2.25rem",
+                  },
+                  letterSpacing: "1pt",
+                }}
+                gutterBottom
+              >
+                CONTACT
+              </Typography>
+            </Box>
+          </Framer>
+          <Framer>
             <Typography
-              variant="h4"
+              variant="body1"
+              sx={{
+                color: "#e8e8e8 ",
+                fontFamily: "Sora",
+                fontWeight: "300",
+                fontSize: {
+                  lg: "1.5rem",
+                  md: "1.3rem",
+                  sm: "1.2rem",
+                  xs: "1.1rem",
+                },
+                letterSpacing: "0.5pt",
+                mb: 2,
+                textAlign: "left",
+              }}
+            >
+              Let's build something impactful together!
+            </Typography>
+            <Typography
+              variant="body1"
               align="left"
               sx={{
-                color: "#d9d7da",
-                fontFamily: "Oswald-Bold",
-                mt: { lg: 8, md: 6, sm: 4, xs: 3 },
-                mb: { lg: 8, md: 6, sm: 4, xs: 4 },
-                fontSize: {
-                  lg: "3rem",
-                  md: "2.6rem",
-                  sm: "2.5rem",
-                  xs: "2.25rem",
-                },
-                letterSpacing: "1pt",
+                fontFamily: "Inter",
+                fontWeight: "300",
+                fontSize: "16px",
+                color: " #c7c7c7",
+                letterSpacing: "0pt",
+                textAlign: "justify",
+                lineHeight: "1.59",
+                marginBottom: "2rem",
               }}
-              gutterBottom
             >
-              CONTACT
+              I'm currently seeking a React Frontend Developer role and open to
+              collaboration oppertunities. feel free to reach out.
             </Typography>
-          </Box>
-
-          <Typography
-            variant="body1"
-            sx={{
-              color: "#e4e3e3b3",
-              fontFamily: "Sora",
-              fontWeight: "300",
-              fontSize: {
-                lg: "1.5rem",
-                md: "1.3rem",
-                sm: "1.2rem",
-                xs: "1.1rem",
-              },
-              letterSpacing: "0.5pt",
-              mb: 2,
-              textAlign: "left",
-            }}
-          >
-            Let's build something impactful together!
-          </Typography>
-          <Typography
-            variant="body1"
-            align="left"
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "300",
-              fontSize: "16px",
-              color: "#b4b4b4a8",
-              letterSpacing: "0pt",
-              textAlign: "justify",
-              lineHeight: "1.59",
-              marginBottom: "2rem",
-            }}
-          >
-            I'm currently seeking a React Frontend Developer role and open to
-            collaboration oppertunities. feel free to reach out.
-          </Typography>
-
-          <Box
-            sx={{
-              display: "flex",
-              flexWrap: "wrap",
-              width: "100%",
-              justifyContent: "space-around",
-              padding: "2rem 0rem",
-              border: "0.25px solid #707070",
-              boxShadow: "#00d8ff61 0px 0px 8px 0px",
-              borderRadius: "8px",
-            }}
-          >
-            {contactDetails.map((contact: contactDetails) => (
-              <ContactIcon
-                key={contact.iId}
-                imgSrc={contact.imgsrc}
-                clickValue={contact.clickValue}
-                clickCall={clickCall}
-                alt={contact.alt}
-              />
-            ))}
-          </Box>
+          </Framer>
+          <Framer>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                width: "100%",
+                justifyContent: "space-around",
+                padding: "2rem 0rem",
+                border: "0.25px solid #707070",
+                boxShadow: "#00d8ff61 0px 0px 8px 0px",
+                borderRadius: "8px",
+              }}
+            >
+              {contactDetails.map((contact: contactDetails) => (
+                <ContactIcon
+                  key={contact.iId}
+                  imgSrc={contact.imgsrc}
+                  clickValue={contact.clickValue}
+                  clickCall={clickCall}
+                  alt={contact.alt}
+                />
+              ))}
+            </Box>
+          </Framer>
         </Box>
       </Box>
     );

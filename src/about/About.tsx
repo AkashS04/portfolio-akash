@@ -1,10 +1,11 @@
-import React, { forwardRef, useContext } from "react";
+import React, { forwardRef, memo, useContext } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { HomeCtx } from "../contexts/HomeCtx";
 import Skills from "./Skills";
+import Framer from "../framer/Framer";
 
-const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
+const About = memo( forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
   console.log("<about >component");
   const homeCtx = useContext(HomeCtx);
   const { aboutRef } = homeCtx;
@@ -16,15 +17,15 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
         sx={{
           width: "100%",
           pt: { lg: 8, md: 6, sm: 4, xs: 3 },
-          // pb: { lg: 8, md: 6, sm: 4, xs: 3 },
-          background:
-            "linear-gradient(81deg, #000000 0%, #2e003e 35%, #4b0082 60%, #0000ff 85%)",
         }}
+        className="about-linear"
+        
       >
+        <Framer>
         <Typography
           variant="h2"
           sx={{
-            color: "#d9d7da",
+            color: "#ffffff",
             fontFamily: "Oswald-Bold",
             fontSize: {
               lg: "3rem",
@@ -38,6 +39,9 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
         >
           ABOUT
         </Typography>
+        </Framer>
+        <Framer>
+
         <Box
           sx={{
             padding: { lg: "6% 8%", md: "6% 6%", sm: "6% 4%", xs: "6% 4%" },
@@ -49,7 +53,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             sx={{
               fontFamily: "Sora",
               fontWeight: "400",
-              color: "#e4e3e3b3",
+              color: "#e8e8e8 ",
               fontSize: {
                 lg: "2.5rem",
                 md: "2rem",
@@ -69,8 +73,8 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             sx={{
               fontFamily: "Inter",
               fontWeight: "300",
-               fontSize: "16px",
-              color: "#b4b4b4a8",
+              fontSize: "16px",
+              color: " #c7c7c7",
               textAlign: "justify",
               lineHeight: "1.5",
             }}
@@ -110,9 +114,13 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((__) => {
             well-engineered and scalable web applications.
           </Typography>
         </Box>
+        </Framer>
+        <Framer>
         <Skills />
+        </Framer>
       </Box>
     </>
   );
-});
+})
+)
 export default About;

@@ -1,4 +1,4 @@
-import React, { createContext, useRef } from "react";
+import React, { createContext, useCallback, useRef } from "react";
 
 export const HomeCtx = createContext<any | null>(null);
 
@@ -10,24 +10,21 @@ export const HomeProvider: React.FC<{ children: React.ReactNode }> = ({
   const projectsRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
 
-  const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
-    console.log(ref.current);
-    if (ref.current) {
-      ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-    } else {
-      console.log("ref is null");
-    }
-  };
+  const scrollToSection = useCallback((ref: React.RefObject<HTMLElement>) => {
+    ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
+
+    const value = React.useMemo(() => ({
+    aboutRef,
+    whyChooseMeRef,
+    projectsRef,
+    contactRef,
+    scrollToSection,
+  }), [])
 
   return (
     <HomeCtx.Provider
-      value={{
-        aboutRef,
-        whyChooseMeRef,
-        projectsRef,
-        contactRef,
-        scrollToSection,
-      }}
+      value={value}
     >
       {children}
     </HomeCtx.Provider>

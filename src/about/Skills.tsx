@@ -27,7 +27,7 @@ const Skills = () => {
         <Typography
           variant="h4"
           sx={{
-            color: "#d9d9d9b8",
+            color: "#e8e8e8",
             paddingLeft: "2rem",
             fontFamily: "Sora",
             fontWeight: "400",

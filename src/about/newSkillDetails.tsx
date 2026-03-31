@@ -10,11 +10,12 @@ const NewSkillDetails = () => {
            sx={{width:"100%"}}
             key={skillLevels.typeID}
           >
+            
             <Box>
               <Typography
                 variant="body1"
                 sx={{
-                  color: "#e4e3e3a3",
+                  color: "#d4d4d4",
                    fontFamily: "Sora",
                 fontWeight: "300",
                   fontSize: {

@@ -30,7 +30,7 @@ export default function TechBatch({
           fontFamily: "Inter",
           fontWeight: "300",
           fontSize: "16px",
-          color: "#b4b4b4",
+          color: "#c7c7c7",
           letterSpacing: "0pt",
           textAlign: "justify",
           lineHeight: "1.59",

@@ -1,18 +1,15 @@
-import React, { Suspense } from "react";
+import React, { Suspense, memo } from "react";
 import ShimmerLayout from "../ShimmerLayout/ShimmerLayout";
 import HomeSplit from "./HomeSplit";
 
 const TitleLazy = React.lazy(() => import("../title/Title"));
 const NavbarLazy = React.lazy(() => import("./Navbar"));
 
-const Home: React.FC = (): any => {
-  console.log("<home >component");
+const Home = memo(() => {
 
   return (
     <>
-      <Suspense
-        fallback={<ShimmerLayout contentText={"Loading Introduction ... "} />}
-      >
+      <Suspense fallback={<ShimmerLayout contentText="Loading Introduction..." />}>
         <div className="titleDiv">
           <TitleLazy />
         </div>
@@ -21,5 +18,6 @@ const Home: React.FC = (): any => {
       <HomeSplit />
     </>
   );
-};
+});
+
 export default Home;

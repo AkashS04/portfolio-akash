@@ -46,7 +46,7 @@ function Navbar({}: any) {
     <Box
       sx={{
         width: 250,
-        backgroundColor: "#4B0082",
+        background: "linear-gradient(180deg, #000000 0%, #2e003e 50%, #0000ff 100%)",
         color: "#e3e3e3",
         height: "100%",
         boxShadow: "#00d8ff 0px 0px 50px 50px",
