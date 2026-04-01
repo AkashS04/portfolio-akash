@@ -98,7 +98,7 @@ const About = memo(
                   textAlign: "justify",
                   lineHeight: "1.5",
                   borderLeft: {lg:"4px solid #ff0000" ,sm:"none"},
-                  paddingLeft:"12px"
+                  paddingLeft:{md:"12px", sm:"0px"}
                 }}
                 gutterBottom
               >

@@ -171,6 +171,9 @@ body {
   font-family: Inter;
   color: #c7c7c7;
 }
+
+
+
 @media (min-width: 1025px) and (max-width: 1440px) {
   /* .home-title-box {
     top: 24% !important;
