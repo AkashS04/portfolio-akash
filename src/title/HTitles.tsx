@@ -1,17 +1,27 @@
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { memo } from "react";
-import "./HTitle.css"
+import "./HTitle.css";
+import TechPill from "../TechPill";
 
 const HTitles = memo(() => {
   return (
-    <Box sx={{ textAlign: "left" }}>
+    <Box sx={{ textAlign: "left", width: { lg:"50%", md:"80%", sm:"100%", xs:"100%" } }}>
+      <div className="" style={{ marginBottom: "16px" }}>
+        <TechPill label="React . TypeScript" />
+      </div>
       <Typography
         variant="h1"
         className="slide-left delay-0"
         sx={{
           color: "#ffffff",
-          fontSize: { xl: "6rem", lg: "6rem", md: "5rem", sm: "4rem", xs: "5.25rem" },
+          fontSize: {
+            xl: "6rem",
+            lg: "6rem",
+            md: "5rem",
+            sm: "4rem",
+            xs: "5.25rem",
+          },
           marginBottom: "1rem",
           fontFamily: "Space Grotesk",
           fontWeight: "400",
@@ -21,24 +31,6 @@ const HTitles = memo(() => {
         }}
       >
         HI, I'M AKASH
-      </Typography>
-
-      <Typography
-        variant="h2"
-        className="slide-left delay-1"
-        sx={{
-          color: "#e8e8e8 ",
-          fontSize: { lg: "2.7rem", md: "2rem", sm: "2.25rem", xs: "1.5rem" },
-          marginBottom: "1rem",
-          fontFamily: "Sora",
-          fontWeight: "300",
-          letterSpacing: "0.5pt",
-          lineHeight: "1.5",
-          textShadow: "3px 2px 8px rgba(32,14,9,0.7)",
-        }}
-        gutterBottom
-      >
-        REACT FRONTEND DEVELOPER (TYPESCRIPT)
       </Typography>
 
       <Typography

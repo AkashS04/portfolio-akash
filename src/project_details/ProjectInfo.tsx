@@ -57,87 +57,7 @@ function ProjectInfo() {
               >
                 {details.projectName}
               </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#e8e8e8 ",
-                  fontFamily: "Sora",
-                  fontWeight: "300",
-                  fontSize: {
-                    lg: "1.5rem",
-                    md: "1.4rem",
-                    sm: "1.3rem",
-                    xs: "1rem",
-                  },
-                  letterSpacing: "0.5pt",
-                  mb: "16px",
-                }}
-                align="left"
-              >
-                Role :{" "}
-              </Typography>
-              <Typography
-                variant="body1"
-                align="left"
-                sx={{
-                  fontFamily: "Inter",
-                  fontWeight: "300",
-                  fontSize: "16px",
-                  color: " #c7c7c7",
-                  letterSpacing: "0pt",
-                  textAlign: "justify",
-                  lineHeight: "1.59",
-                  mb: { lg: 4, md: 3, sm: 2, xs: 2 },
-                }}
-              >
-                {" "}
-                {details.projectRole}
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#e8e8e8 ",
-                  fontFamily: "Sora",
-                  fontWeight: "300",
-                  fontSize: {
-                    lg: "1.4rem",
-                    md: "1.3rem",
-                    sm: "1.2rem",
-                    xs: "1rem",
-                  },
-                  letterSpacing: "0.5pt",
-                  mb: "16px",
-                }}
-                align="left"
-              >
-                Tech:
-              </Typography>
-              <Box sx={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-                {details.techUsed.map((data: techUsed) => (
-                  <TechBatch key={data.tId} data={data.techName} />
-                ))}
-              </Box>
-
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#e8e8e8 ",
-                  fontFamily: "Sora",
-                  fontWeight: "300",
-                  fontSize: {
-                    lg: "1.4rem",
-                    md: "1.3rem",
-                    sm: "1.2rem",
-                    xs: "1rem",
-                  },
-                  letterSpacing: "0.5pt",
-                  mb: "16px",
-                }}
-                align="left"
-              >
-                OverView:
-              </Typography>
-              <Typography
+                   <Typography
                 variant="body1"
                 align="left"
                 sx={{
@@ -153,25 +73,11 @@ function ProjectInfo() {
               >
                 {details.projectOverView}
               </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#e8e8e8 ",
-                  fontFamily: "Sora",
-                  fontWeight: "300",
-                  fontSize: {
-                    lg: "1.4rem",
-                    md: "1.3rem",
-                    sm: "1.2rem",
-                    xs: "1rem",
-                  },
-                  letterSpacing: "0.5pt",
-                  mb: "16px",
-                }}
-                align="left"
-              >
-                What I Built:
-              </Typography>
+              <Box sx={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                {details.techUsed.map((data: techUsed) => (
+                  <TechBatch key={data.tId} data={data.techName} />
+                ))}
+              </Box>
               <Typography
                 variant="body1"
                 align="left"
@@ -186,49 +92,9 @@ function ProjectInfo() {
                 }}
                 gutterBottom
               >
-                <ul>
+                <ul >
                   {details.whatIbuilt.map((data: whatIbuilt) => (
                     <li key={data.wId}>{data.data}</li>
-                  ))}
-                </ul>
-              </Typography>
-
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#e8e8e8 ",
-                  fontFamily: "Sora",
-                  fontWeight: "300",
-                  fontSize: {
-                    lg: "1.4rem",
-                    md: "1.3rem",
-                    sm: "1.2rem",
-                    xs: "1rem",
-                  },
-                  letterSpacing: "0.5pt",
-                  mb: "16px",
-                }}
-                align="left"
-              >
-                What I Learned:
-              </Typography>
-              <Typography
-                variant="body1"
-                align="left"
-                sx={{
-                  fontFamily: "Inter",
-                  fontWeight: "300",
-                  fontSize: "16px",
-                  color: " #c7c7c7",
-                  letterSpacing: "0pt",
-                  textAlign: "justify",
-                  lineHeight: "1.59",
-                }}
-                gutterBottom
-              >
-                <ul>
-                  {details.whatILearned.map((data: whatILearned) => (
-                    <li key={data.wLId}>{data.data}</li>
                   ))}
                 </ul>
               </Typography>

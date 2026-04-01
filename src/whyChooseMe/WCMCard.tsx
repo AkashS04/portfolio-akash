@@ -28,14 +28,10 @@ const WCMCard = () => {
                   sm: "100%",
                   xs: "100%",
                 },
-                height: {
-                  lg: "140px",
-                  md: "140px",
-                  sm: "140px",
-                  xs: "140px",
-                },
+                height: "auto",
                 display: "flex",
                 alignItems: "center",
+                flexDirection:"column",
                 gap: {
                   lg: "1rem",
                   md: "0.5rem",

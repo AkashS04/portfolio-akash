@@ -138,10 +138,39 @@ body {
 .why-choose-me-linear {
   background: linear-gradient(127deg, #000000 0%, #2e003e 50%, #0000ff 100%);
 }
-.projects-linear{
+.projects-linear {
   background: linear-gradient(74deg, #000000 0%, #2e003e 50%, #0000ff 100%);
 }
 
+/* Experience Pills */
+
+.exp-pills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.exp-pills > .exp-pill {
+  background-color: #4f00ffb3;
+  padding: 8px 16px;
+  /* border: 1px solid #00aaffc9; */
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.exp-pills > .exp-pill > h4 {
+  font-size: 24px;
+  font-family: Inter;
+  color: #e8e8e8;
+  margin: 0;
+}
+.exp-pills > .exp-pill > p {
+  margin: 0;
+  font-size: 12px;
+  font-family: Inter;
+  color: #c7c7c7;
+}
 @media (min-width: 1025px) and (max-width: 1440px) {
   /* .home-title-box {
     top: 24% !important;
@@ -212,8 +241,8 @@ body {
   .why-choose-me-linear {
     background: linear-gradient(122deg, #000000 0%, #2e003e 50%, #0000ff 100%);
   }
-  .projects-linear{
-  background: linear-gradient(78deg, #000000 0%, #2e003e 50%, #0000ff 100%);
+  .projects-linear {
+    background: linear-gradient(78deg, #000000 0%, #2e003e 50%, #0000ff 100%);
   }
   .reactNavbar-main {
     display: none !important;
@@ -231,8 +260,8 @@ body {
   .why-choose-me-linear {
     background: linear-gradient(122deg, #000000 0%, #2e003e 50%, #0000ff 100%);
   }
-    .projects-linear{
-  background: linear-gradient(78deg, #000000 0%, #2e003e 50%, #0000ff 100%);
+  .projects-linear {
+    background: linear-gradient(78deg, #000000 0%, #2e003e 50%, #0000ff 100%);
   }
   .reactNavbar-main {
     display: none !important;
