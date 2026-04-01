@@ -22,7 +22,7 @@ export const whyChooseMeData: whyChooseMeDataType[] = [
   {
     uId: 222,
     skillIcon: TeamPlayer,
-    title: "Collabration",
+    title: "Collaboration",
     name: "I work closely with designers, backend developers, and teams to deliver consistent and reliable user experiences",
     alt: "team-player-image",
   },
