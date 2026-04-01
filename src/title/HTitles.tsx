@@ -8,7 +8,7 @@ const HTitles = memo(() => {
   return (
     <Box sx={{ textAlign: "left", width: { lg:"50%", md:"80%", sm:"100%", xs:"100%" } }}>
       <div className="" style={{ marginBottom: "16px" }}>
-        <TechPill label="React . TypeScript" />
+        <TechPill skill="React . TypeScript" color="blue" />
       </div>
       <Typography
         variant="h1"

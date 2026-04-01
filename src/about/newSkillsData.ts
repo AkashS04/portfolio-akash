@@ -3,149 +3,39 @@ export enum skillTypes {
   TOOLS = "Tools",
   OTHER = "Other",
 }
-export interface skillValues {
-  uID: number;
-  title: string;
-  value: number;
-  percentage: string;
-}
-export interface skillLevels {
-  typeID: number;
-  type: skillTypes | "";
-  skills: skillValues[];
+
+export interface stacks{
+  stId:number,
+  skill:string,
 }
 
-export const newSkillsData: skillLevels[] = [
-  {
-    typeID: 11,
-    type: skillTypes.FRONTEND,
-    skills: [
-      {
-        uID: 125,
-        title: "React",
-        value: 90,
-        percentage: "90%",
-      },
-      {
-        uID: 124,
-        title: "TypeScript",
-        value: 90,
-        percentage: "90%",
-      },
-      {
-        uID: 135,
-        title: "Tailwind CSS",
-        value: 85,
-        percentage: "85%",
-      },
-      {
-        uID: 131,
-        title: "Redux",
-        value: 85,
-        percentage: "85%",
-      },
-      {
-        uID: 121,
-        title: "HTML5",
-        value: 95,
-        percentage: "95%",
-      },
-      {
-        uID: 122,
-        title: "CSS3",
-        value: 90,
-        percentage: "90%",
-      },
-      {
-        uID: 123,
-        title: "JavaScript",
-        value: 90,
-        percentage: "90%",
-      },
-      {
-        uID: 126,
-        title: "Material-UI",
-        value: 70,
-        percentage: "70%",
-      },
-      {
-        uID: 127,
-        title: "Bootstrap",
-        value: 80,
-        percentage: "80%",
-      },
-    ],
+export interface techStacksType{
+  tId:number,
+  type:skillTypes | "",
+  color:string,
+  stacks:stacks[]
+  
+}
+export const techStacks:techStacksType[] =[
+  { tId:11,
+    type:skillTypes.FRONTEND,
+    color:"blue",
+    stacks:[
+      {stId:121, skill:"React"},{stId:122,skill:"TypeScript"},{stId:123,skill:"Tailwind CSS"},{stId:124,skill:"Redux"},{stId:125,skill:"HTML5"},{stId:126,skill:"CSS3"},{stId:127,skill:"Javascript"},{stId:128,skill:"Material UI"},{stId:129,skill:"Bootstrap"}
+    ]
   },
-  {
-    typeID: 12,
-    type: skillTypes.TOOLS,
-    skills: [
-      {
-        uID: 129,
-        title: "GitHub",
-        value: 80,
-        percentage: "80%",
-      },
-      {
-        uID: 140,
-        title: "Git",
-        value: 80,
-        percentage: "80%",
-      },
-      {
-        uID: 133,
-        title: "Vite",
-        value: 75,
-        percentage: "75%",
-      },
-      {
-        uID: 132,
-        title: "Jest + React Testing Library",
-        value: 80,
-        percentage: "80%",
-      },
-      {
-        uID: 136,
-        title: "Playwright",
-        value: 75,
-        percentage: "75%",
-      },
-      {
-        uID: 130,
-        title: "JIRA",
-        value: 70,
-        percentage: "70%",
-      },
-    ],
+    { tId:12,
+    type:skillTypes.TOOLS,
+    color:"green",
+    stacks:[
+      {stId:129, skill:"Git"},{stId:130,skill:"Vite"},{stId:131,skill:"Jest"},{stId:132,skill:"Playwright"},{stId:133,skill:"JIRA"}
+    ]
   },
-  {
-    typeID: 13,
-    type: skillTypes.OTHER,
-    skills: [
-      {
-        uID: 134,
-        title: "GitHub Actions",
-        value: 75,
-        percentage: "75%",
-      },
-      {
-        uID: 128,
-        title: "RESTful APIs",
-        value: 90,
-        percentage: "90%",
-      },
-      {
-        uID: 137,
-        title: "Axios",
-        value: 90,
-        percentage: "90%",
-      },
-      {
-        uID: 138,
-        title: "Performance Optimization",
-        value: 75,
-        percentage: "75%",
-      },
-    ],
-  },
-];
+    { tId:13,
+    type:skillTypes.OTHER,
+    color:"yellow",
+    stacks:[
+      {stId:141, skill:"Rest APIs"},{stId:142,skill:"Axios"},{stId:143,skill:"CI/CD"},{stId:144,skill:"SEO"}
+    ]
+  }
+]

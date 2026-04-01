@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import NewSkillDetails from "./newSkillDetails";
+import TechStacks from "./TechStacks";
 
 const Skills = () => {
   return (
@@ -28,7 +28,7 @@ const Skills = () => {
           variant="h4"
           sx={{
             color: "#e8e8e8",
-            paddingLeft: "2rem",
+            paddingLeft: "1rem",
             fontFamily: "Sora",
             fontWeight: "400",
             fontSize: {
@@ -44,7 +44,7 @@ const Skills = () => {
         >
           Core Skills
         </Typography>
-        <NewSkillDetails />
+        <TechStacks />
       </Box>
     </Box>
   );

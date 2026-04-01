@@ -4,7 +4,6 @@ import {
   projectExplaination,
   techUsed,
   whatIbuilt,
-  whatILearned,
 } from "./projectDetails.ts";
 import TechBatch from "./TechBatch.tsx";
 import Framer from "../framer/Framer.tsx";
