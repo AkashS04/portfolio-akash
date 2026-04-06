@@ -5,8 +5,7 @@ const ContactIcon = ({ imgSrc, clickValue, clickCall, alt }: any) => {
     height: { lg: "100px", md: "80px", sm: "50px", xs: "40px" },
     width: "auto",
     filter:
-      "invert(85%) sepia(7%) saturate(26%) hue-rotate(319deg) brightness(101%) contrast(104%)",
-    opacity: "0.7",
+      "brightness(0) saturate(100%) invert(94%) sepia(4%) saturate(1%) hue-rotate(321deg) brightness(111%) contrast(82%)",
     display: "block",
   };
   return (
@@ -21,7 +20,7 @@ const ContactIcon = ({ imgSrc, clickValue, clickCall, alt }: any) => {
 
         "&:hover": {
           transform: "scale(1.060)",
-          opacity: "0.9",
+          filter:"brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(256deg) brightness(101%) contrast(101%)",
         },
         "&:active": {
           transform: "scale(0.8)",

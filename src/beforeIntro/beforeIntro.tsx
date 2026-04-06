@@ -7,9 +7,9 @@ import { motion, Variants } from "motion/react";
 function LoadingThreeDotsJumping() {
   const dotVariants: Variants = {
     jump: {
-      y: -30,
+      y: -25,
       transition: {
-        duration: 0.78,
+        duration: 0.75,
         repeat: Infinity,
         repeatType: "mirror",
         ease: "easeInOut",
@@ -45,11 +45,12 @@ function LoadingThreeDotsJumping() {
           <Typography
             variant="body1"
             sx={{
-                  fontFamily:"Inter",
-            fontWeight:"400",
+              fontFamily:"Inter",
+              fontWeight:"400",
+              fontSize:"16px",
               lineHeight: "1.5",
               marginTop: "1rem",
-              color: "#ffffffa8",
+              color: "#ffffff",
               textAlign: "center",
             }}
           >
@@ -79,7 +80,7 @@ function StyleSheet() {
                 width: 4px;
                 height: 4px;
                 border-radius: 8px ;
-                background-color:#00d8ff;
+                background-color:#a855f7;
                 will-change: transform;
             }
             `}

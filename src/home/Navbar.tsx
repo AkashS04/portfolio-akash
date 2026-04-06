@@ -62,7 +62,7 @@ function Navbar({}: any) {
           position: "absolute",
           top: "10px",
           right: "10px",
-          color: "#00d8ff",
+          color: "#a855f7",
           zIndex: "999",
           background: "transparent",
           transition: "all 250ms ease-out",

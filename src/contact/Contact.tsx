@@ -104,8 +104,8 @@ const Contact = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>(
                 fontSize: {
                   lg: "1.5rem",
                   md: "1.3rem",
-                  sm: "1.2rem",
-                  xs: "1.1rem",
+                  sm: "16px",
+                  xs: "16px",
                 },
                 letterSpacing: "0.5pt",
                 mb: 2,

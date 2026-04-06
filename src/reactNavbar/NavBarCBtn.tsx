@@ -31,7 +31,7 @@ const Navtexttheme = createTheme({
           boxShadow: "-19px 17px 23px -17px rgba(0,0,0,0.52)",
           WebkitBoxShadow: "-19px 17px 23px -17px rgba(0,0,0,0.52)",
           MozBoxShadow: "-19px 17px 23px -17px rgba(0,0,0,0.52)",
-          borderRadius: "24px",
+          borderRadius: "12px",
           padding: "8px",
           cursor: "pointer",
           width: "154px",

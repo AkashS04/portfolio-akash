@@ -35,7 +35,7 @@ export default function TechBatch({
           textAlign: "justify",
           lineHeight: "1.59",
           mb: { lg: 4, md: 3, sm: 2, xs: 2 },
-          borderRadius:"16px 0px 18px 16px",
+          borderRadius:"8px",
           display:"flex",
           justifyContent:"center",
           alignItems:"center",

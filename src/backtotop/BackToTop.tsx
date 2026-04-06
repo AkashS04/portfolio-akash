@@ -28,7 +28,7 @@ const BackToTop: React.FC = () => {
           <IconButton
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             sx={{
-              color: "#ffffffb8",
+              color: "#ffffff",
               transition: "transform 150ms ease-out",
             }}
           >

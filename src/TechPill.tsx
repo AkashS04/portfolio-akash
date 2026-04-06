@@ -28,7 +28,7 @@ color:[{
         fontSize: "18px",
         padding: "8px 16px",
         border: "1px solid",
-        borderRadius: "18px",
+        borderRadius: "12px",
         fontFamily: "Inter",
       }}
     >

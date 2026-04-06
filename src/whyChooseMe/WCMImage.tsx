@@ -16,7 +16,7 @@ const WCMImage = ({ image }: any) => {
         src={image}
         sx={{
           filter:
-            " brightness(0) saturate(100%) invert(61%) sepia(56%) saturate(2702%) hue-rotate(150deg) brightness(108%) contrast(103%)",
+            " brightness(0) saturate(100%) invert(44%) sepia(27%) saturate(7486%) hue-rotate(246deg) brightness(97%) contrast(99%)",
           width: {
             xl: "18%",
             lg: "14%",

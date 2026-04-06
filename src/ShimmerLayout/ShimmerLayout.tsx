@@ -14,12 +14,13 @@ const ShimmerLayout = ({ contentText }: any) => {
     background: "linear-gradient(90deg, rgb(0 0 0 /29%), rgb(255 255 255 / 32%), rgb(0 0 0 / 29%))",
     backgroundSize: "200% 100%",
     animation: `${ShimmerBg} 2.8s infinite linear`,
+    borderRadious:"16px"
   };
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+      sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}
     >
-      <Box sx={{ width: "95%", margin: "8px" }}>
+      <Box sx={{ width: "95%", margin: "8px"  }}>
         <Box sx={shimmerStyle}>
           <Box
             sx={{
