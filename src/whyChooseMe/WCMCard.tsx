@@ -60,10 +60,9 @@ const WCMCard = () => {
                     color: "#e8e8e8 ",
                     fontSize: {
                       xl: "2.25rem",
-                      lg: "1.8rem",
+                      lg: "1.5rem",
                       md: "1.125rem",
-                      sm: "1.125rem",
-                      xs: "1.125rem",
+                      xs: "18px",
                     },
                     letterSpacing: "0.5pt",
                     mb: 1,

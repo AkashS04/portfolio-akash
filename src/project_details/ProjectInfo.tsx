@@ -24,7 +24,7 @@ function ProjectInfo() {
         <Framer>
           <Box
             sx={{
-              padding: "4% 6%",
+              padding: {md:"4% 6%", xs:"6% 6%"},
               marginBottom: "4%",
               borderRadius: "16px",
               backdropFilter: "blur(8px)",
@@ -40,14 +40,13 @@ function ProjectInfo() {
                 variant="h3"
                 align="left"
                 sx={{
-                  fontFamily: "Sora",
+                  fontFamily: 'Bebas Neue',
                   fontWeight: "400",
                   color: "#e8e8e8 ",
                   fontSize: {
-                    lg: "2rem",
-                    md: "1.5rem",
-                    sm: "1.4rem",
-                    xs: "1.2rem",
+                    md: "2.5rem",
+                    sm: "2.2rem",
+                    xs: "2rem",
                   },
                   letterSpacing: "1.0pt",
                   mb: { lg: 5, md: 4, sm: 3, xs: 3 },
@@ -88,14 +87,13 @@ function ProjectInfo() {
                   letterSpacing: "0pt",
                   textAlign: "justify",
                   lineHeight: "1.59",
+                  margin:0
                 }}
                 gutterBottom
               >
-                <ul >
                   {details.whatIbuilt.map((data: whatIbuilt) => (
-                    <li key={data.wId}>{data.data}</li>
+                    <p key={data.wId}>{data.data}</p>
                   ))}
-                </ul>
               </Typography>
             </Box>
           </Box>
