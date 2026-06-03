@@ -174,7 +174,7 @@ body {
 .ctc-div {
   background: linear-gradient(45deg, #0337de, transparent);
   border-radius: 8px;
-  padding: 8px 12px;
+  padding: 16px 12px;
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -272,4 +272,17 @@ body {
   .reactNavbar-main {
     display: none !important;
   }
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #6ee7b7;       
+  border-radius: 50%;
+  box-shadow: 0 0 6px #6ee7b7;   
+  animation: blink 1.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.2; }
 }
